@@ -1,0 +1,1 @@
+// Create shortcut for "create text document/create document"

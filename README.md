@@ -1,2 +1,1 @@
-TrigonaMinima.github.io
-=======================
+My awesome blog.
