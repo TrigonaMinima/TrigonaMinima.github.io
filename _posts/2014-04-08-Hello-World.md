@@ -10,6 +10,6 @@ This line being a classic way to start anything in the computer world whether it
 
 What I hope to write here is about the things concerning me or interesting to me. Things like - Physics, Computers, Philosophy, Psychology, Biology, reading, writing, etc. I guess it basically means anything and everything. 
 
-I also intend to write about the common problems I find while working on anything and may be their solutions too. And the things I engage myself in.
+I also intend to write about the common problems I face while working on anything and may be post their solutions too. And the things I engage myself in. Lets just hope that I will be writing frequently on this Blog.
 
-Lets just hope that I will be writing frequently on this Blog or should I say - lets hope that the Force be strong with this Blog.
+Let the Force be strong with this Blog.
