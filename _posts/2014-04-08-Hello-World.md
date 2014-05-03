@@ -2,6 +2,7 @@
 layout: post
 title:  "Hello World!!"
 date:   2014-04-08 18:04
+categories: Intro
 ---
 
 Hello World!!
