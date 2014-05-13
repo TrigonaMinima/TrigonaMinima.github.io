@@ -32,7 +32,7 @@ Some sources of similar articles and movements-
 - [Goonj][G]
 - [Smile Foundation][SF]
 
-Further if you really care about the future of our nation; about their health, education and protection and do sign the pledge **[here][vote4children]**. By signing the pledge you will be taking the first step in telling the decision makers that this pathetic situation needs to change.
+Further if you really care about the future of our nation; about their health, education and protection then do sign the pledge **[here][vote4children]**. By signing the pledge you will be taking the first step in telling the decision makers that this pathetic situation needs to change.
 
 This post is a part of the #Vote4Children Blog-a-thon on Youth Ki Awaaz. Find out more at: http://www.youthkiawaaz.com/vote4children
 
