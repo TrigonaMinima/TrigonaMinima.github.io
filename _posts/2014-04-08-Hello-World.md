@@ -7,7 +7,7 @@ categories: Intro
 
 Hello World!!
 
-This line being a classic way to start anything in the computer world whether it is the first program in a programming language or a hello world OS, seemed to me the only way to start blogging.
+This line being a classic way to start anything in the Computer programming world whether it is the first program in a programming language or a hello world OS, seemed to me the only way to start blogging. I don't know what happens to people who break with this tradition, but I think it's safer not to find out.
 
 What I hope to write here is about the things concerning me or interesting to me. Things like - Physics, Computers, Philosophy, Psychology, Biology, reading, writing, etc. I guess it basically means anything and everything. 
 
