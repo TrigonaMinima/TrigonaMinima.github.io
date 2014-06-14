@@ -6,7 +6,7 @@ body > footer { font-size: 12px; color: #808080; }
 body > footer a { color: #808080; }
 * { -webkit-font-smoothing: antialiased; }
 * { box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; }
-a { color: #1157f2; text-decoration: none; }
+a { color: #000; text-decoration: none; }   /*1157f2*/
 nav > a {color: #345;  text-decoration: none;}
 
 del { color: #999; }
