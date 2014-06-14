@@ -22,8 +22,8 @@ If I haven't gone to this event then I would have never gained that experience. 
 
 Again, I started babbling. I was going to tell you what I actually did.
 
-Firstly, this hackathon was of 24 hours that started at 1:00 pm on 7th June Saturday and ran till 1:00 pm on 8th June Sunday. There were 5 people in my team including me viz. [*Mr Vipul][3], [*Mr Pankaj*][4], [*Mr Hammad*][5] and [*Mr Safiyat*][6]. Of these the team was divided into 2 sub-teams with *Mr Vipul and *Mr Hammad* in one and other three in one. We had 2 ideas.  
-*Mr Hammad* and *Mr Vipul worked on **distributed CDN** (I won't tell you what it is 'cos I barely understand it. Okay, I will tell you, but later.)
+Firstly, this hackathon was of 24 hours that started at 1:00 pm on 7th June Saturday and ran till 1:00 pm on 8th June Sunday. There were 5 people in my team including me viz. [*Mr Vipul*][3], [*Mr Pankaj*][4], [*Mr Hammad*][5] and [*Mr Safiyat*][6]. Of these the team was divided into 2 sub-teams with *Mr Vipul* and *Mr Hammad* in one and other three in one. We had 2 ideas.  
+*Mr Hammad* and *Mr Vipul* worked on **distributed CDN** (I won't tell you what it is 'cos I barely understand it. Okay, I will tell you, but later.)
 *Mr Pankaj*, me and *Mr Safiyat* were working on **Freya**. Now two things.
 
 **Q. What was the idea? And how did we came up with this name?**  

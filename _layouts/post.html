@@ -5,7 +5,8 @@ layout: default
 <header>
 <h2>{{ page.title }}</h2>
 <a class="category">{{ page.category }}</a>
-<time><span>Published on </span>{{ page.date | date_to_string }}</time>
+<time><span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words</time>
+
 </header>
 {{ content }}
 {% if page.disqus == "y" and site.disqus_shortname %}

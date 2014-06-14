@@ -59,21 +59,21 @@ time {
 
 .posts, article, aside {
   width: 100%;
-  max-width: 500px;
+  max-width: 600px;
   margin: auto;
-  text-align: left; }
+  text-align: justify; }
 
 .categories {
   position: relative; }
   .categories h3 {
     font-size: 14px;
-    margin: 0 0 6px;
+    margin: 0 0 2px;
     text-transform: capitalize; }
   .categories h3:not(:first-of-type):before {
     content: "------";
     display: block;
     color: #d0d0d0;
-    margin: 10px 0;
+    margin: 5px 0;
     font-weight: normal; }
 
 article header {

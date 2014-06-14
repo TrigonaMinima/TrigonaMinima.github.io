@@ -27,11 +27,11 @@ owner:
 links: 
   - name:         Home
     url:          /
-  - name:         Categories
-    url:          /categories
   - name:         About
     url:          /about
-  - name:         Email
-    url:          mailto:trigonamin@gmail.com
+  - name:         Categories
+    url:          /categories
+  - name:     index
+    url:              /archive
   - name:         GitHub
     url:          http://github.com/TrigonaMinima

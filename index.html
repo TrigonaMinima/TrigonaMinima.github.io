@@ -7,7 +7,7 @@ layout: default
     <li>
       <a href="{{ post.url }}">
         <h2>{{ post.title }}</h2>
-        <time>{{ post.date | date_to_string }}</time>
+        <pre><time>{{ post.date | date_to_string }} &nbsp; {{ post.content | number_of_words }} words</time></pre>
       </a>
     </li>
   {% endfor %}
