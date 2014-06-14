@@ -9,7 +9,7 @@ So, this weekend of mine was spent in an office in Gurgaon (1-2 hr away from my 
 
 Let's start with.. well... start.  
 Hackathon called [**AngelHack**][2] organized all over world anually was organized here in Delhi for the 1st time.  
-I've never been to a hackathon, which is (for those readers who doesn't know what a hackathon is) a competition where you spend 24-48 hours building a product - an app or web service or API or any other hack. You can take part as an individual or as a team. You can form teams with people you know or with people you meet at the venue. The methods vary depending on the rules but the aim is to deliver a [*MVP*][10] in a short amount of time.  
+I've never been to a hackathon, which is (for the readers who don't know what a hackathon is) a competition where you spend 24-48 hours building a product - an app or web service or API or any other hack. You can take part as an individual or as a team. You can form teams with people you know or with people you meet at the venue. The methods vary depending on the rules but the aim is to deliver a [*MVP*][10] in a short amount of time.  
 Unfortunately here around me, in every hackathon one has to make an app or web-service. Even though it's fun doing that, I am not interested in that. I seek for events where I can work on hardware, on APIs, on data analytics etc. But alas, I have never found one.
 
 Enough with the explaining. Let's start.
@@ -18,7 +18,7 @@ I was in a team of five with other four seniors. Reasons for all of them being s
 
 **Q. You might ask why I even went there if I didn't know how to hack?**  
 **A.** Since, I have never been to any hackathon, I wanted to experience the event; to feel the pace of environment; to present the idea to the live audience and judges and to work within a team.  
-If I haven't gone to this event then I would have never gained that experience. If I haven't gone then I would have never known that making a web-service was so simple. All that mattered was a great idea for the product.
+If I hadn't gone to this event then I would have never gained that experience. If I hadn't gone then I would have never known that making a web-service was so simple. All that mattered was a great idea for the product.
 
 Again, I started babbling. I was going to tell you what I actually did.
 
