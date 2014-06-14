@@ -14,19 +14,17 @@ Unfortunately here around me, in every hackathon one have to make an app or web-
 
 Enough with the explaining. Let's start.
 
-I was in the team of five. Remaining four were seniors. Reasons for all of them being seniors was -  
-1. I have pathetic class mates, never ready to do such things. Always bitch away. Chickens!! (Yeah, Shadab Zafar, that was for you too!!)  
-2. I didn't know how to make an Android app. I didn't have any experience with any back-end technology like php either. I only have exp in a little bit of front-end languages like html and css. I am more of a system programmer where too I am not deep in expertise. So, it was a logical step to get involved with the seniors.
+I was in the team of five. Remaining four were seniors. Reasons for all of them being seniors were - I have pathetic class mates, never ready to do such things. Always bitch away. Chickens!! (Yeah, Shadab Zafar, that was for you too!!). Also, I didn't know how to make an Android app or had any experience with any back-end technology like php either. I only have exp in a little bit of front-end languages like html and css. I am more of a system programmer where too I am not deep in expertise. So, it was a logical step to get involved with the seniors.
 
 **Q. You might ask why I even went there if I didn't know how to hack?**  
-**A.** Since, I have never been to any hackathon, I wanted to experience the event; to feel the pace of creating a working product in 24 hours; to present the idea to the live audience and judges; to work within a team.  
-If I haven't gone to this event then I would have never gained that experience. If I haven't gone then I would have never known that making a web-service was so simple. All that matters is a great idea for the product.
+**A.** Since, I have never been to any hackathon, I wanted to experience the event; to feel the pace of environment; to present the idea to the live audience and judges and to work within a team.  
+If I haven't gone to this event then I would have never gained that experience. If I haven't gone then I would have never known that making a web-service was so simple. All that mattered was a great idea for the product.
 
 Again I started babbling. I was going to tell you what I actually did.
 
 Firstly, this hackathon was of 24 hours that started at 1:00 pm on 7th June Saturday and ran till 1:00 pm on 8th June Sunday. There were 5 people in my team including me viz. [Mr Vipul][3], [Mr Pankaj][4], [Mr Hammad][5] and [Mr Safiyat][6]. Of these the team was divided into 2 sub-teams with Mr Vipul and Mr Hammad in one and other three in one. We had 2 ideas.  
-Mr Hammad and Mr Vipul worked on **distributed CDN** (I won't tell you what it is 'cos I barely understand it. Okay, I will tell you but later.)
-Mr Pankaj, me and Mr Safiyat were working on **Freya**. Now two things,
+Mr Hammad and Mr Vipul worked on **distributed CDN** (I won't tell you what it is 'cos I barely understand it. Okay, I will tell you, but later.)
+Mr Pankaj, me and Mr Safiyat were working on **Freya**. Now two things.
 
 **Q. What was the idea? And how did we came up with this name?**  
 **A.** First I'll talk about idea. From around 12:00 noon to 3:00 pm on Saturday we just discussed about ideas. Actually, me and Mr Safiyat were just chilling, waiting for others to think of something. They came up with CDN about which we didn't know anything, so we thought to think of something separate. We (mostly me) came up with two - one was to create a [**yelp**][7] like web service for India (yeah! There isn't one). Another one was to create a **platform for NGOs and Social Startups** ie to create a common place for all NGOs and social startups to showcase what they have been up to and to provide people a place to get in contact with these orgs.  
@@ -43,13 +41,13 @@ Now came the presentation round. This was my first time at this kind of event so
 There were 2 rounds - 3-4 minutes for Round one and 15 minutes for Round two. We did well in *Round one* and were selected out of 25 other team for *Round two*. You know that alone was a great thing for me and my team. Especially for me 'cos I *popped my hackathon cherry* at this event. We passed for Round two along with other 9 ideas. Here our presentation wasn't that good. We *tumbled and fell* (third form of feeder song - [Tumble and Fall][11]). So *in the end* (Linkin park - [In the End][12]) we failed and it doesn't even matter that much. Well we weren't feeling that bad, we didn't even expect to pass the round one.
 
 **Q. Who won?**  
-**A.** I don't really know who won it but what he made was like distributed content manager. Yeah I didn't understand what he made. I guess he got to go to California as a grand prize for a incubator kind of program.
+**A.** I don't really know who won but what he made was like distributed content manager. Yeah, I didn't understand what he made. I guess he got to go to California as a grand prize for a incubator kind of program.
 
 **Q. What were other ideas?**  
-**A.** Some ideas were interesting. A guy made an android app through which he controlled NFS most wanted on his laptop. He also made an API for that. Another was an app through which you can broadcast whatever you write without lag on other phones over the network. Another was a quizzing app.  
+**A.** Some ideas were interesting. A guy made an android app through which he controlled *NFS most wanted* on his laptop. He also made an API for that. Another was an app through which you can broadcast whatever you write on one phone, without lag on other phones over the network. Another was a quizzing app.  
 What else... Ahh.. My memory. I don't remember another ones. Fuck it! Lets move to next question.
 
-Oh.. I forgot!!  
+Oh.. I forgot!! I know you did too.  
 **Q. What is *distributed CDN*?**  
 **A.** It is like normal [CDN][15] (Content Delivery Network), but it works on the concept of [*tor*][13] or [*diaspora*][14]. Run by the community. The content will be hosted in the individual's RAM which will be lost after the power off.  
 Now, do you understand? That's why I wasn't telling you. I can't explain further.
