@@ -5,18 +5,18 @@ date:   2014-06-10
 categories: Hackathon Fun-weekend Coding
 ---
 
-So this weekend of mine was spent in an office in Gurgaon (1-2 hr away from my home), hacking a web service called [**Freya**][1]. FYI, *hacking* means tinkering/playing/building with the technologies, not getting access into private things and steal something, kindly write it with indelible ink in your mind.
+So this weekend of mine was spent in an office in Gurgaon (1-2 hr away from my home), hacking a web service called [**Freya**][1]. FYI, *hacking* means tinkering/playing/building with the technologies, not getting access into private things and steal something, inscribe it in your mind.
 
 Let's start with.. well... start.  
-There was a hackathon called [**AngelHack**][2] organized all over world, which was going to be organized here in Delhi for 1st time.  
-I've never been to a hackathon, which is (for those readers who doesn't know what a hackathon is), a competition where you spend 24-48 hours building a product - an app or web service or API or any other hack. You can be a single person or be in a team, you can form teams with people you know or with people you meet at the venue. The methods vary depending on the rule but the same thing I'd you have to deliver a product in a short amount of time.  
-Unfortunately here, around me, in every hackathon one have to make an app or web-service. I am not much interested in that. I seek for events where I can work on hardware, on APIs, on data analytics etc. But alas, I have never found that here.
+Hackathon called [**AngelHack**][2] organized all over world anually was organized here in Delhi for the 1st time.  
+I've never been to a hackathon, which is (for those readers who doesn't know what a hackathon is) a competition where you spend 24-48 hours building a product - an app or web service or API or any other hack. You can take part as an individual or in a team. You can form teams with people you know or with people you meet at the venue. The methods vary depending on the rules but the aim is to deliver a [*MVP*][10] in a short amount of time.  
+Unfortunately here around me, in every hackathon one have to make an app or web-service. Even though it's fun doing that, I am not interested in that. I seek for events where I can work on hardware, on APIs, on data analytics etc. But alas, I have never found one.
 
 Enough with the explaining. Let's start.
 
-I was in the team with my college mates (of whom, all were seniors). The reason for all of them being seniors was -  
+I was in the team of five. Remaining four were seniors. Reasons for all of them being seniors was -  
 1. I have pathetic class mates, never ready to do such things. Always bitch away. Chickens!! (Yeah, Shadab Zafar, that was for you too!!)  
-2. I didn't know how to make an Android app and also didn't have any experience with any back-end technology to develop a web service. I only have exp in a little bit of front-end. I am more of a system programmer where too I am not deep in knowledge. So, it was a logical step to get involved with the seniors.
+2. I didn't know how to make an Android app. I didn't have any experience with any back-end technology like php either. I only have exp in a little bit of front-end languages like html and css. I am more of a system programmer where too I am not deep in expertise. So, it was a logical step to get involved with the seniors.
 
 **Q. You might ask why I even went there if I didn't know how to hack?**  
 **A.** Since, I have never been to any hackathon, I wanted to experience the event; to feel the pace of creating a working product in 24 hours; to present the idea to the live audience and judges; to work within a team.  
