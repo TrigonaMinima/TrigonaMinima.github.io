@@ -10,7 +10,7 @@ Task 2 is as follows -
 
 >Download Linus's latest git tree from git.kernel.org. Build it, install it, and boot it. You can use whatever kernel configuration options you wish to use, but you must enable CONFIG_LOCALVERSION_AUTO=y. Show proof of booting this kernel. Bonus points if you do it on a "real" machine, and not a virtual machine (virtual machines are acceptable, but come on, real kernel developers don't mess around with virtual machines, they are too slow. Oh yeah, we aren't real kernel developers just yet.)
 
-Okay, so there's nothing much to say what I did but, still to document I'll write.
+Okay, so there's nothing much to say what I did, but still to document I'll write.
 
 I first ran 
 
@@ -24,9 +24,9 @@ Went to the general settings & selected the automatically update local version a
 $ make && make modules_install && make install
 {% endhighlight %}
 
-This wont finish anytime soon so go have a walk or something. I went for dinner, if you were wondering. I did this whole compiling process three times. The first time I didn't know how much time it will take so, I was watching it compile and install for 15-20 minutes (even after, I was warned by various blogs that it'll take time). I should have taken some inspiration from this xkcd comic [here][1].
+This won't end anytime soon so go have a walk or something. I went for dinner, if you were wondering. I did this whole compiling process three times. The first time I didn't know how much time it will take so, I was watching it compile and install for 15-20 minutes (even after, I was warned by various blogs that it'll take time). I should have taken some inspiration from this xkcd comic [here][1].
 
-When the show's over reboot your machine and in the grub only you will be able to see the kernel version you used. For further proof you can run in you terminal the following command.
+When the show's over reboot your machine and in the grub only you will be able to see the kernel version you used. For further proof you can run in your terminal the following command.
 
 {% highlight sh %}
 $ uname -a
