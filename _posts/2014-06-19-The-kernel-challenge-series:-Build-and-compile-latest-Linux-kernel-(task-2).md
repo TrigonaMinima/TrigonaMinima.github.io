@@ -8,7 +8,7 @@ categories: kernel system-programming
 
 Task 2 is as follows -
 
->Download Linus's latest git tree from git.kernel.org. Build it, install it, and boot it. You can use whatever kernel configuration options you wish to use, but you must enable CONFIG_LOCALVERSION_AUTO=y. Show proof of booting this kernel. Bonus points if you do it on a "real" machine, and not a virtual machine (virtual machines are acceptable, but come on, real kernel developers don't mess around with virtual machines, they are too slow. Oh yeah, we aren't real kernel developers just yet.)
+>Download Linus's latest git tree from git.kernel.org. Build it, install it, and boot it. You can use whatever kernel configuration options you wish to use, but you must enable _`CONFIG_LOCALVERSION_AUTO`=y_. Show proof of booting this kernel. Bonus points if you do it on a "real" machine, and not a virtual machine (virtual machines are acceptable, but come on, real kernel developers don't mess around with virtual machines, they are too slow. Oh yeah, we aren't real kernel developers just yet.)
 
 Okay, so there's nothing much to say what I did, but still to document I'll write.
 
@@ -18,10 +18,10 @@ I first ran
 $ make menuconfig
 {% endhighlight %}
 
-Went to the general settings & selected the automatically update local version and then saved the file as '.config'. You will have the file named the same in your kernel directory. Now run as root
+Went to the general settings & selected the automatically update local version and then saved the file as _.config_. You will have the file named the same in your kernel directory. Now run as root
 
 {% highlight sh %}
-$ make && make modules_install && make install
+# make && make modules_install && make install
 {% endhighlight %}
 
 This won't end anytime soon so go have a walk or something. I went for dinner, if you were wondering. I did this whole compiling process three times. The first time I didn't know how much time it will take so, I was watching it compile and install for 15-20 minutes (even after, I was warned by various blogs that it'll take time). I should have taken some inspiration from this xkcd comic [here][1].
