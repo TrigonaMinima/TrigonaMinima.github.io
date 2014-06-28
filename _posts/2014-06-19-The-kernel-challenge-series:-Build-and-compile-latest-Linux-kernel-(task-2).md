@@ -21,7 +21,7 @@ $ make menuconfig
 Went to the general settings & selected the automatically update local version and then saved the file as _.config_. You will have the file named the same in your kernel directory. Now run as root
 
 {% highlight sh %}
-# make && make modules_install && make install
+$ make && make modules_install && make install
 {% endhighlight %}
 
 This won't end anytime soon so go have a walk or something. I went for dinner, if you were wondering. I did this whole compiling process three times. The first time I didn't know how much time it will take so, I was watching it compile and install for 15-20 minutes (even after, I was warned by various blogs that it'll take time). I should have taken some inspiration from this xkcd comic [here][1].
