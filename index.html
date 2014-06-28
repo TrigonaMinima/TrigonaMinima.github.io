@@ -5,10 +5,10 @@ layout: default
 <ul class="posts">
   {% for post in paginator.posts %}
     <li>
-      <a href="{{ post.url }}">
+      <a href="{{ post.url }}" text-decoration: none;>
         <h2>{{ post.title }}</h2>
-        <pre><time>{{ post.date | date_to_string }} &nbsp; {{ post.content | number_of_words }} words</time></pre>
       </a>
+        <pre><time>{{ post.date | date_to_string }} &nbsp; {{ post.content | number_of_words }} words</time></pre>
     </li>
   {% endfor %}
 </ul>
