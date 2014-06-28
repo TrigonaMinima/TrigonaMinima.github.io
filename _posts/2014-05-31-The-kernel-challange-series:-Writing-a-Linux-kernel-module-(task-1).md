@@ -8,8 +8,8 @@ categories: kernel system-programming Linux
 
 How I am becoming a Linux kernel developer (at least, I think I am). There will be a series of these posts as I get ahead on my becoming a Linux kernel developer quest. These are the ones I have written yet.
 
-[Writing a Linux kernel module (task 1)][] (this post)  
-[Building and booting the Linux kernel (Task 2)][]  
+[Writing a Linux kernel module (task 1)][3] (this post)  
+[Building and booting the Linux kernel (Task 2)][4]  
 
 Task #1 was to -
 
@@ -140,3 +140,5 @@ References-
 
 [1]: http://tldp.org/LDP/lkmpg/2.6/html/
 [2]: http://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
+[3]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module-(task-1) %}
+[4]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel-(task-2) %}
