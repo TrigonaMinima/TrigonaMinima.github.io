@@ -8,7 +8,7 @@ categories: kernel system-programming
 
 Task 2 is as follows -
 
->Download Linus's latest git tree from git.kernel.org. Build it, install it, and boot it. You can use whatever kernel configuration options you wish to use, but you must enable _`CONFIG_LOCALVERSION_AUTO`=y_. Show proof of booting this kernel. Bonus points if you do it on a "real" machine, and not a virtual machine (virtual machines are acceptable, but come on, real kernel developers don't mess around with virtual machines, they are too slow. Oh yeah, we aren't real kernel developers just yet.)
+>Download Linus's latest git tree from git.kernel.org. Build it, install it, and boot it. You can use whatever kernel configuration options you wish to use, but you must enable _CONFIG`_`LOCALVERSION`_`AUTO=y_. Show proof of booting this kernel. Bonus points if you do it on a "real" machine, and not a virtual machine (virtual machines are acceptable, but come on, real kernel developers don't mess around with virtual machines, they are too slow. Oh yeah, we aren't real kernel developers just yet.)
 
 Okay, so there's nothing much to say what I did, but still to document I'll write.
 
