@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "The kernel challange (Task 2)"
+title:  "The kernel challange series: Building and booting the Linux kernel (Task 2)"
 date:   2014-06-19
 categories: kernel system-programming 
 ---
 
+How I am becoming a Linux kernel developer (at least, I think I am). There will be a series of posts as I get ahead on my becoming a Linux kernel developer quest. These are the ones I have written yet.
+
+[Writing a Linux kernel module (task 1)][2]  
+[Building and booting the Linux kernel (Task 2)][3] (this post)  
 
 Task 2 is as follows -
 
@@ -39,3 +43,5 @@ Linux Shivam 3.16.0-rc2y #1 SMP Sun Jun 22 21:24:16 IST 2014 x86_64 x86_64 x86_6
 {% endhighlight %}
 
 [1]: http://xkcd.com/303/
+[2]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module-(task-1) %}
+[3]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel-(task-2) %}
