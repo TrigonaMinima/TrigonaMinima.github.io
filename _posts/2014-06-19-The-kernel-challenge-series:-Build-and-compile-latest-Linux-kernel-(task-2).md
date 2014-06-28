@@ -7,8 +7,8 @@ categories: kernel system-programming
 
 How I am becoming a Linux kernel developer (at least, I think I am). There will be a series of posts as I get ahead on my becoming a Linux kernel developer quest. These are the ones I have written yet.
 
-[Writing a Linux kernel module (task 1)][2]  
-[Building and booting the Linux kernel (Task 2)][3] (this post)  
+[Writing a Linux kernel module][2]  
+[Building and booting the Linux kernel][3] (this post)  
 
 Task 2 is as follows -
 
