@@ -1,0 +1,14 @@
+---
+layout: quotes_template
+---
+
+<ul>
+  {% for quote in site.posts %}
+    {% unless quote.quote != 'y' %}
+        <li>
+        {{ quote.content }}
+        <!-- <a href="{{ post.url }}">{{ content }}</a> -->
+        </li>
+    {% endunless %}
+  {% endfor %}
+</ul>

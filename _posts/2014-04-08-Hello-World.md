@@ -1,8 +1,9 @@
 ---
 layout: post
 title:  "Hello World!!"
-date:   2014-04-08 18:04
+date:   2014-04-08
 category: Intro
+modified:  2014-07-09
 ---
 
 Hello World!!

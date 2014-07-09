@@ -6,12 +6,14 @@ layout: default
   {% for category in site.categories %}
     <h3 class="muted">{{ category[0] }} ({{ category[1].size }}) </h3>
     {% for post in category[1] %}
-      <li>
-        <a href="{{ post.url }}">
-          <h2>{{ post.title }}</h2>
-          <time class="inline">{{ post.date | date_to_string }}</time>
-        </a>
-      </li>
+      {% unless post.quote == 'y' %}
+        <li>
+          <a href="{{ post.url }}">
+            <h2>{{ post.title }}</h2>
+            <time class="inline">{{ post.date | date_to_string }}</time>
+          </a>
+        </li>
+      {% endunless %}
     {% endfor %}
   {% endfor %}
   </ul>

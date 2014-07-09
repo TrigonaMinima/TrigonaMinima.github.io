@@ -1,11 +1,22 @@
 ---
-layout: default
+layout: default1
 ---
 <article>
 <header>
 <h2>{{ page.title }}</h2>
 <a class="category">{{ page.category }}</a>
-<time><span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words</time>
+<time>
+<span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words
+
+<!-- [TODO] -->
+  &nbsp;
+  {% unless page.modified == date %}
+    <span>Modified on </span>{{ page.modified }}   <!-- | date_to_string -->
+  {% endunless %}
+
+
+
+</time>
 
 </header>
 {{ content }}
@@ -33,6 +44,7 @@ layout: default
       </a>
     </div>
   {% endif %}
+
   {% if page.next %}
     <div class="next-post">
       <a href="{{page.next.url}}" title="{{ page.next.title }}">

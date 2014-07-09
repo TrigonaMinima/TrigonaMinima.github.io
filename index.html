@@ -4,12 +4,14 @@ layout: default
 
 <ul class="posts">
   {% for post in paginator.posts %}
+    {% unless post.quote == 'y' %}
     <li>
       <a href="{{ post.url }}" text-decoration: none;>
         <h2>{{ post.title }}</h2>
       </a>
         <pre><time>{{ post.date | date_to_string }} &nbsp; {{ post.content | number_of_words }} words</time></pre>
     </li>
+    {% endunless %}
   {% endfor %}
 </ul>
 {% unless paginator.total_pages == 1 %}
