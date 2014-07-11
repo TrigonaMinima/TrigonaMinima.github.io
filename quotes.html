@@ -2,13 +2,15 @@
 layout: quotes_template
 ---
 
-<ul class="quotes">
+<div class="quotes">
+<!-- <ul class="quotes"> -->
   {% for quote in site.posts %}
     {% unless quote.quote != 'y' %}
-        <li>
+        <!-- <li ul class="quotes"> -->
         {{ quote.content }}
         <!-- <a href="{{ post.url }}">{{ content }}</a> -->
-        </li>
+        <!-- </li> -->
     {% endunless %}
   {% endfor %}
-</ul>
+<!-- </ul> -->
+</div>
