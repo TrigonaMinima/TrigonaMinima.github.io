@@ -8,13 +8,10 @@ layout: default1
 <time>
 <span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words
 
-<!-- [TODO] -->
   &nbsp;
   {% unless page.modified == date %}
     <span>Modified on </span>{{ page.modified }}   <!-- | date_to_string -->
   {% endunless %}
-
-
 
 </time>
 

@@ -63,6 +63,18 @@ time {
   margin: auto;
   text-align: justify; }
 
+.quotes, .quotes li {
+  margin: 0;
+  padding: 0;
+  /*margin-bottom: 10px;*/
+  /*margin: 0 0 3px 0;*/
+  font-weight: normal;
+  /*width: 100%;*/
+  max-width: 700px;
+  margin: auto;
+  text-align: justify;
+}
+
 .categories {
   position: relative; }
   .categories h3 {

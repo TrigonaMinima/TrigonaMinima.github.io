@@ -2,7 +2,7 @@
 layout: post
 title:  "Hello World!!"
 date:   2014-04-08
-category: Intro
+category: General
 modified:  2014-07-09
 ---
 

@@ -1,8 +1,3 @@
-<!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 
 {% include header %}
 
@@ -16,16 +11,9 @@
       <!-- <p class="description">{{ site.description }}</p> -->
       <nav>{% for link in site.links %}<a target="_top" href="{{ link.url }}">{{ link.name }}</a>{% endfor %}</nav>
       <aside></aside>
-      <div>
-        <p><i> There exists a class of men who are so good at planning that they forgot the main idea. A good plan is one, which can be executed. If not, its  nothing more than a bed time story.</i> <strong> Chanakya Niti </strong> </p>
-      </div>
+
+      {% include quotations %}
+
     </header>
 
-
-
-
-    <section class="content">{{ content }}</section>
-
-    <footer>Built with Jekyll using <a href="https://github.com/muan/jekyll-wardrobe">Wardrobe</a></footer>
-  </body>
-</html>
+{% include section_footer %}
