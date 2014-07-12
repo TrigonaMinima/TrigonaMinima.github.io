@@ -17,9 +17,9 @@ layout: default
 
 {% unless paginator.total_pages == 1 %}
 <section class="pagination">
-  <a href="/{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}">Previous</a>
+  <a href="{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}">Previous</a>
   &nbsp; {{ paginator.page }} of {{ paginator.total_pages }} &nbsp;
-  <a href="/{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">   Next</a>
+  <a href="{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">   Next</a>
 </section>
 {% endunless %}
 

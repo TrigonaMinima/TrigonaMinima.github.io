@@ -4,9 +4,8 @@ layout: default1
 <article>
 <header>
 <h2>{{ page.title }}</h2>
-<a class="category">{{ page.category }}</a>
 <time>
-<span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words
+  <span>Published on </span>{{ page.date | date_to_string }} &nbsp; {{ page.content | number_of_words }} words
 
   &nbsp;
   {% unless page.modified == date %}
@@ -14,6 +13,11 @@ layout: default1
   {% endunless %}
 
 </time>
+
+<a class="category">{{ page.category }}</a>
+{% for category in page.categories %} &nbsp;
+  <a class="category">{{ category }}</a>
+{% endfor %}
 
 </header>
 {{ content }}
