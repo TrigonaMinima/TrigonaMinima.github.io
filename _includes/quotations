@@ -1,3 +1,6 @@
-      <div class="quotes">
-        <p><i> There exists a class of men who are so good at planning that they forgot the main idea. A good plan is one, which can be executed. If not, its  nothing more than a bed time story.</i> <strong> Chanakya Niti </strong> </p>
-      </div>
+
+<div class="quotes">
+        <br>
+        <div id="gr_quote_body"></div>
+        <script src="https://www.goodreads.com/quotes/widget/12149311-shivam?v=2" type="text/javascript"></script>
+</div>
