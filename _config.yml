@@ -29,8 +29,6 @@ links:
     url:          /
   - name:         About
     url:          /about
-  - name:         Quotes
-    url:          /quotes
   - name:         Categories
     url:          /categories
   - name:     Archive
