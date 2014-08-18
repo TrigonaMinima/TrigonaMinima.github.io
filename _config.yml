@@ -3,7 +3,7 @@ description:     A place to play.
 url:              http://trigonaminima.github.io/
 paginate:         10
 
-pygments:         true
+highlighter:         pygments
 permalink:        pretty
 markdown:       redcarpet
 rdiscount:
@@ -12,19 +12,24 @@ rdiscount:
 # Theme specific settings
 theme:            b
 signoff:          Shivam Rana
-facebook_appid:   
-google_analytics: 
+facebook_appid:
+google_analytics:
   provider : google
   google :
     tracking_id : 'UA-51512073-1'
-disqus_shortname: 
+disqus_shortname:
 
 owner:
   name:           Shivam Rana
   avatar:         'http://www.gravatar.com/avatar/c9b959b3098d7c12ee8c389c817c91e8.png'
   bio:            'Another curious soul. Lives in Delhi. Interested in a lot of things - Science, Arts, History, Philosophy - basically everything around me and you.'
 
-links: 
+gems:
+  - gemoji
+  - jekyll-sitemap
+  - jekyll-mentions
+
+links:
   - name:         Home
     url:          /
   - name:         About
