@@ -1,5 +1,5 @@
 ---
-layout: default1
+layout: default
 ---
 <article>
 <header>
@@ -16,7 +16,7 @@ layout: default1
 &nbsp;
 <a class="category">{{ page.category }}</a>
 &nbsp;
-{% for category in page.categories %} 
+{% for category in page.categories %}
   <a class="category">{{ category }}</a>
 {% endfor %}
 
@@ -25,7 +25,7 @@ layout: default1
 {% if page.disqus == "y" and site.disqus_shortname %}
   <div id="disqus_thread"></div>
   <script type="text/javascript">
-      var disqus_shortname = "{{ site.disqus_shortname }}"; 
+      var disqus_shortname = "{{ site.disqus_shortname }}";
       (function() {
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
         dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
