@@ -24,11 +24,6 @@ owner:
   avatar:         'http://www.gravatar.com/avatar/c9b959b3098d7c12ee8c389c817c91e8.png'
   bio:            'Another curious soul. Lives in Delhi. Interested in a lot of things - Science, Arts, History, Philosophy - basically everything around me and you.'
 
-gems:
-  - gemoji
-  - jekyll-sitemap
-  - jekyll-mentions
-
 links:
   - name:         Home
     url:          /
