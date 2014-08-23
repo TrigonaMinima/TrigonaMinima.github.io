@@ -1,10 +1,12 @@
 ---
-layout: default
+layout: page
+<!-- title: Categories -->
+permalink: /catedories/
 ---
 
-  <ul class="posts categories">
+  <ul>
   {% for category in site.categories %}
-    <h3 class="muted">{{ category[0] }} ({{ category[1].size }}) </h3>
+    <h3>{{ category[0] }} ({{ category[1].size }}) </h3>
     {% for post in category[1] %}
       {% unless post.quote == 'y' %}
         <li>

@@ -1,9 +1,0 @@
-
-    <section class="content">{{ content }}</section>
-
-    <footer>
-      Built with Jekyll using <a href="https://github.com/muan/jekyll-wardrobe">Wardrobe</a>
-    </footer>
-
-  </body>
-</html>

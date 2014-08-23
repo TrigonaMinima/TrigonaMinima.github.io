@@ -13,148 +13,183 @@ Right now I am just listing all of 'em, later I'll give details too (and remove 
 One more thing, this list will not be much useful to non-geeky people. Although, I doubt that any reader of this post is non-geeky or further I doubt I have any readers at all. Yeah, I know my life is sad, you don't have to tell me that. Here the list goes in the order of installation.
 
 ### [Sublime Text 3][1]
-        It's worthy of being here as the first. I can't explain how good it is, it is that good. This text editor has got everything you can imagine and if anything is not there as then there are many plug-ins made by the active developer community. You will even find the plug-ins for the features which you can't imagine (at least not yet).
+It's worthy of being here as the first. I can't explain how good it is, it is that good. This text editor has got everything you can imagine and if anything is not there as then there are many plug-ins made by the active developer community. You will even find the plug-ins for the features which you can't imagine (at least not yet).
 
-        *Plugins I use*
-                - [Package Control][1a]
-                        This is the package where you will find other packages to install. You can think of this as a *synaptic* for sublime packages. You can install it using the [link][1a].
+**Plugins I use**  
+- [Package Control][1a]  
+This is the package where you will find other packages to install. You can think of this as a *synaptic* for sublime packages. You can install it using the [link][1a].
 
-                        Press <Ctrl>+<Shift>+p and type 'install packages', you will get a prompt. Enter the required package name there and it will be installed directly. Thus for the following packages you can follow the same process
-                - [Python PEP8 autoformat][1b]
-                        You might have heard about the PEP8. It is style guidelines for the programming in python. And yes, as you can guess, this plug-in basically does that. It PEP8-ifies the python code.
-                - [AlignTab][1d]
-                        It helps in aligning the code as you want. Perhaps, the link will tell you better.
-                - [TodoReview][1e]
-                        There are many places in you code where you write a reminder keyword of sorts like (TODO) so that when you revisit the code later you can remind yourself of what you wanted to edit/add/remove. This plug-in helps in that. By default it looks for 'TODO', but you can add keywords of your like.
-                - [SublimeCodeIntel][1c]
-                        A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.
+Press Ctrl+Shift+p and type 'install packages', you will get a prompt. Enter the required package name there and it will be installed directly. Thus for the following packages you can follow the same process  
+- [Python PEP8 autoformat][1b]  
+You might have heard about the PEP8. It is style guidelines for the programming in python. And yes, as you can guess, this plug-in basically does that. It PEP8-ifies the python code.  
+- [AlignTab][1d]  
+It helps in aligning the code as you want. Perhaps, the link will tell you better.  
+- [TodoReview][1e]  
+There are many places in you code where you write a reminder keyword of sorts like (TODO) so that when you revisit the code later you can remind yourself of what you wanted to edit/add/remove. This plug-in helps in that. By default it looks for 'TODO', but you can add keywords of your like.  
+- [SublimeCodeIntel][1c]  
+A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.  
 
-### [Synaptic][2]
-        sudo apt-get install synaptic
+### [Synaptic][2]  
+This essentially do the thing you do via "apt-get" but it gives you the list of packages you can install in a GUI. You can search and select the packages for installation, removal, re-installation etc.
 
-        This essentially do the thing you do via "apt-get" but it gives you the list of packages you can install in a GUI. You can search and select the packages for installation, removal, re-installation etc.
+{% highlight sh %}
+sudo apt-get install synaptic
+{% endhighlight %}
 
-### [Git][3] (and [Github][3a])
-        sudo apt-get install git
+### [Git][3] (and [Github][3a])  
+{% highlight sh %}
+sudo apt-get install git
+{% endhighlight %}
 
-        I don't think I have to tell you anything about *git*. It is the creation of one and only, *Linus Torvalds*. Git is an awesome tool being the lifeline for almost all the open source development. Every computer programmer should understand and use version controlling. There are many version control tools like Bazaar, Mercurial, HVN etc. Git it the best out of these (according to me). It's a command line tool.
-        And out of many web clients [Github][3a] is the best. To know how, you can try it out yourself. This blog is hosted on Github, Github is that awesome.
+I don't think I have to tell you anything about *git*. It is the creation of one and only, *Linus Torvalds*. Git is an awesome tool being the lifeline for almost all the open source development. Every computer programmer should understand and use version controlling. There are many version control tools like Bazaar, Mercurial, HVN etc. Git it the best out of these (according to me). It's a command line tool.  
+And out of many web clients [Github][3a] is the best. To know how, you can try it out yourself. This blog is hosted on Github, Github is that awesome.
 
-### Python2.7, 3.4
-        There's nothing to say here. Just checkout this one of the most widely used programming language at [python.org][4].
+### Python2.7, 3.4  
+There's nothing to say here. Just checkout this one of the most widely used programming language at [python.org][4].
 
-### [pip][5]
-        sudo apt-get install python-pip
+### [pip][5]  
+This is the package manager (yeah, apt-get) for the python modules. You can install almost every python module via pip. And when it is combined with *virtualenv* (Next heading) then it is killer as fuck.
 
-        This is the package manager (yeah, apt-get) for the python modules. You can install almost every python module via pip. And when it is combined with *virtualenv* (Next heading) then it is killer as fuck.
+{% highlight sh %}
+sudo apt-get install python-pip
+{% endhighlight %}
 
-### [virtualenv][6]
-        sudo pip install virtualenv
+### [virtualenv][6]  
+This is what I was talking about above. It is a simple tool to create isolated Python environments. If you don't want to clutter your standard python installation with modules and make it huge then you install this and create a isolated python interpretor. You can create the environment with any version of python. The *pip* is already generated along with the python interpretor and here you can use this pip to install your modules in the generated python interpretor and make a local environment according to your needs.  
+For complete understanding and documentation you can checkout this [link][6].
 
-        This is what I was talking about above. It is a simple tool to create isolated Python environments. If you don't want to clutter your standard python installation with modules and make it huge then you install this and create a isolated python interpretor. You can create the environment with any version of python. The *pip* is already generated along with the python interpretor and here you can use this pip to install your modules in the generated python interpretor and make a local environment according to your needs.
-        For complete understanding and documentation you can checkout this [link][6].
+{% highlight sh %}
+sudo pip install virtualenv
+{% endhighlight %}
 
-### [Chrome Browser][7]
-        I think this [wiki][7a] establishes the fact that this browser is the number one. I have tried both Firefox and Chrome. And let me show you a few points I found worth mentioning here. which makes chrome better that Firefox.
-        1. Syncing is better across devices.
-        2. If you don't worry that much about your history (search patterns) being saved and you are an Android user then using Chrome with [Google Now][7b] will show you what I am talking about. Whatever you search on your Laptop or PC you can instantly get its history in Google Now, which makes life easier.
-        3. [Desktop Apps][7c], install these in your Chrome browser as an app and you can get its launcher directly on  your desktop as if the app is like a software on your system. And these apps are synced across all your machines if you have logged in with the same account.
-        4. I can't think of any more, just move already. How much do you need?
+### [Chrome Browser][7]  
+I think this [wiki][7a] establishes the fact that this browser is the number one. I have tried both Firefox and Chrome. And let me show you a few points I found worth mentioning here. which makes chrome better that Firefox.  
+1. Syncing is better across devices.  
+2. If you don't worry that much about your history (search patterns) being saved and you are an Android user then using Chrome with [Google Now][7b] will show you what I am talking about. Whatever you search on your Laptop or PC you can instantly get its history in Google Now, which makes life easier.  
+3. [Desktop Apps][7c], install these in your Chrome browser as an app and you can get its launcher directly on  your desktop as if the app is like a software on your system. And these apps are synced across all your machines if you have logged in with the same account.  
+4. I can't think of any more, just move already. How much do you need?
 
-        Extensions-
-                - [AdBlock][7d]
-                        Dude, name suggests everything.
-                - [Google Keep - notes and lists][7f]
-                        This acts as a Desktop App as I mentioned above. Since my Android and Chrome are linked with same Gmail account, my notes *keep* synced across devices. This connectivity feels awesome.
-                - [Google Translate][7g]
-                        Translates the whole page in a jiff.
-                - [Hover Zoom][7h]
-                        Just hover over an image and see its zoomed preview.
-                - [Pocket][7i]
-                        Another desktop app which provides the articles I save on the web offline.
-                - [Save to Pocket][7j]
-                        The plugin used to save the articles in the pocket.
-                - [Google Dictionary][7e]
-                        Go to the first extension I listed and read its description.
+**Extensions**-  
+- [AdBlock][7d]  
+Dude, name suggests everything.  
+- [Google Keep - notes and lists][7f]  
+This acts as a Desktop App as I mentioned above. Since my Android and Chrome are linked with same Gmail account, my notes *keep* synced across devices. This connectivity feels awesome.  
+- [Google Translate][7g]  
+Translates the whole page in a jiff.  
+- [Hover Zoom][7h]  
+Just hover over an image and see its zoomed preview.  
+- [Pocket][7i]  
+Another desktop app which provides the articles I save on the web offline.  
+- [Save to Pocket][7j]  
+The plugin used to save the articles in the pocket.  
+- [Google Dictionary][7e]  
+Go to the first extension I listed and read its description.  
 
-        ### [Dropbox for Linux][8]
-        Go to software center and install it.
+### [Dropbox for Linux][8]  
+Go to software center and install it.
 
-        It is another web-service I am very thankful of. My Dropbox account is linked with my Android, my Laptop and any other machine I want it to. And everything is synced everywhere. Whenever any pic is snapped with my phone it is uploaded to my Dropbox account and then it is downloaded to every linked machine. And whatever I add through the desktop once it gets uploaded it is available everywhere. It has really made my life simpler.
+It is another web-service I am very thankful of. My Dropbox account is linked with my Android, my Laptop and any other machine I want it to. And everything is synced everywhere. Whenever any pic is snapped with my phone it is uploaded to my Dropbox account and then it is downloaded to every linked machine. And whatever I add through the desktop once it gets uploaded it is available everywhere. It has really made my life simpler.
 
-### [Redshift][9]
-        sudo apt-get install gtk-redshift
+### [Redshift][9]  
+If you know what f.lux (for Windows) is then you know what redshift is. For the ignorants, it adjusts a computer display's color temperature according to its location and time of day, based on a user specified set of longitude and latitude geographical coordinates, a ZIP Code, or a city name.
 
-        If you know what f.lux (for Windows) is then you know what redshift is. For the ignorants, it adjusts a computer display's color temperature according to its location and time of day, based on a user specified set of longitude and latitude geographical coordinates, a ZIP Code, or a city name.
+{% highlight sh %}
+sudo apt-get install gtk-redshift
+{% endhighlight %}
 
-### [Bleachbit][10]
-        Go to software center and install it.
+### [Bleachbit][10]  
+Go to software center and install it.
 
-        It removes unnecessary files off your laptop. There are a lot of options provided form web history to bash history.
+It removes unnecessary files off your laptop. There are a lot of options provided form web history to bash history.
 
-### [MusicBrainz Picard][11]
-        Go to software center and install it.
+### [MusicBrainz Picard][11]  
+Go to software center and install it.
 
-        This is a product of [MusicBrainz Foundation][11a] which, for your information, is a web-service having data about the music you must have. Here data meaning metadata, metadata meaning the data about each song made commercially. Metadata like name of song, name of album, artist, year of release etc. This wiki or music database is organized and maintained by the people like you and me.
-        Now, what [Picard][11] does is help you make your music's metadata better. You must have had cases where the metadata of you music wasn't present or  was incorrect like when you download some songs via torrent or other sites and in your song title or artist name some sitename occurs (eg: Coldplay-Shiver-brought to you by-troll.com). I know even if it's not that big of a deal it still annoys. Picard helps in that. It searches its database and corrects its metadata. It also downloads the album art from it's databases.
+This is a product of [MusicBrainz Foundation][11a] which, for your information, is a web-service having data about the music you must have. Here data meaning metadata, metadata meaning the data about each song made commercially. Metadata like name of song, name of album, artist, year of release etc. This wiki or music database is organized and maintained by the people like you and me.  
+Now, what [Picard][11] does is help you make your music's metadata better. You must have had cases where the metadata of you music wasn't present or  was incorrect like when you download some songs via torrent or other sites and in your song title or artist name some sitename occurs (eg: Coldplay-Shiver-brought to you by-troll.com). I know even if it's not that big of a deal it still annoys. Picard helps in that. It searches its database and corrects its metadata. It also downloads the album art from it's databases.
 
-### [wget][12]
-        Usually, it's already present in the distro.
+### [wget][12]  
+Usually, it's already present in the distro.
 
-        Downloads anything - video, audio, image, zip - by just providing a link after the command. It's a command line tool.
+Downloads anything - video, audio, image, zip - by just providing a link after the command. It's a command line tool.
 
-### [cURL][13]
-        sudo apt-get install curl
+### [cURL][13]  
+Helps me in sending all kind of requests, whatever it is - GET, POST, DELETE, PUT etc, to a server. You can also download an html page or some other downloadable file with this tool (yeah, same as wget). It's a command line [tool][13a].
 
-        Helps me in sending all kind of requests, whatever it is - GET, POST, DELETE, PUT etc, to a server. You can also download an html page or some other downloadable file with this tool (yeah, same as wget). It's a command line [tool][13a].
+{% highlight sh %}
+sudo apt-get install curl
+{% endhighlight %}
 
-### [youtube-dl][14]
-        sudo apt-get install youtube-dl
+### [youtube-dl][14]  
+You want to download a Youtube video without using any plugin or extension via terminal, then this is the command line tool for you. It can download any video (I haven't been disappointed yet) off the Internet. Just give it the url of the video you want downloaded.
 
-        You want to download a Youtube video without using any plugin or extension via terminal, then this is the command line tool for you. It can download any video (I haven't been disappointed yet) off the Internet. Just give it the url of the video you want downloaded.
+{% highlight sh %}
+sudo apt-get install youtube-dl
+{% endhighlight %}
 
-### Music Player
-        [Clementine][15a]
-                Best music player in terms of functionality and easiness. You will get a hang of it soon enough. With plugins like scrobbler already built in the software.
+### Music Player  
+**[Clementine][15a]**  
+Best music player in terms of functionality and easiness. You will get a hang of it soon enough. With plugins like scrobbler already built in the software.
 
-        [Deepin Music Player][15b]
-                Since switching to the Deepin linux (yeah I have switched on it) I didn't need any other music player. It's good looking with less clutter. What I miss in this player is the absence of scrobbler. I am thinking of adding that support to it and generate a PR to the Deepin guys. Lets see if it happens or not. May be they are already planning or implementing it.
+**[Deepin Music Player][15b]**  
+Since switching to the Deepin linux (yeah I have switched on it) I didn't need any other music player. It's good looking with less clutter. What I miss in this player is the absence of scrobbler. I am thinking of adding that support to it and generate a PR to the Deepin guys. Lets see if it happens or not. May be they are already planning or implementing it.
 
-### Video Player
-        [vlc][16a]
-                Who can deny the dominance of VLC?
-                It has a large array of settings and functionality. It can play anything. I used to be my default player until...
+### Video Player  
+**[vlc][16a]**  
+Who can deny the dominance of VLC?  
+It has a large array of settings and functionality. It can play anything. I used to be my default player until...
 
-        [Deepin Movie][16b]
-                Yeah, until I used Deepin Movie. Its looks awesome. Have the basic things that I need in a video player. It has been able to play everything I have played on it yet. No other bullshit. It's just awesome.
+**[Deepin Movie][16b]**  
+Yeah, until I used Deepin Movie. Its looks awesome. Have the basic things that I need in a video player. It has been able to play everything I have played on it yet. No other bullshit. It's just awesome.
 
-### [Jekyll][17]
-        sudo apt-get install jekyll
+### [Jekyll][17]  
+{% highlight sh %}
+sudo apt-get install jekyll
+{% endhighlight %}
 
-        Jekyll is my blog framework. All this reading you are doing here is due to the jekyll. You can change the theme if you want to. Its much better than Wordpress in every respect.
+make sure you have libssl-dev installed:
 
-### [Firefox][18]
-        Yeah I gotta include it here. It is a good piece of software by [Mozila][18a]. Here syncing is present but not like Chrome. In Chrome it's simpler in Firefox you gotta create your account whose credentials I used to forget. So I didn't get my previously synced data.
+{% highlight sh %}
+dpkg -s libssl-dev
+{% endhighlight %}
 
-        Addons
-                - Addblock Plus
-                - Dictionary Extension
-                - Down Them All
-                - Ginger Grammar and Spell Checker
-                - InstantFox
-                - Pocket
-                - Session Manager
-                - Thumbnail Zoom Plus
-                - Lazarus
-                - Evernote Web Clipper
-                - Disconnect
-                - Tab Mix Plus
-                - Video DownloadHelper
-                - Xmarks
-                - InvisibleHand
-                - Hola Unblocker
-                - Barlesque
+if not, install it:
 
+{% highlight sh %}
+sudo apt-get -y install libssl-dev
+{% endhighlight %}
+
+download Ruby, rubygems, node from here and build them. Then install jekyll by,
+
+{% highlight sh %}
+sudo gem install jekyll
+{% endhighlight %}
+
+Jekyll is my blog framework. All this reading you are doing here is due to the jekyll. You can change the theme if you want to. Its much better than Wordpress in every respect.
+
+### [Firefox][18]  
+Yeah I gotta include it here. It is a good piece of software by [Mozila][18a]. Here syncing is present but not like Chrome. In Chrome it's simpler in Firefox you gotta create your account whose credentials I used to forget. So I didn't get my previously synced data.
+
+**Addons**  
+- Addblock Plus  
+- Dictionary Extension  
+- Down Them All  
+- Ginger Grammar and Spell Checker  
+- InstantFox  
+- Pocket  
+- Session Manager  
+- Thumbnail Zoom Plus  
+- Lazarus  
+- Evernote Web Clipper  
+- Disconnect  
+- Tab Mix Plus  
+- Video DownloadHelper  
+- Xmarks  
+- InvisibleHand  
+- Hola Unblocker  
+- Barlesque
+
+----
 
 This above list of packages I use will change with time. More additions, removals and modifications will be done in the future.
 
