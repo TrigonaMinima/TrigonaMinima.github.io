@@ -1,21 +1,23 @@
 ---
 layout: page
-<!-- title: Categories -->
-permalink: /catedories/
+title: Categories
+permalink: /categories/
 ---
 
-  <ul>
+<div style="text-align: center;">
+
   {% for category in site.categories %}
     <h3>{{ category[0] }} ({{ category[1].size }}) </h3>
     {% for post in category[1] %}
       {% unless post.quote == 'y' %}
-        <li>
+        <!-- <li> -->
           <a href="{{ post.url }}">
-            <h2>{{ post.title }}</h2>
+            <h4>{{ post.title }}</h4>
           </a>
           <!-- <time class="inline">{{ post.date | date_to_string }}</time> -->
-        </li>
+        <!-- </li> -->
       {% endunless %}
     {% endfor %}
   {% endfor %}
-  </ul>
+
+</div>

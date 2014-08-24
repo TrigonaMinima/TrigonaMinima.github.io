@@ -1,18 +1,11 @@
 <footer class="site-footer">
 
-  <div class="wrapper">
+  <div class="quotes">
 
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
+    <!-- <h2 class="footer-heading">{{ site.avatar }}</h2> -->
+    <!-- <img src="{{ site.avatar }}" alt="{{ site.owner }}" /> -->
     <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col  footer-col-2">
+<!--       <div class="footer-col  footer-col-1">
         <ul class="social-media-list">
           {% if site.github_username %}
           <li>
@@ -43,11 +36,18 @@
           </li>
           {% endif %}
         </ul>
+      </div> -->
+
+      <div class="footer-col  footer-col-4" style='margin-left: 20px;'>
+        <ul class="contact-list">
+          <li>{{ site.owner }}</li>
+          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li><p class="text">{{ site.bio }}</p></li>
+        </ul>
       </div>
 
-      <div class="footer-col  footer-col-3">
-        <p class="text">{{ site.description }}</p>
-      </div>
+      <!-- <div class="footer-col  footer-col-3"> -->
+      <!-- </div> -->
     </div>
 
   </div>

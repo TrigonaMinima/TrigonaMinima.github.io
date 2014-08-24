@@ -4,13 +4,14 @@ title: Archive
 permalink: /archive/
 ---
 
-<div class="home">
+<div  style="text-align: center;">
 
       {% for post in site.posts %}
             {% unless post.quote == 'y' %}
-                <li>
+                <!-- <li> -->
                   <a href="{{ post.url }}">{{ post.title }}</a>
-                </li>
+                  <br>
+                <!-- </li> -->
             {% endunless %}
       {% endfor %}
 
