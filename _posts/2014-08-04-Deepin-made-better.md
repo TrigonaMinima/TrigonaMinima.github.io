@@ -106,7 +106,7 @@ apt-get install manpages-posix-dev
 -----------------------------
 **Custom Shortcuts**
 
-| *Shortcut*     | *Command*                        | *Shortcut* |
+| **Shortcut**     | **Command**                        | **Shortcut** |
 | Sublime Text   | subl                             | alt+s      |
 | Music Player   | deepin-music-player              | alt+m      |
 | Control Center | /usr/bin/dde-control-center show | alt+c      |
@@ -115,14 +115,13 @@ apt-get install manpages-posix-dev
 -------------------------------
 There are still some problems which i couldn't find any solution to but will try to find.
 
-**Display the size of drive and size left free**
-**Zeal**
-**Man pages unscrollable with mouse**
-**No Scrobbler for the Deepin Music Player**
-**Arrows not working with Alt+Tab**
+1. Display the size of drive and size left free  
+2. Zeal  
+3. Man pages unscrollable with mouse  
+4. No Scrobbler for the Deepin Music Player  
+5. Arrows not working with Alt+Tab  
 
 For now I just got the above solved ones. It's  time to sign off.
-
 SR.
 
 

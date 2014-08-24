@@ -1,17 +1,17 @@
-title:            Playground
-description:     A place to play.
-url:              http://trigonaminima.github.io/
-paginate:         10
+title: Playground
+description: A place to play.
+url: http://trigonaminima.github.io/
+paginate: 10
 
-highlighter:         pygments
-permalink:        pretty
-markdown:       kramdown
+highlighter: pygments
+permalink: pretty
+markdown: kramdown
 rdiscount:
-  extensions:     [smart]
+  extensions: [smart]
 
 # Theme specific settings
-theme:            b
-signoff:          Shivam Rana
+theme: b
+signoff: Shivam Rana
 facebook_appid:
 google_analytics:
   provider : google
@@ -26,8 +26,3 @@ email: trigonamin@gmail.com
 bio: 'Another curious soul. Lives in Delhi. Interested in a lot of things - Science, Arts, History, Philosophy - basically everything around me and you.'
 twitter_username: TrigonaMinima
 github_username: TrigonaMinima
-
-links:
-
-  - name:         Categories
-    url:          /categories

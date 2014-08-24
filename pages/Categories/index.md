@@ -14,7 +14,6 @@ permalink: /categories/
           <a href="{{ post.url }}">
             <h4>{{ post.title }}</h4>
           </a>
-          <!-- <time class="inline">{{ post.date | date_to_string }}</time> -->
         <!-- </li> -->
       {% endunless %}
     {% endfor %}
