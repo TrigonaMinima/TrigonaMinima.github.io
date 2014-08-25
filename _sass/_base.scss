@@ -171,13 +171,14 @@ pre {
 
 
 /**
- * Wuotes
+ * Quotes
  */
 .quotes {
     max-width: -webkit-calc(900px - (#{$spacing-unit} * 2));
     max-width:         calc(900px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
+    text-align: center;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
     @extend %clearfix;
