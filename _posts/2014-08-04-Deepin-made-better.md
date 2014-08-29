@@ -26,7 +26,7 @@ It's good and all but it still have a few small shortcomings. I have felt a few 
 You can also install gconf-tools and see your settings there and find a few more. Like you can enable *horizontal scrolling* there. Install it as follows,
 
 {% highlight sh %}
-sudo apt-get install gconf-tools
+sudo apt-get install gconf-editor
 {% endhighlight %}
 
 -----------------
