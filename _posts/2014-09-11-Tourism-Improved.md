@@ -2,7 +2,7 @@
 layout: post
 title:  "Tourism Improved"
 date:   2014-09-11
-category: Big-Data
+categories: Big-Data Idea
 ---
 
 ####**Problem statement**  
