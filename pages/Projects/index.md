@@ -23,4 +23,4 @@ A simple Python app which starts on the system boot and displays a random quote 
 A distribution of my Facebook friends' hometowns on the World Map.
 
 
-[1]: https://github.com/TrigonaMinima/HTowned
+[1]: http://trigonaminima.github.io/HTowned
