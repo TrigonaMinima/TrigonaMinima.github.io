@@ -82,6 +82,8 @@ Just hover over an image and see its zoomed preview.
 Another desktop app which provides the articles I save on the web offline.  
 - [Save to Pocket][7j]  
 The plugin used to save the articles in the pocket.  
+- [Session Buddy][7k]
+Save and manage sessions.
 - [Google Dictionary][7e]  
 Go to the first extension I listed and read its description.  
 
@@ -220,6 +222,7 @@ SR.
 [7h]: https://chrome.google.com/webstore/detail/hover-zoom/nonjdcjchghhkdoolnlbekcfllmednbl
 [7i]: https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk
 [7j]: https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
+[7k]: https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko
 [8]: https://www.dropbox.com/
 [9]: http://jonls.dk/redshift/
 [10]: http://bleachbit.sourceforge.net/
