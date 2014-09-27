@@ -191,6 +191,9 @@ Yeah I gotta include it here. It is a good piece of software by [Mozila][18a]. H
 - Hola Unblocker  
 - Barlesque
 
+### Qt4 Designer
+As the name suggests you can design apis with this software instead of making everything with code. It'll make a .ui file which can easily be converted to a python class to be used with pyqt4.
+
 ----
 
 This above list of packages I use will change with time. More additions, removals and modifications will be done in the future.
