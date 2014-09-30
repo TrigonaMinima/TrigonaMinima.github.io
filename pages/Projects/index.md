@@ -15,11 +15,11 @@ A text mining tool which extracts the names of the customer, individuals, other 
 A web platform where you can share and explore the ideas.-->
 
 
-##[Quoto][2]
+###[Quoto][2]
 Quote on Display, a simple application which displays a Quote on regular intervals of time.
 
 
-##[HTowned][1]
+###[HTowned][1]
 A distribution of my Facebook friends' hometowns on the World Map.
 
 
