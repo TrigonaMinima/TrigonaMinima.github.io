@@ -14,6 +14,9 @@ A text mining tool which extracts the names of the customer, individuals, other 
 **[IdeaBin][3]**
 A web platform where you can share and explore the ideas.-->
 
+####[Alphas][3]
+Play with Alphabets
+
 
 ####[Quoto][2]
 Quote on Display, a simple application which displays a Quote on regular intervals of time.
@@ -25,3 +28,4 @@ A distribution of my Facebook friends' hometowns on the World Map.
 
 [1]: http://trigonaminima.github.io/HTowned
 [2]: http://trigonaminima.github.io/Quoto
+[3]: http://trigonaminima.github.io/Alphas
