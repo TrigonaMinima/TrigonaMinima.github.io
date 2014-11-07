@@ -78,7 +78,7 @@ There were many activities over which I wanted to observe myself. The broad cate
 
 Now the scores were decided. You can see the score distribution in the image below. 
 
-![Scoring]({{ site.url}}assets/gamification_scoring.png)
+![Scoring]({{ site.url }}assets/gamification_score.png)
 
 I know. I know. This was a hilarious score distribution.  
 Don't laugh over it. Okay?
