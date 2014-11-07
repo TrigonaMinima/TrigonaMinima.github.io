@@ -15,20 +15,26 @@ One more thing, this list will not be much useful to non-geeky people. Although,
 ### [Sublime Text 3][1]
 It's worthy of being here as the first. I can't explain how good it is, it is that good. This text editor has got everything you can imagine and if anything is not there as then there are many plug-ins made by the active developer community. You will even find the plug-ins for the features which you can't imagine (at least not yet).
 
-**Plugins I use**
-- [Package Control][1a]
-This is the package where you will find other packages to install. You can think of this as a *synaptic* for sublime packages. You can install it using the [link][1a].
+**Plugins I use**  
 
+- [Package Control][1a]  
+This is the package where you will find other packages to install. You can think of this as a *synaptic* for sublime packages. You can install it using the [link][1a].  
 Press Ctrl+Shift+p and type 'install packages', you will get a prompt. Enter the required package name there and it will be installed directly. Thus for the following packages you can follow the same process
-- [Python PEP8 autoformat][1b]
+- [Python PEP8 autoformat][1b]  
 You might have heard about the PEP8. It is style guidelines for the programming in python. And yes, as you can guess, this plug-in basically does that. It PEP8-ifies the python code.
-- [AlignTab][1d]
+- [AlignTab][1d]  
 It helps in aligning the code as you want. Perhaps, the link will tell you better.
-- [TodoReview][1e]
+- [TodoReview][1e]  
 There are many places in you code where you write a reminder keyword of sorts like (TODO) so that when you revisit the code later you can remind yourself of what you wanted to edit/add/remove. This plug-in helps in that. By default it looks for 'TODO', but you can add keywords of your like.
-- [Sublime Terminal][1f]
+- [Sublime Terminal][1f]  
 Open Terminal Here menu and keyboard shortcuts for Sublime Text. (Yeah, it was blatantly copied right from its Github repo.)
-- [SublimeCodeIntel][1c]
+- [Color Highlighter][1g]  
+Just click or move the cursor (or multiple cursors) on the color code e.g. "#FFFFFF" and it'll be highlighted with its real color.
+- [Markdown Editing][1h]  
+A plugin to handle markdown files.
+- [GitGutter][1i]  
+It'll be better if you look at the link.
+- [SublimeCodeIntel][1c]  
 A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.
 
 ### [Synaptic][2]
@@ -66,27 +72,29 @@ sudo pip install virtualenv
 
 ### [Chrome Browser][7]
 I think this [wiki][7a] establishes the fact that this browser is the number one. I have tried both Firefox and Chrome. And let me show you a few points I found worth mentioning here. which makes chrome better that Firefox.
+
 1. Syncing is better across devices.
 2. If you don't worry that much about your history (search patterns) being saved and you are an Android user then using Chrome with [Google Now][7b] will show you what I am talking about. Whatever you search on your Laptop or PC you can instantly get its history in Google Now, which makes life easier.
 3. [Desktop Apps][7c], install these in your Chrome browser as an app and you can get its launcher directly on  your desktop as if the app is like a software on your system. And these apps are synced across all your machines if you have logged in with the same account.
 4. I can't think of any more, just move already. How much do you need?
 
-**Extensions**-
-- [AdBlock][7d]
+**Extensions**
+
+- [AdBlock][7d]  
 Dude, name suggests everything.
-- [Google Keep - notes and lists][7f]
+- [Google Keep - notes and lists][7f]  
 This acts as a Desktop App as I mentioned above. Since my Android and Chrome are linked with same Gmail account, my notes *keep* synced across devices. This connectivity feels awesome.
-- [Google Translate][7g]
-Translates the whole page in a jiff.
-- [Hover Zoom][7h]
+- [Google Translate][7g]  
+Translates the whole page in a jiff.    
+- [Hover Zoom][7h]  
 Just hover over an image and see its zoomed preview.
-- [Pocket][7i]
+- [Pocket][7i]  
 Another desktop app which provides the articles I save on the web offline.
-- [Save to Pocket][7j]
+- [Save to Pocket][7j]  
 The plugin used to save the articles in the pocket.
-- [Session Buddy][7k]
+- [Session Buddy][7k]  
 Save and manage sessions.
-- [Google Dictionary][7e]
+- [Google Dictionary][7e]  
 Go to the first extension I listed and read its description.
 
 ### [Dropbox for Linux][8]
@@ -132,18 +140,20 @@ sudo apt-get install youtube-dl
 {% endhighlight %}
 
 ### Music Player
-**[Clementine][15a]**
+
+- **[Clementine][15a]**
 Best music player in terms of functionality and easiness. You will get a hang of it soon enough. With plugins like scrobbler already built in the software.
 
-**[Deepin Music Player][15b]**
+- **[Deepin Music Player][15b]**
 Since switching to the Deepin linux (yeah I have switched on it) I didn't need any other music player. It's good looking with less clutter. What I miss in this player is the absence of scrobbler. I am thinking of adding that support to it and generate a PR to the Deepin guys. Lets see if it happens or not. May be they are already planning or implementing it.
 
 ### Video Player
-**[vlc][16a]**
+
+- **[vlc][16a]**
 Who can deny the dominance of VLC?
 It has a large array of settings and functionality. It can play anything. I used to be my default player until...
 
-**[Deepin Movie][16b]**
+- **[Deepin Movie][16b]**
 Yeah, until I used Deepin Movie. Its looks awesome. Have the basic things that I need in a video player. It has been able to play everything I have played on it yet. No other bullshit. It's just awesome.
 
 ### [Jekyll][17]
@@ -175,23 +185,24 @@ Jekyll is my blog framework. All this reading you are doing here is due to the j
 Yeah I gotta include it here. It is a good piece of software by [Mozila][18a]. Here syncing is present but not like Chrome. In Chrome it's simpler in Firefox you gotta create your account whose credentials I used to forget. So I didn't get my previously synced data.
 
 **Addons**
-- Addblock Plus
-- Dictionary Extension
-- Down Them All
-- Ginger Grammar and Spell Checker
-- InstantFox
-- Pocket
-- Session Manager
-- Thumbnail Zoom Plus
-- Lazarus
-- Evernote Web Clipper
-- Disconnect
-- Tab Mix Plus
-- Video DownloadHelper
-- Xmarks
-- InvisibleHand
-- Hola Unblocker
-- Barlesque
+
+- Addblock Plus  
+- Dictionary Extension  
+- Down Them All  
+- Ginger Grammar and Spell Checker  
+- InstantFox  
+- Pocket  
+- Session Manager  
+- Thumbnail Zoom Plus  
+- Lazarus  
+- Evernote Web Clipper  
+- Disconnect  
+- Tab Mix Plus  
+- Video DownloadHelper  
+- Xmarks  
+- InvisibleHand  
+- Hola Unblocker  
+- Barlesque  
 
 ### Qt4 Designer
 As the name suggests you can design apis with this software instead of making everything with code. It'll make a .ui file which can easily be converted to a python class to be used with pyqt4.
@@ -210,6 +221,9 @@ SR.
 [1d]: https://github.com/randy3k/AlignTab
 [1e]: https://github.com/jonathandelgado/SublimeTodoReview
 [1f]: https://github.com/wbond/sublime_terminal
+[1g]: https://github.com/Monnoroch/ColorHighlighter
+[1h]: https://github.com/SublimeText-Markdown/MarkdownEditing
+[1i]: https://github.com/jisaacks/GitGutter
 [1c]: https://sublimecodeintel.github.io/SublimeCodeIntel/
 [2]: https://help.ubuntu.com/community/SynapticHowto
 [3]: http://git-scm.com/
