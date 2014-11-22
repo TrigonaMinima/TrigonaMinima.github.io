@@ -34,6 +34,8 @@ Just click or move the cursor (or multiple cursors) on the color code e.g. "#FFF
 A plugin to handle markdown files.
 - [GitGutter][1i]  
 It'll be better if you look at the link.
+- [Text-Pastry][1j]
+Play with multiple selections and removals.
 - [SublimeCodeIntel][1c]  
 A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.
 
@@ -224,6 +226,7 @@ SR.
 [1g]: https://github.com/Monnoroch/ColorHighlighter
 [1h]: https://github.com/SublimeText-Markdown/MarkdownEditing
 [1i]: https://github.com/jisaacks/GitGutter
+[1j]: https://github.com/duydao/Text-Pastry
 [1c]: https://sublimecodeintel.github.io/SublimeCodeIntel/
 [2]: https://help.ubuntu.com/community/SynapticHowto
 [3]: http://git-scm.com/
