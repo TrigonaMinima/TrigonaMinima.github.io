@@ -2,7 +2,7 @@
 layout: post
 title:  "Reconnaissance on Shadab"
 date:   2014-11-23
-categories: Idea, Security
+categories: Idea Security
 ---
 Once, me and Shadab were discussing, how traceable were we on the Internet? So, we decided to do this reconnaissance on each other. This is the documentation of how I did the same on him and how much I could trace of him.
 
