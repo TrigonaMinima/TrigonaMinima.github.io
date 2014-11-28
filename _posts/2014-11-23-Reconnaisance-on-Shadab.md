@@ -10,7 +10,7 @@ Let me first tell you how much I know about him. His name is *Shadab Zafar*, pur
 The things I am assuming I know is his name, **Shadab Zafar**, his face and the college where he studies. I will be using Incognito Mode of Chrome Browser to search for him. This way, I am not signed in to any social media account, which might have aided me to find him easily. Of course, Google will be the search engine.  
 
 Lets start with Google Images first. Search string is "Shadab Zafar". On second row I found 2 images of him. Awesome.  
-This is how he looks - [first][2], [second][2] (I know pathetic he looks, but lets not judge a book by its cover.)  
+This is how he looks - [first][1], [second][2] (I know pathetic he looks, but lets not judge a book by its cover.)  
 Clicking on 'Visit page' on each image we are sent to 2 pages,
 
 - JMILUG recently hosted an event where the GSoCers came and spoke about their project.Thus, here our Shadab Zafar was one of the speakers. One link took us to this event page.  
@@ -197,6 +197,7 @@ Now, as you can see, this tool is not much of a use for the general public. It i
 
 SR.
 
+[1]: http://gsoc.jmilug.org/gsoc/assets/img/speaker/speaker-4.jpg
 [2]: https://avatars1.githubusercontent.com/u/1449512?s=460
 [3]: https://github.com/dufferzafar
 [4]: https://github.com/dufferzafar?tab=repositories
