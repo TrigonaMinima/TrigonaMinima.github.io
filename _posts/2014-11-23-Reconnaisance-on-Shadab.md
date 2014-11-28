@@ -182,6 +182,7 @@ A tool to find everything about a person of the web. Everything meaning everythi
 - What type of data he shared?
 - With whom he shared?
 - Preferences in various things - songs, books, web-services, etc.
+- Trying other search engines (Bing, DuckDuckGo)
 - I can't guess more, but, clearly there are many more things still remaining.
 
 **How can we go about doing this?**
