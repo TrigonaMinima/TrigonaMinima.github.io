@@ -2,7 +2,7 @@
 layout: post
 title:  "The kernel challange series: Building and booting the Linux kernel (Task 2)"
 date:   2014-06-19
-categories: kernel system-programming 
+categories: LinuxKernel system-programming 
 ---
 
 How I am becoming a Linux kernel developer (at least, I think I am). There will be a series of posts as I get ahead on my becoming a Linux kernel developer quest. These are the ones I have written yet.

@@ -7,6 +7,13 @@ layout: default
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">Written on: {{ page.date | date: "%b %-d, %Y" }}{% if page.modified %} • Modified on: {{ page.modified | date: "%b %-d, %Y" }} {% endif %} {% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %} • {{ page.content | number_of_words }} words </p>
 
+    <p class="post-meta">
+      {% if  page.categories %}
+        tags:
+        {% for tag in page.categories %}
+          {{tag}},
+        {% endfor %}
+      {% endif %}
     </p>
   </header>
 

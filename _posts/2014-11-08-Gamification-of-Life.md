@@ -2,7 +2,7 @@
 layout: post
 title:  "Gamification of Life"
 date:   2014-11-08
-categories: General data-analytics idea
+categories: General Data-Analytics Idea
 ---
 
 Almost two months back I stumbled upon [this][1] question on [Personal Productivity Stack Exchange][3]. Here, someone asked the following question,

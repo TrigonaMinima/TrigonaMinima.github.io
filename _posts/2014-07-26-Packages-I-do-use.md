@@ -2,7 +2,7 @@
 layout: post
 title:  "Packages I do use"
 date:   2014-07-26
-categories: Linux general
+categories: Linux General
 modified:  2014-10-10
 ---
 

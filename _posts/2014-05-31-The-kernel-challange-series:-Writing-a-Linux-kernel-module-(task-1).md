@@ -2,7 +2,7 @@
 layout: post
 title:  "The kernel challange series: Writing a Linux kernel module (task 1)"
 date:   2014-05-31
-categories: kernel system-programming Linux
+categories: LinuxKernel system-programming 
 ---
 
 How I am becoming a Linux kernel developer (at least, I think I am). There will be a series of these posts as I get ahead on my becoming a Linux kernel developer quest. These are the ones I have written yet.
