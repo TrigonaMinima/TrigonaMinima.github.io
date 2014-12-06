@@ -2,6 +2,7 @@
 layout: post
 title:  "Reconnaissance on Shadab"
 date:   2014-11-23
+modified: 2014-12-06
 categories: Idea Security
 ---
 Once, me and Shadab were discussing, how traceable were we on the Internet? So, we decided to do this reconnaissance on each other. This is the documentation of how I did the same on him and how much I could trace of him.
@@ -195,6 +196,16 @@ And, there will also be 2 separate lists for the images to search for and search
 Thus, by searching recursively we might be able to get a considerable amount of data on a person to create a sort of timeline of him on the Internet and generate a profile of him.
 
 Now, as you can see, this tool is not much of a use for the general public. It is almost a spying/stalking/recon tool. I can't think where else it might be used legally. Anyway, this was just an idea. There are a lot of constraints here in making this piece of software.
+
+**EDIT**  
+The approach I used to find about Shadab Zafar is not a general approach, I have realized this. After writing this post one of my friend Aditya, made me realize that there are some factors that come into play while finding about a person.
+
+- Person need to have a good web presence.
+- A unique identifier (like dufferzafar in Shadab's case).
+- Real name is not that common.
+
+I saw these facts unfolding in front of me by searching about Aditya. His name is pretty common so, I got a lot of results with the same name. In the image search I never got a result matching his image (but there were a lot of faces with which the image recog will give false positives).  
+Moreover, in the web results too, I didn't get anything on him on the first few pages of Google search. This again fails my approach of finding about a person. And, hence this totally destroys the tool if the person is doesn't have 1 or 2 things mentioned above.
 
 SR.
 

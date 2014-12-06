@@ -34,8 +34,10 @@ Just click or move the cursor (or multiple cursors) on the color code e.g. "#FFF
 A plugin to handle markdown files.
 - [GitGutter][1i]  
 It'll be better if you look at the link.
-- [Text-Pastry][1j]
+- [Text-Pastry][1j]  
 Play with multiple selections and removals.
+- [GhostText][1k]  
+Use Sublime Text to write in your browser. Everything you type in the editor will be instantly updated in the browser (and vice versa). For this you also have to install the Chrome/Firefox plugin listed in the Chrome section.
 - [SublimeCodeIntel][1c]  
 A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.
 
@@ -96,6 +98,12 @@ Another desktop app which provides the articles I save on the web offline.
 The plugin used to save the articles in the pocket.
 - [Session Buddy][7k]  
 Save and manage sessions.
+- [Stylish][7l]  
+Restyle the web with Stylish, a user styles manager. Stylish lets you easily install themes and skins for many popular sites. Some styles which can be done can be searched on the plugin management window itself. Some I use are listed here,
+
+    - [Wide Github][7la]
+- [GhostText for Chrome][7m]  
+This is the plugin which works with the above mentioned Sublime Text 3 plugin GhostText.
 - [Google Dictionary][7e]  
 Go to the first extension I listed and read its description.
 
@@ -227,6 +235,7 @@ SR.
 [1h]: https://github.com/SublimeText-Markdown/MarkdownEditing
 [1i]: https://github.com/jisaacks/GitGutter
 [1j]: https://github.com/duydao/Text-Pastry
+[1k]: https://sublime.wbond.net/packages/GhostText
 [1c]: https://sublimecodeintel.github.io/SublimeCodeIntel/
 [2]: https://help.ubuntu.com/community/SynapticHowto
 [3]: http://git-scm.com/
@@ -246,6 +255,9 @@ SR.
 [7i]: https://chrome.google.com/webstore/detail/pocket/mjcnijlhddpbdemagnpefmlkjdagkogk
 [7j]: https://chrome.google.com/webstore/detail/save-to-pocket/niloccemoadcdkdjlinkgdfekeahmflj
 [7k]: https://chrome.google.com/webstore/detail/session-buddy/edacconmaakjimmfgnblocblbcdcpbko
+[7l]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
+[7la]: https://github.com/mdo/github-wide
+[7lm]: https://chrome.google.com/webstore/detail/ghosttext-for-chrome/godiecgffnchndlihlpaajjcplehddca?hl=en
 [8]: https://www.dropbox.com/
 [9]: http://jonls.dk/redshift/
 [10]: http://bleachbit.sourceforge.net/
