@@ -13,6 +13,9 @@ A text mining tool which extracts the names of the customer, individuals, other 
 
 **[IdeaBin][3]**
 A web platform where you can share and explore the ideas.-->
+####[Linux Tweaks][4]
+A collection of tweaks I have done and will do in various Linux based distros.
+
 
 ####[Alphas][3]
 Play with Alphabets
@@ -29,3 +32,4 @@ A distribution of my Facebook friends' hometowns on the World Map.
 [1]: http://trigonaminima.github.io/HTowned
 [2]: http://trigonaminima.github.io/Quoto
 [3]: http://trigonaminima.github.io/Alphas
+[4]: http://trigonaminima.github.io/Linux-Tweaks

@@ -27,10 +27,10 @@ At first, I thought of making a small python script that'll enter all the data g
 - How to give input to the Script?  
 GUI might have been an answer but that was too much work. Wow, I just got a solution while writing this point. I can take input from a text file. Writing the data to be fed in a defined format. Nice. (still seems to be a hassle to work with)
 
-- After input, I had to think of points over which I was going to quantify myself.  
+- After input, I had to think of the points over which I was going to quantify myself.  
 That is, to decide over the scoring of activities I do. Since, I didnt know if my current decided criteria will be final or not, I couldn't start writing this script. It might need some major ammendments in the future. This was the point much required than the first one.
 
-Thus, I first decided to explore the criteria/categories for the quantification. A set of categories I already had in mind, seemed to encompass every aspect I wanted to be covered. But, after 2-3 weeks I had to modify this set with some more elements. This was the final set which haven't been modified more.
+Therefore, I first decided to explore the criteria/categories for the quantification. A set of categories I already had in mind, seemed to encompass every aspect I wanted to be covered. But, after 2-3 weeks I had to modify this set with some more elements. This was the final set which haven't been modified more.
 
     Categories = {Read, Write, Code, Music, Watch, Travel, Other Productive/Worthwhile activities}
 
@@ -99,7 +99,7 @@ Now, here's an interesting thing. In this "unwell week" I had a decent score of 
 
 Now, I have to decide whether I should make the script/GUI of this whole process. Moreover, I would like to get some stats, some conclusion or glossary kind of thing, some prediction system, some recommendation system (to recommend to me something like, what activity should I do which I haven't done for a long time). So, I will most probably be making a script to do some or all of the things stated. And, it wouldn't hurt to build a GUI upon it, I suppose.
 
-Also, along with this fun expt. I started making a list of movies I watched. I added in some previous ones I have watched along with the ones I have watched during these 10 weeks. There are 124 movies as of now along with the some other meta data like language it was in, subs or not, type (animation, documentary, normal), releasing year, ratings, country it belongs to (according to production house), etc. This gave rise to some other fun stats and data to play with. I Will probably write another post with those analysis results.
+Also, along with this fun expt., I started making a list of movies I watched. I added in some previous ones I have watched along with the ones I have watched during these 10 weeks. There are 124 movies as of now along with the some other meta data like language it was in, subs or not, type (animation, documentary, normal), releasing year, ratings, country it belongs to (according to production house), etc. This gave rise to some other fun stats and data to play with. I Will probably write another post with those analysis results.
 
 SR.
 
