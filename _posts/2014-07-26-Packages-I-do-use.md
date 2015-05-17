@@ -38,6 +38,8 @@ It'll be better if you look at the link.
 Play with multiple selections and removals.
 - [GhostText][1k]  
 Use Sublime Text to write in your browser. Everything you type in the editor will be instantly updated in the browser (and vice versa). For this you also have to install the Chrome/Firefox plugin listed in the Chrome section.
+- [Origami][1l]  
+Split your pane any way you want.
 - [SublimeCodeIntel][1c]  
 A code intelligence plug-in for Sublime Text. Copied from the above link. Go check it out.
 
@@ -236,6 +238,7 @@ SR.
 [1i]: https://github.com/jisaacks/GitGutter
 [1j]: https://github.com/duydao/Text-Pastry
 [1k]: https://sublime.wbond.net/packages/GhostText
+[1l]: https://github.com/SublimeText/Origami
 [1c]: https://sublimecodeintel.github.io/SublimeCodeIntel/
 [2]: https://help.ubuntu.com/community/SynapticHowto
 [3]: http://git-scm.com/
