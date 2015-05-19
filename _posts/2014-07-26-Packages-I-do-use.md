@@ -106,6 +106,8 @@ Restyle the web with Stylish, a user styles manager. Stylish lets you easily ins
     - [Wide Github][7la]
 - [GhostText for Chrome][7m]  
 This is the plugin which works with the above mentioned Sublime Text 3 plugin GhostText.
+- [The Great Suspender][7n]  
+Unload, park, suspend tabs to reduce memory footprint of chrome. 
 - [Google Dictionary][7e]  
 Go to the first extension I listed and read its description.
 
@@ -261,6 +263,7 @@ SR.
 [7l]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
 [7la]: https://github.com/mdo/github-wide
 [7lm]: https://chrome.google.com/webstore/detail/ghosttext-for-chrome/godiecgffnchndlihlpaajjcplehddca?hl=en
+[7m]: https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg
 [8]: https://www.dropbox.com/
 [9]: http://jonls.dk/redshift/
 [10]: http://bleachbit.sourceforge.net/
