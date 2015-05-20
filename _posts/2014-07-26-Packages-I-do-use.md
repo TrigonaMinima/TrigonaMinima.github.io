@@ -3,7 +3,7 @@ layout: post
 title:  "Packages I do use"
 date:   2014-07-26
 categories: Linux General
-modified:  2014-10-10
+modified:  2015-05-20
 ---
 
 Thinking of installing a new Distro (Deepin, because of the lovely looks of this relatively new product from China) I refrained myself in apathy of installing all the packages and softwares again in the new Distro. Also, I don't remember them all. So, now at 3:00 AM in the morning I am documenting all the packages I use. This list will keep on being modified in the future (yeah, yeah, I know you knew that).
@@ -218,6 +218,9 @@ Yeah I gotta include it here. It is a good piece of software by [Mozila][18a]. H
 - Hola Unblocker  
 - Barlesque  
 
+### [Mackup][19]
+Keep your application settings in sync. If you have Dropbox installed and want to use it to save your config files, that's super easy. Supported for Linux/OS X.
+
 ### Qt4 Designer
 As the name suggests you can design apis with this software instead of making everything with code. It'll make a .ui file which can easily be converted to a python class to be used with pyqt4.
 
@@ -280,3 +283,4 @@ SR.
 [17]: http://jekyllrb.com/docs/installation/
 [18]: https://www.mozilla.org/en-US/firefox/new/
 [18a]: https://www.mozilla.org/en-US/
+[19]: https://github.com/lra/mackup
