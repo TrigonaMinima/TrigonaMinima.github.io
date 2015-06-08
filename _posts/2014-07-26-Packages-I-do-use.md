@@ -3,7 +3,7 @@ layout: post
 title:  "Packages I do use"
 date:   2014-07-26
 categories: Linux General
-modified:  2015-05-20
+modified:  2015-06-08
 ---
 
 Thinking of installing a new Distro (Deepin, because of the lovely looks of this relatively new product from China) I refrained myself in apathy of installing all the packages and softwares again in the new Distro. Also, I don't remember them all. So, now at 3:00 AM in the morning I am documenting all the packages I use. This list will keep on being modified in the future (yeah, yeah, I know you knew that).
@@ -110,6 +110,8 @@ This is the plugin which works with the above mentioned Sublime Text 3 plugin Gh
 Unload, park, suspend tabs to reduce memory footprint of chrome. 
 - [Markdown Here][7o]  
 Write your email in Markdown, then make it pretty.  
+- [Terms of Service; Didn’t Read](7p)  
+Get information instantly about websites' terms of service and privacy policies, with ratings and summaries from the www.tosdr.org.  
 - [Google Dictionary][7e]  
 Go to the first extension I listed and read its description.
 
@@ -269,7 +271,8 @@ SR.
 [7la]: https://github.com/mdo/github-wide
 [7lm]: https://chrome.google.com/webstore/detail/ghosttext-for-chrome/godiecgffnchndlihlpaajjcplehddca?hl=en
 [7m]: https://chrome.google.com/webstore/detail/the-great-suspender/klbibkeccnjlkjkiokjodocebajanakg
-[70]: https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa
+[7o]: https://chrome.google.com/webstore/detail/markdown-here/elifhakcjgalahccnjkneoccemfahfoa
+[7p]: https://chrome.google.com/webstore/detail/terms-of-service-didn%E2%80%99t-r/hjdoplcnndgiblooccencgcggcoihigg
 [8]: https://www.dropbox.com/
 [9]: http://jonls.dk/redshift/
 [10]: http://bleachbit.sourceforge.net/
