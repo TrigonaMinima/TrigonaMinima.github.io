@@ -16,11 +16,15 @@ layout: default
         </h2>
 
         <span class="post-meta">
-          {% if  post.categories %}
+          <!-- {% if  post.categories %} -->
             {% for tag in post.categories %}
-              {{tag}},
+              {{tag}}
+              <!-- {{forloop.length}} -->
+              {% if forloop.last != true %}
+                ,
+              {% endif %}
             {% endfor %}
-          {% endif %}
+          <!-- {% endif %} -->
         </span>
 
       </li>
