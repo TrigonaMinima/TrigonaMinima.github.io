@@ -181,6 +181,15 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+
+    > a:link {
+        color: $grey-color;
+    }
+
+    > a:visited {
+        color: $grey-color-dark;
+    }
+
 }
 
 .post-link {
