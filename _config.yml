@@ -10,6 +10,9 @@ markdown: kramdown
 rdiscount:
   extensions: [smart]
 
+gems:
+  - jekyll-feed
+
 # Owner Settings
 owner: Shivam Rana
 avatar: 'http://www.gravatar.com/avatar/c9b959b3098d7c12ee8c389c817c91e8.png'
