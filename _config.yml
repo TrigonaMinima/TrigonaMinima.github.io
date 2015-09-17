@@ -1,6 +1,6 @@
 title: Playground
 description: A place to play.
-url: http://trigonaminima.github.io/
+url: http://trigonaminima.github.io
 paginate: 10
 paginate_path: "/blog/page:num/"
 
@@ -9,6 +9,10 @@ permalink: pretty
 markdown: kramdown
 rdiscount:
   extensions: [smart]
+
+# For the feeds
+name: Playground
+author: Shivam Rana
 
 gems:
   - jekyll-feed
