@@ -3,6 +3,7 @@ layout: post
 title:  "Shiny Apps"
 date:   2015-07-02
 categories: R Shiny
+annotation: R
 ---
 
 This a collection of small shiny apps I have made (or going to make) to learn [shiny](http://shiny.rstudio.com/) (by RStudio). The list of apps in this repo are listed (and documented) on this page. To learn more about the apps (what they do and how were they developed to do what they do) just read further. 

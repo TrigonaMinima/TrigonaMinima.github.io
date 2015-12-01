@@ -4,8 +4,9 @@ title:  "Reconnaissance on Shadab"
 date:   2014-11-23
 modified: 2014-12-06
 categories: Idea Security
+annotation: Fun Research
 ---
-Once, me and Shadab were discussing, how traceable were we on the Internet? So, we decided to do this reconnaissance on each other. This is the documentation of how I did the same on him and how much I could trace of him.
+Once, me and Shadab were discussing, how traceable were we on the Internet? So, we decided to do this reconnaissance on each other. This is the documentation of how I did the same on him and how much I could trace him.
 
 Let me first tell you how much I know about him. His name is *Shadab Zafar*, pursuing B.Tech from [Jamia Milla Islamia](http://jmi.ac.in/), same as me. He and me both are a part of [JMILUG](http://jmilug.org/cms/) (a group sort of thing in our college promoting the open source. Hail Linux!!) under which we host some events from time to time. He did a GSoC project in metabrainz foundation. He loves his laptop very much, been a coder since like 10th grade or may be earlier. Here's his [Github account][3], he has coded a lot of things. He is proficient in web development, interested in Cryptography and Security and Hacking-n-stuff. He was Islamic but now he is an atheist thanks to some books I guess. He has read quite a lot of books.He has one sibling five years younger than him. Well, all of this is sounding more of an endorsement of Mr Shadab Zafar. I am feeling weird now. Lets stop. I will be attempting to trace all the above things I have said and may be more.  
 The things I am assuming I know is his name, **Shadab Zafar**, his face and the college where he studies. I will be using Incognito Mode of Chrome Browser to search for him. This way, I am not signed in to any social media account, which might have aided me to find him easily. Of course, Google will be the search engine.  

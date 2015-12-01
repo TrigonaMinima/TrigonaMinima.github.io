@@ -3,6 +3,7 @@ layout: post
 title:  "Gene Regulatory Networks"
 date:   2015-10-21
 categories: R Bioinformatics
+annotation: Bio-Informatics
 ---
 This post explains the things I did during my summer internship. Yeah, I know, this is a coming quite late, but hey, "better late than never!". I did all the code in R which can be seen in this [Github Repo](https://github.com/TrigonaMinima/Genetic-Regulatory-Networks/tree/research-work). There's also a pdf available [here](https://github.com/TrigonaMinima/Genetic-Regulatory-Networks/blob/research-work/GRN%20Report/GRN_Report.pdf), with some more explanation behind the concepts I have used.
 
@@ -88,7 +89,6 @@ Data-gathering methods are often loosely controlled, resulting in out-of-range v
     Unspecific filtering, methods for excluding a certain part of the data without any knowledge of the grouping of the samples. It is typically used for excluding any uninteresting genes from the dataset. Genes that are not changing at all during the experiment or are expressed on a very low level so that their measurements are unreliable, are usually excluded from further analyses. If the filtering in truly unspecific, then no bias has been introduced to the statistical testing, and its results should be valid. If in doubt whether to filter or not, one can always first run a statistical test, and after that use unspecific filtering. I opted for this in this study, that is, filtering before and after running a statistical test. Thus, 2 sets of results were generated.
 
     Specific filtering, is used in situations when the filtering is affected by the known grouping of the samples. For example, in a case-control study genes that are expressed on a very low level across all samples might be removed in an unspecific filtering process. Genes could also be removed from the data using some statistical test or some other method that requires group knowledge.
-
 
 ### Statistical Analyses
 Statistical analysis of DNA microarray experiments is still under heavy development. There are no consensus, no strict guidelines or real rules of thumb when to apply some tests and when never to apply certain other tests. One of the widely used tools for the statistical analysis is ```limma```, which implements linear models. One of the assumptions of the limma’s method is that the data is normally distributed (otherwise the significance tests give wrong results), but the real world data is not always normally distributed. From a typical Affymetrix experiment, maybe only about 20% of the expression values are normally distributed (inferred from several chips, of course). Other are non-normally distributed, and one should probably use non-parametric methods for the analysis. However, usually the same method is used for all genes, and the results are therefore only approximate. One can probably rank the genes according to the p-values, but assuming that the p-values are unbiased in the traditional statistical sense is an illusion.

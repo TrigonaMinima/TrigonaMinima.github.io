@@ -3,6 +3,7 @@ layout: post
 title:  "'Gaming the Github streak' as Shadab said!!"
 date:   2014-05-30
 category: Github
+annotation: Git
 ---
 
 You should read the following Blog post first - [Gaming the Github Streak][1], written by my very good but asshole friend Shadab on his blog, Duffer's Log. Yeah, he is a real duffer!

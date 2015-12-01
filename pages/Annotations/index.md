@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Categories
-permalink: /categories/
+title: Annotations
+permalink: /annotaions/
 ---
 
 <div>

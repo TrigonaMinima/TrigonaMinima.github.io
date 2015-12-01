@@ -3,6 +3,7 @@ layout: post
 title:  "AngelHacked Weekend"
 date:   2014-06-10
 categories: Hackathon Fun-weekend Coding
+annotation: Hackathon
 ---
 
 So, this weekend of mine was spent in an office in Gurgaon (1-2 hr away from my home), hacking a web service called **Freya**. FYI, *hacking* means tinkering/playing/building with the technologies, not getting access into private things and steal anything, inscribe it in your mind.

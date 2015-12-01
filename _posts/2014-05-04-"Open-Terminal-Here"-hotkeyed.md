@@ -3,6 +3,7 @@ layout: post
 title:  "'Open Terminal Here' hotkeyed"
 date:   2014-05-04
 category: Linux
+annotation: Linux
 ---
 
 I expected that my first actual post would be about something related to Philosophy or Computer or Physics that is, anything pseudo intellectual, but I am going to write about the problem I faced in Linux. The problem was to have a hotkey for "Open in Terminal" (in Linux Mint) with variants as "Open Terminal here" (in Ubuntu). Without the hotkey one have to right click in the respective directory opened in file manager (Nemo in Linux Mint) and then select "Open in Terminal". 
