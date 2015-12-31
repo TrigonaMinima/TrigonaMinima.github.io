@@ -2,7 +2,7 @@
 layout: post
 title:  "'Gaming the Github streak' as Shadab said!!"
 date:   2014-05-30
-category: Github
+category: Git
 annotation: Git
 ---
 

@@ -14,6 +14,10 @@ A text mining tool which extracts the names of the customer, individuals, other 
 **[IdeaBin][3]**
 A web platform where you can share and explore the ideas.-->
 
+####[Genetic Regulatory Networks][4]
+Inference of genetic regulatory networks from the micro-array data.
+
+
 ####[Linux Tweaks][4]
 A collection of tweaks I have done and will do in various Linux based distros.
 

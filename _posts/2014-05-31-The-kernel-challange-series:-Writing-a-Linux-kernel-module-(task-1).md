@@ -2,7 +2,7 @@
 layout: post
 title:  "The kernel challange series: Writing a Linux kernel module (task 1)"
 date:   2014-05-31
-categories: LinuxKernel system-programming
+categories: Linux
 annotation: Linux
 ---
 

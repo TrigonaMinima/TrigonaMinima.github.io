@@ -2,7 +2,7 @@
 layout: post
 title:  "The kernel challange series: Building and booting the Linux kernel (Task 2)"
 date:   2014-06-19
-categories: LinuxKernel system-programming 
+categories: Linux
 annotation: Linux
 ---
 
