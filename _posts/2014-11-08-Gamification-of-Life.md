@@ -2,7 +2,7 @@
 layout: post
 title:  "Gamification of Life"
 date:   2014-11-08
-categories: General Data-Analytics Idea
+categories: Quantified-Self Data-Analytics Idea
 annotation: Quantified Self
 ---
 

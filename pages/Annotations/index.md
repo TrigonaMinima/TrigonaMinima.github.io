@@ -6,7 +6,7 @@ permalink: /annotaions/
 
 <div>
 {% for category in site.categories %}
-  <a href="#{{ category[0] }}">{{ category[0] }} ({{ category[1].size }}), </a>
+  <a href="#{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a>, 
 {% endfor %}
 </div>
 <br>

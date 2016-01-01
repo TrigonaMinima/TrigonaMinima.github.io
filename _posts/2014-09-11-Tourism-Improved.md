@@ -2,7 +2,7 @@
 layout: post
 title:  "Tourism Improved"
 date:   2014-09-11
-categories: Big-Data Idea
+categories: Idea
 annotation: Big ideas
 ---
 

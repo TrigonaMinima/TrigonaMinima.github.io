@@ -2,7 +2,7 @@
 layout: post
 title:  "AngelHacked Weekend"
 date:   2014-06-10
-categories: Hackathon Fun-weekend Coding
+categories: Hackathon Fun-weekend
 annotation: Hackathon
 ---
 
