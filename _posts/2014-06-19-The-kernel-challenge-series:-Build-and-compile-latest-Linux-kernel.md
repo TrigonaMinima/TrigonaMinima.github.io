@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The kernel challange series: Building and booting the Linux kernel (Task 2)"
+title:  "The kernel challange series: Building and booting the Linux kernel"
 date:   2014-06-19
 categories: Linux
 annotation: Linux
@@ -44,5 +44,5 @@ Linux Shivam 3.16.0-rc2y #1 SMP Sun Jun 22 21:24:16 IST 2014 x86_64 x86_64 x86_6
 {% endhighlight %}
 
 [1]: http://xkcd.com/303/
-[2]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module-(task-1) %}
-[3]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel-(task-2) %}
+[2]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module %}
+[3]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel %}

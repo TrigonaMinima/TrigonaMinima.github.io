@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "The kernel challange series: Writing a Linux kernel module (task 1)"
+title:  "The kernel challange series: Writing a Linux kernel module"
 date:   2014-05-31
 categories: Linux
 annotation: Linux
@@ -140,5 +140,5 @@ References-
 
 [1]: http://tldp.org/LDP/lkmpg/2.6/html/
 [2]: http://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
-[3]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module-(task-1) %}
-[4]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel-(task-2) %}
+[3]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module %}
+[4]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel %}

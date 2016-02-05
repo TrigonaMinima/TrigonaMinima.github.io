@@ -4,7 +4,7 @@ url: http://trigonaminima.github.io
 paginate: 10
 paginate_path: "/blog/page:num/"
 
-highlighter: pygments
+highlighter: rouge
 permalink: pretty
 markdown: kramdown
 rdiscount:
@@ -16,6 +16,7 @@ author: Shivam Rana
 
 gems:
   - jekyll-feed
+  - jekyll-paginate
 
 # Owner Settings
 owner: Shivam Rana
