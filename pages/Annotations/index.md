@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Annotations
-permalink: /annotaions/
+permalink: /annotations/
 ---
 
 <div>
