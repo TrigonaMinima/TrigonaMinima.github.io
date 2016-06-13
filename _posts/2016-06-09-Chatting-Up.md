@@ -20,7 +20,7 @@ Man, I thought this plot will look great, but it looks okay-ish. I am all over t
 
 ![Daily Messages]({{ site.url }}/assets/2016-06/daily.jpeg)
 
-After joining the college, I talked pretty much to someone whom is a very good friend of mine now. Very knowledgeable dude with whom I had interesting conversations with. The messages in the year 2012 is pretty much with him. At the end of 2012, I picked up the pace and made some new friends. By 2013, I was very busy talking. After that, I went through something rough and I dropped quite low and then again picked up the pace. After that, with sudden high spikes I am pretty much consistent in talking.
+After joining the college, I talked pretty much to someone who is a very good friend of mine now. Very knowledgeable dude with whom I had interesting conversations with. The messages in the year 2012 is pretty much with him. At the end of 2012, I picked up the pace and made some new friends. By 2013, I was very busy talking. After that, I went through something rough and I dropped quite low and then again picked up the pace. After that, with sudden high spikes I am pretty much consistent in talking.
 
 All in all, out of a whopping 90000 messages sent by me, I was most chatty in the years 2013 (24500 messages) and 2015 (26000 messages). I almost dropped sending messages by 30% from 2013 to 2014. Damn! I didn't realize that rough episode was this rough. This was a new insight. And, the year 2016 is going pretty good relative to the previous years. I am talking more this year. Interesting. Talks about college major project, internship, seniors add ups quickly.
 
