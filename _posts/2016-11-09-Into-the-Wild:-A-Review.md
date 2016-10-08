@@ -2,8 +2,8 @@
 layout: post
 title:  "Into the Wild: A Review"
 date:   2016-10-09
-categories: 
-annotation:
+categories: book-review
+annotation: book-review
 ---
 
 I once heard on a podcast that, when you like something, make it a practice to think of the reason(s) why you like it. If I remember it correctly, this was a strategy to keep your skeptical nature in check. Anyway, skeptical or not, I think this is a good practice.
