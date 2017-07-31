@@ -14,7 +14,8 @@ rdiscount:
 name: Playground
 author: Shivam Rana
 
-plugins:
+gems:
+  - github-pages
   - jekyll-feed
   - jekyll-paginate
 
