@@ -14,14 +14,14 @@ rdiscount:
 name: Playground
 author: Shivam Rana
 
-gems:
+plugins:
   - jekyll-feed
   - jekyll-paginate
 
 # Owner Settings
 owner: Shivam Rana
 avatar: 'http://www.gravatar.com/avatar/c9b959b3098d7c12ee8c389c817c91e8.png'
-email: trigonamin@gmail.com
+email: shivamrana95@yahoo.in
 bio: 'Another curious soul. Lives in Delhi. Interested in a lot of things - Coding, Science, Arts, History, Philosophy - basically everything around me and you.'
 twitter_username: TrigonaMinima
 github_username: TrigonaMinima
