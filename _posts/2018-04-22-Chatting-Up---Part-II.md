@@ -96,7 +96,7 @@ Another interesting thing is, even though, <u>I have talked with Duffer a lot, o
 
 This is a parallel plot where each friend is ranked on various measures. There were far many measures, but to not to crowd the plot, I have limited to 10 metrics. You can see how each friend does across the metrics. Parallel plot was the most relevant plot, I could think of, for this kind of relative ranking across multiple measures. Also, each metric was normalized to bring everything on the same scale for the plot. So, if my reply rate and my friend's reply rate (5th and 6th vertical line in the plot) are not on the same level, that doesn't mean we have a gap in our rates. It's just normalized according to other values in the column.
 
-Lets take the example of Duffer (Dark blue line) to walk through the plot. We have high messages counts. Messenger is our common mode of conversation. My reply rate is lowest for him (this is biased - since we have talked a lot, there will more instances of delay during replies). His reply rate is high though. So, he is, more active responder than me. Average delay between our replies is the okayish. Our total replies and mean text length per unique day is at the center (meaning, they are closer to the average of all the values for that metric).
+Lets take the example of Duffer (Dark blue line) to walk through the plot. We have high messages counts. Messenger is our common mode of conversation. My reply rate is lowest for him (this is biased - since we have talked a lot, there will more instances of delay during replies). His reply rate is high though. So, he is, more active responder than me. Average delay between our replies is okayish. Our total replies and mean text length per unique day is at the center (meaning, they are closer to the average of all the values for that metric).
 
 We can also get other interesting bits from the above plot. For the Lawyer, the major mode of conversation is WhatsApp. My reply rate per minute is highest for PG. Average delay between replies is lowest for AK. We both usually have latency free conversations with each other. Total unique texts per day are the lowest for Vin2.
 
@@ -116,7 +116,7 @@ All the previously discussed frequency patterns can be seen here easily. Duffer 
 
 <br>
 
-One thing, that I thought would be interesting was the application of Poisson's Distribution on the data. Sadly, the data didn't follow the distribution. The goodness of fit test gave a very very small p-value rejecting the null hypothesis. :(
+One thing, that I thought would be interesting was the application of Poisson's Distribution on the data. Poisson distribution is the distribution of number of events occuring in a given time period. So, if your data follows that distribution, then you can find the probability of number of times that event is going to occur next. My data was how many new conversations do I have within a day. So, I can find the probability of the ```n``` new conversations I'll be having the next day. Sadly, the data didn't follow the distribution. The goodness of fit test, which is used to check whether a data follows the distribution, gave a very very small p-value rejecting the null hypothesis (null hypothesis was that data follows the distribution). :(
 
 These were some of the analyses I did on the data. There is much more that can be done. Some of them which were not included here, can be found in the [github repository](https://github.com/TrigonaMinima/Chats) in the Jupyter Notebook. The data preparation and other related code is also there.
 
