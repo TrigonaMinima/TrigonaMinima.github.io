@@ -18,9 +18,11 @@ layout: default
         <span class="post-meta">
           <!-- {% if  post.categories %} -->
             {% for tag in post.categories %}
-              <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>,
-              <!-- {{forloop.length}} -->
               {% if forloop.last != true %}
+               <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>,
+              {% else %}
+              <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>
+              <!-- {{forloop.length}} -->
               {% endif %}
             {% endfor %}
           <!-- {% endif %} -->
