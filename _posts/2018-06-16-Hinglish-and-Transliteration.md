@@ -6,7 +6,7 @@ categories: General
 annotation: Linguistics
 ---
 
-My friends and I recently created a group on Telegram, and so, we thought we should make a bot for fun. With all the useless functionalities in the bot there is also spelling correction. We have mixed uses of Hindi and English. Sometimes, our whole sentences are in English. Sometimes, it's in Hindi. Sometimes, it's a mixture of both - English and Hindi.
+My friends and I recently created a group on Telegram, and so, we thought we should make a bot for fun. With all the useless functionalities in the bot there is also spelling correction. I'll discuss the spelling corrector in a separate post, but right now I want to talk about Hinglish and transliteration. We have mixed uses of Hindi and English in our chats. Sometimes, our whole sentences are in English. Sometimes, it's in Hindi. Sometimes, it's a mixture of both - English and Hindi. The difference was not exactly clear when I started working on this, so let's discuss how they differ.
 
 
 ### What is Hinglish?
@@ -32,13 +32,13 @@ Pure English: I thought you meant that I am a slacker.
 
 > Baakiyo/Baakiyon
 
-Pure English: Others  
+Pure English: Remaining  
 Pure Hindi: बाकियों
 
 > Aajaunga/Ajaunga
 
 Pure English: I will come  
-Pure Hindi: आजाऊंगा
+Pure Hindi: आ जाऊंगा
 
 > Puch
 
@@ -51,4 +51,4 @@ I think, in our usage (when spelling Hindi in English) we probably use a mixture
 
 <br>
 
-So, in Hinglish, we use a mixture of English and *transliterated* Hindi to communicate. And all of this digression occurred when I was trying to find some data for *Romanagarized* Hindi to be used for my spelling corrector.
+So, in Hinglish, we use a mixture of English and *transliterated* Hindi to communicate. And all of this digression occurred when I was trying to find some data for *Romanagarized* Hindi to be used for the spelling corrector.
