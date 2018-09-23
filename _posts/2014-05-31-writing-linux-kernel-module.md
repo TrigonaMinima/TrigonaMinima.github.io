@@ -140,5 +140,5 @@ References-
 
 [1]: http://tldp.org/LDP/lkmpg/2.6/html/
 [2]: http://www.tldp.org/LDP/lkmpg/2.6/lkmpg.pdf
-[3]: {% post_url 2014-05-31-The-kernel-challange-series:-Writing-a-Linux-kernel-module %}
-[4]: {% post_url 2014-06-19-The-kernel-challenge-series:-Build-and-compile-latest-Linux-kernel %}
+[3]: {% post_url 2014-05-31-writing-linux-kernel-module %}
+[4]: {% post_url 2014-06-19-build-compile-linux-kernel %}

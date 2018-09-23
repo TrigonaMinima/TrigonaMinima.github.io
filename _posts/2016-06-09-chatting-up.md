@@ -6,7 +6,7 @@ categories: Quantified-Self Facebook-data
 annotation: Quantified Self
 ---
 
-So, my [Gamification of Life]({% post_url 2014-11-08-Gamification-of-Life %}), has grown into a much bigger project than I thought it was. Now, the gamification part is dropping off and the concept of personal analytics of my life is gaining. Basically, I want to collect data about myself and analyse it to be kinda self-aware. At the end, make a dashboard that shows me the basic stats and maybe help find patterns where I can improve myself. This post will talk about the chats I have been having for 4-5 years on various IMs mainly, WhatsApp and Facebook.
+So, my [Gamification of Life]({% post_url 2014-11-08-gamification-of-life %}), has grown into a much bigger project than I thought it was. Now, the gamification part is dropping off and the concept of personal analytics of my life is gaining. Basically, I want to collect data about myself and analyse it to be kinda self-aware. At the end, make a dashboard that shows me the basic stats and maybe help find patterns where I can improve myself. This post will talk about the chats I have been having for 4-5 years on various IMs mainly, WhatsApp and Facebook.
 
 Lets first talk about the data. I had this chat thing in mind for a year or two. Hence, during all this time whenever, I had a conversation with someone on WhatsApp I used to email it to myself. To reduce my work, I do it whenever I think a particular chat has been going on for a long time. There was no other method to get them out of the app. Then, I manually downloaded every text file and ran a script which gave me the the clean CSVs. For the purposes of this post, I have only extracted the timestamps and the person sending the replies.
 

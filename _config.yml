@@ -3,9 +3,9 @@ description: A place to play.
 url: http://trigonaminima.github.io
 paginate: 10
 paginate_path: "/blog/page:num/"
+permalink: "/:year/:month/:title/"
 
 highlighter: rouge
-permalink: pretty
 markdown: kramdown
 rdiscount:
   extensions: [smart]
@@ -14,7 +14,7 @@ rdiscount:
 name: Playground
 author: Shivam Rana
 
-gems:
+plugins:
   - github-pages
   - jekyll-feed
   - jekyll-paginate
