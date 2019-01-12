@@ -3,7 +3,7 @@
  */
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
+dl, dd, ol, ul, figure, code, pre {
     margin: 0;
     padding: 0;
 }
@@ -122,34 +122,6 @@ blockquote {
 
 
 /**
- * Code formatting
- */
-pre,
-code {
-    font-size: 15px;
-    border: 1px solid $grey-color-light;
-    border-radius: 3px;
-    background-color: #eef;
-}
-
-code {
-    padding: 1px 5px;
-}
-
-pre {
-    padding: 8px 12px;
-    overflow-x: scroll;
-
-    > code {
-        border: 0;
-        padding-right: 0;
-        padding-left: 0;
-    }
-}
-
-
-
-/**
  * Wrapper
  */
 .wrapper {
@@ -168,6 +140,7 @@ pre {
         padding-left: $spacing-unit / 2;
     }
 }
+
 
 
 /**
@@ -192,6 +165,7 @@ pre {
 }
 
 
+
 /**
  * Clearfix
  */
@@ -203,7 +177,6 @@ pre {
         clear: both;
     }
 }
-
 
 
 /**
@@ -225,7 +198,57 @@ pre {
 
 .icons {
     > a {
-                color: #FFFFFF;
-                text-decoration: none;
-            }
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+}
+
+
+
+/**
+* Code formatting
+**/
+// Takes effect when the code segment is marked using {% highlight %} or ```
+pre, code {
+    font-size: 15px;
+//     font-family: 'Roboto Mono', monospace;
+    overflow-x: auto;
+}
+
+// Just controlling the inline code segments made using ```
+code.highlighter-rouge {
+    // background-color: rgba(0, 132, 255, 0.199);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+
+// Settings of code-blocks made using ```
+pre.highlight {
+    // padding-left: 0.50em;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;    
+}
+
+// Settings of code-blocks made using {% highlight %} without linenos
+figure.highlight {
+    padding-top: 1em;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+}
+
+.highlight {
+    margin: 2em 0; // Determines the vertical space before and after the code block
+// //     background-color: #fff;
+}
+
+// Only takes effect when the code segment is marked using {% highlight linenos %}
+.lineno {
+    // padding: .5em;
+    // padding-left: 0.50em;
+    padding-right: 1em;
 }

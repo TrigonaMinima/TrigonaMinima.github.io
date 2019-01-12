@@ -2,3 +2,4 @@ _drafts
 _site
 *.sublime-project
 *.sublime-workspace
+*.code-workspace

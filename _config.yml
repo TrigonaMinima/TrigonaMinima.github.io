@@ -10,6 +10,12 @@ markdown: kramdown
 rdiscount:
   extensions: [smart]
 
+kramdown:
+  input: GFM
+  syntax_highlighter: rogue
+
+
+
 # For the feeds
 name: Playground
 author: Shivam Rana
