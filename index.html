@@ -15,19 +15,16 @@ layout: default
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
 
-        <span class="post-meta">
-          <!-- {% if  post.categories %} -->
+        <!-- <span class="post-meta">
             {% for tag in post.categories %}
               {% if forloop.last != true %}
                <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>,
               {% else %}
               <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>
-              <!-- {{forloop.length}} -->
               {% endif %}
             {% endfor %}
-          <!-- {% endif %} -->
         </span>
-
+ -->
       </li>
     {% endfor %}
   </ul>
