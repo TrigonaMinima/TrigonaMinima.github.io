@@ -76,3 +76,54 @@
 .highlight .vg { color: #000000 } /* Name.Variable.Global */
 .highlight .vi { color: #000000 } /* Name.Variable.Instance */
 .highlight .il { color: #0000cf; font-weight: bold } /* Literal.Number.Integer.Long */
+
+
+
+/**
+* Code formatting
+**/
+// Takes effect when the code segment is marked using {% highlight %} or ```
+pre, code {
+    font-size: 15px;
+//     font-family: 'Roboto Mono', monospace;
+    overflow-x: auto;
+}
+
+// Just controlling the inline code segments made using ```
+code.highlighter-rouge {
+    // background-color: rgba(0, 132, 255, 0.199);
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    padding-left: 1px;
+    padding-right: 1px;
+    padding-top: 1px;
+}
+
+// Settings of code-blocks made using ```
+pre.highlight {
+    // padding-left: 0.50em;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+// Settings of code-blocks made using {% highlight %} without linenos
+figure.highlight {
+    padding-top: 1em;
+    padding-left: 1em;
+    border: 1px solid #ddd;
+}
+
+.highlight {
+    margin: 2em 0; // Determines the vertical space before and after the code block
+// //     background-color: #fff;
+}
+
+// Only takes effect when the code segment is marked using {% highlight linenos %}
+.lineno {
+    // padding: .5em;
+    // padding-left: 0.50em;
+    padding-right: 1em;
+}
+
