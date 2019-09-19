@@ -6,7 +6,10 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="{{ "css/homer.css" | prepend: site.baseurl }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords:75 }}" />
+    <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
+
+    <link rel="stylesheet" href="{{ "/css/homer.css" | prepend: site.baseurl }}">
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
@@ -16,10 +19,10 @@
         }
     </style>
     <script type="text/javascript">
-        if(navigator.userAgent.indexOf("WebKit") != -1) {
+        if (navigator.userAgent.indexOf("WebKit") != -1) {
             var link = document.createElement('link');
-            link.href='css/homer-webkit.css';
-            link.rel='stylesheet';
+            link.href = 'css/homer-webkit.css';
+            link.rel = 'stylesheet';
             document.getElementsByTagName('head')[0].appendChild(link);
         }
     </script>

@@ -5,57 +5,136 @@
     <!-- <h2 class="footer-heading">{{ site.avatar }}</h2> -->
     <!-- <img src="{{ site.avatar }}" alt="{{ site.owner }}" /> -->
     <div class="footer-col-wrapper">
-<!--       <div class="footer-col  footer-col-1">
-        <ul class="social-media-list">
+      <div class="footer-col">
+        <div class="icons">
           {% if site.github_username %}
-          <li>
-            <a href="https://github.com/{{ site.github_username }}">
-              <span class="icon  icon--github">
-                <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
-                </svg>
-              </span>
-
-              <span class="username">{{ site.github_username }}</span>
-            </a>
-          </li>
+          <a class="icon-link" href="https://github.com/{{ site.github_username }}">
+            <span class="icon  icon--github">
+              <svg viewBox="0 0 16 16">
+                <path fill="#111111"
+                  d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z" />
+              </svg>
+            </span>
+          </a>
           {% endif %}
 
-          {% if site.twitter_username %}
-          <li>
-            <a href="https://twitter.com/{{ site.twitter_username }}">
+          <!--           {% if site.twitter_username %}
+            <a class="icon-link" href="https://twitter.com/{{ site.twitter_username }}">
               <span class="icon  icon--twitter">
                 <svg viewBox="0 0 16 16">
-                  <path fill="#828282" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
+                  <path fill="#00aced" d="M15.969,3.058c-0.586,0.26-1.217,0.436-1.878,0.515c0.675-0.405,1.194-1.045,1.438-1.809
                   c-0.632,0.375-1.332,0.647-2.076,0.793c-0.596-0.636-1.446-1.033-2.387-1.033c-1.806,0-3.27,1.464-3.27,3.27 c0,0.256,0.029,0.506,0.085,0.745C5.163,5.404,2.753,4.102,1.14,2.124C0.859,2.607,0.698,3.168,0.698,3.767 c0,1.134,0.577,2.135,1.455,2.722C1.616,6.472,1.112,6.325,0.671,6.08c0,0.014,0,0.027,0,0.041c0,1.584,1.127,2.906,2.623,3.206 C3.02,9.402,2.731,9.442,2.433,9.442c-0.211,0-0.416-0.021-0.615-0.059c0.416,1.299,1.624,2.245,3.055,2.271 c-1.119,0.877-2.529,1.4-4.061,1.4c-0.264,0-0.524-0.015-0.78-0.046c1.447,0.928,3.166,1.469,5.013,1.469 c6.015,0,9.304-4.983,9.304-9.304c0-0.142-0.003-0.283-0.009-0.423C14.976,4.29,15.531,3.714,15.969,3.058z"/>
                 </svg>
               </span>
-
-              <span class="username">{{ site.twitter_username }}</span>
             </a>
-          </li>
           {% endif %}
-        </ul>
-      </div> -->
+ -->
+
+          {% if 1 %}
+          <a class="icon-link" href="https://stackoverflow.com/users/2650427">
+            <span class="icon  icon--so">
+              <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+                y="0px" viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+                <style type="text/css">
+                  .st0 {
+                    fill: #BCBBBB;
+                  }
+
+                  .st1 {
+                    fill: #F48023;
+                  }
+                </style>
+                <polygon class="st0"
+                  points="84.4,93.8 84.4,70.6 92.1,70.6 92.1,101.5 22.6,101.5 22.6,70.6 30.3,70.6 30.3,93.8 " />
+                <path class="st1"
+                  d="M38.8,68.4l37.8,7.9l1.6-7.6l-37.8-7.9L38.8,68.4z M43.8,50.4l35,16.3l3.2-7l-35-16.4L43.8,50.4z M53.5,33.2
+                  l29.7,24.7l4.9-5.9L58.4,27.3L53.5,33.2z M72.7,14.9l-6.2,4.6l23,31l6.2-4.6L72.7,14.9z M38,86h38.6v-7.7H38V86z" />
+              </svg>
+            </span>
+          </a>
+          {% endif %}
+
+
+          {% if site.lastfm_username %}
+          <a class="icon-link" href="https://last.fm/user/{{ site.lastfm_username }}">
+            <span class="icon  icon--lastfm">
+              <svg width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100"
+                style="transform: none; backface-visibility: hidden; transform-origin: 50% 50% 0px;">
+                <g>
+                  <path fill="red"
+                    d="M84.438,45.646l-7.238-1.583c-4.977-1.131-6.445-3.167-6.445-6.559c0-3.845,3.052-6.107,8.028-6.107 c5.43,0,8.368,2.036,8.821,6.899l11.309-1.357c-0.905-10.179-7.915-14.363-19.452-14.363c-10.177,0-20.13,3.845-20.13,16.172 c0,7.69,3.733,12.554,13.117,14.816l7.693,1.809c5.767,1.357,7.688,3.732,7.688,7.012c0,4.184-4.068,5.88-11.76,5.88 c-11.424,0-16.174-5.994-18.887-14.25L53.45,42.706c-4.749-14.703-12.327-20.131-27.37-20.131 c-16.624,0-25.445,10.518-25.445,28.386c0,17.191,8.821,26.464,24.654,26.464c12.78,0,18.888-5.993,18.888-5.993l-3.619-9.839 c0,0-5.882,6.559-14.703,6.559c-7.803,0-13.345-6.786-13.345-17.643c0-13.91,7.01-18.887,13.91-18.887 c9.951,0,13.117,6.446,15.833,14.703l3.619,11.31c3.619,10.97,10.404,19.791,29.969,19.791c14.026,0,23.524-4.297,23.524-15.606 C99.365,52.659,94.163,47.908,84.438,45.646z">
+                  </path>
+                </g>
+              </svg>
+            </span>
+          </a>
+          {% endif %}
+
+
+          {% if site.linkdin_username %}
+          <a class="icon-link" href="https://www.linkedin.com/in/{{ site.linkdin_username }}">
+            <span class="icon  icon--linkedin">
+              <svg viewBox="0 50 512 512">
+                <path fill="#0077b5"
+                  d="M150.65,100.682c0,27.992-22.508,50.683-50.273,50.683c-27.765,0-50.273-22.691-50.273-50.683 C50.104,72.691,72.612,50,100.377,50C128.143,50,150.65,72.691,150.65,100.682z M143.294,187.333H58.277V462h85.017V187.333z M279.195,187.333h-81.541V462h81.541c0,0,0-101.877,0-144.181c0-38.624,17.779-61.615,51.807-61.615 c31.268,0,46.289,22.071,46.289,61.615c0,39.545,0,144.181,0,144.181h84.605c0,0,0-100.344,0-173.915 s-41.689-109.131-99.934-109.131s-82.768,45.369-82.768,45.369V187.333z" />
+              </svg>
+            </span>
+          </a>
+          {% endif %}
+
+
+          <a class="icon-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+            <span class="icon  icon--rss">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon"
+                viewBox="0 0 256 256">
+                <defs>
+                  <linearGradient x1="0.085" y1="0.085" x2="0.915" y2="0.915" id="RSSg">
+                    <stop offset="0.0" stop-color="#E3702D" />
+                    <stop offset="0.1071" stop-color="#EA7D31" />
+                    <stop offset="0.3503" stop-color="#F69537" />
+                    <stop offset="0.5" stop-color="#FB9E3A" />
+                    <stop offset="0.7016" stop-color="#EA7C31" />
+                    <stop offset="0.8866" stop-color="#DE642B" />
+                    <stop offset="1.0" stop-color="#D95B29" />
+                  </linearGradient>
+                </defs>
+                <rect width="256" height="256" rx="55" ry="55" x="0" y="0" fill="#CC5D15" />
+                <rect width="246" height="246" rx="50" ry="50" x="5" y="5" fill="#F49C52" />
+                <rect width="236" height="236" rx="47" ry="47" x="10" y="10" fill="url(#RSSg)" />
+                <circle cx="68" cy="189" r="24" fill="#FFF" />
+                <path d="M160 213h-34a82 82 0 0 0 -82 -82v-34a116 116 0 0 1 116 116z" fill="#FFF" />
+                <path d="M184 213A140 140 0 0 0 44 73 V 38a175 175 0 0 1 175 175z" fill="#FFF" />
+              </svg>
+            </span>
+          </a>
+
+        </div>
+      </div>
 
       <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        (function (i, s, o, g, r, a, m) {
+          i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+          }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
         ga('create', 'UA-51512073-2', 'auto');
         ga('send', 'pageview');
 
       </script>
 
-      <div class="footer-col  footer-col-4" style='margin-left: 20px;'>
+      <!-- <div class="footer-col  footer-col-4" style='margin-left: 20px;'>
         <ul class="contact-list">
           <li>{{ site.owner }}</li>
           <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          <li><p class="text">{{ site.bio }} <br> Homer built using <a href="https://github.com/pattle/simpsons-in-css">simpsons-in-css</a></p></li>
+          <li>
+            <p class="text">{{ site.bio }} <br> Homer built using <a
+                href="https://github.com/pattle/simpsons-in-css">simpsons-in-css</a></p>
+          </li>
         </ul>
-      </div>
+      </div> -->
 
       <!-- <div class="footer-col  footer-col-3"> -->
       <!-- </div> -->
