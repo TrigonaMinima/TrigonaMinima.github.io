@@ -6,9 +6,9 @@ categories: Book-Review
 annotation: Book-Review
 ---
 
-I once heard on a podcast that, when you like something, make it a practice to think of the reason(s) why you like it. If I remember it correctly, this was a strategy to keep your skeptical nature in check. Anyway, skeptical or not, I think this is a good practice.
+I once heard on a podcast that, when you like something, make it a practice to think of the reason(s) why you like it. If I remember it correctly, this was a strategy to keep your sceptical nature in check. Anyway, sceptical or not, I think this is a good practice.
 
-Recently, I finished reading [Into the Wild](https://en.wikipedia.org/wiki/Into_the_Wild_(book)) by Jon Krakauer. It's a biography, true travel essay about an adventurer who went off the grid to live like a tramp ending this long trip by living in Alaska. Although, a bit bogged down, at a few places, with too many details about the places mentioned that it was not easy for me to imagine, it was an interesting read. 
+Recently, I finished reading [Into the Wild](https://en.wikipedia.org/wiki/Into_the_Wild_(book)) by Jon Krakauer. It's a biography, true travel essay about an adventurer who went off the grid to live like a tramp ending this long trip by living in Alaska. Although, a bit bogged down, at a few places, with too many details about the places mentioned that it was not easy for me to imagine, it was an interesting read.
 
 ## The Author
 
@@ -16,7 +16,7 @@ Recently, I finished reading [Into the Wild](https://en.wikipedia.org/wiki/Into_
 
 ## The Title
 
-What does the word, "wild" mean? By dictionary, it means an inhospitable, uncultivated or uninhabited place. One can also call wild, a pure or untouched place. A place which is yet to be destroyed by humanity. It can be someplace unknown to us. 
+What does the word, "wild" mean? By dictionary, it means an inhospitable, uncultivated or uninhabited place. One can also call wild, a pure or untouched place. A place which is yet to be destroyed by humanity. It can be someplace unknown to us.
 
 >"I want movement, not a calm course of existence. I want excitement and danger and the chance to sacrifice myself for my love. I feel in myself a superabundance of energy which finds no outlet in our quiet life." - Leo Tolstoy
 
@@ -45,7 +45,7 @@ There's part of the book where Chris' love for running is depicted. He'd get sad
 
 ## The Ending
 
-The book ends with the description of the Chris' parents coming to peace with their son's death in Alaska. They visited the site where their son died on the Magic Bus, as Chris described it the day he found the bus in the wilderness. His parents saw the same beauty and tranquility that Chris might have enjoyed, in the place where Chris spent his last days. 
+The book ends with the description of the Chris' parents coming to peace with their son's death in Alaska. They visited the site where their son died on the Magic Bus, as Chris described it the day he found the bus in the wilderness. His parents saw the same beauty and tranquility that Chris might have enjoyed, in the place where Chris spent his last days.
 
 
 ## The Conclusion

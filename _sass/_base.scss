@@ -28,10 +28,16 @@ body {
  * Set `margin-bottom` to maintain vertycal rhythm
  */
 h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
+p, blockquote,
 ul, ol, dl, figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
+}
+
+// Added to handle code highlighting previously it was in the previous code block
+pre, code,
+%vertical-rhythm {
+    margin-bottom: 1;
 }
 
 
