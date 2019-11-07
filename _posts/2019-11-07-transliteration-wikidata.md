@@ -64,7 +64,7 @@ At the end of this extraction process, I had a ~500MB output text file (lets cal
 
 This `pairs.txt` contained a raft of transliteration pairs which was what I needed. I just had to get rid of all the noisy data. Now comes the divide and conquer strategy. Break your problem into small chunks and solve them independently. To create these small subproblems, I had to look into the data.
 
-Vscode took some time to open the `pairs.txt`. First thing was to eliminate the completely useless rows. Embrace yourself, a lot of regular expressions are going to be introduced now.
+Vscode took some time to open the `pairs.txt`. First thing was to eliminate the completely useless rows. Brace yourself, a lot of regular expressions are going to be introduced now.
 
 - If the source and target strings are same then that means that both the scripts are same in both the strings like numbers. Another reason can be that there are issues with the data and either both the strings are in Roman script or in Devanagari stript. Thus, it is a useless row for us. Replaced all such lines with blank using this regex - `^(.*)\|\1$\n`.
 
