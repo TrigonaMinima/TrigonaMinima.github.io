@@ -290,7 +290,10 @@ Everything is correct here except I didn't take into account that values of leng
 Let's understand why this was happening. For the perimeter of `36`, both length and breadth should be `9` for the area to be maximum. I made a 3D plot of $$x*y$$ (area of a rectangle) when values of `x` and `y` range from `-18` to `18`.
 
 
-<!-- <video controls src="{{ site.url }}/assets/2019-12/area_rect.mp4" /> -->
+<video muted controls>
+    <source src="{{ site.url }}/assets/2019-12/area_rect.mp4" type="video/mp4">
+</video>
+
 
 
 The z-axis represents the area and x and y-axes represent the length and breadth, respectively. As you increase the length and breadth, the area increases and it'll keep going up. Play the gif to look at the curve from different angles to understand how that's happening. So if there are no constraints on length and breadth then the curve will keep going up making Gradient Descent to indefinitely look for the maxima. Another interesting thing to note is, if you check the point `(0, 0, 0)`, it's a relative maxima if you look at the curve from a certain point and a relative minima when seen from other. Such points are called [*saddle points*](https://en.wikipedia.org/wiki/Saddle_point). This will come up in bit.
@@ -298,7 +301,9 @@ The z-axis represents the area and x and y-axes represent the length and breadth
 Lets look at the same plot with the constraints that both length and breadth have to lie between `0` and `9`.
 
 
-<!-- <video controls src="{{ site.url }}/assets/2019-12/area_rect2.mp4" /> -->
+<video muted controls>
+    <source src="{{ site.url }}/assets/2019-12/area_rect2.mp4" type="video/mp4">
+</video>
 
 
 With this constrained view of the curve, it's clear that the maxima of the area function (at `81` on z-axis) occurs when both length and breadth are equal to `9`. So Gradient Descent needs to take the constraint into account when optimizing.
