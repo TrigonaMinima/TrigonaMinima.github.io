@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gradient Descent"
-date: 2020-02-09
+date: 2020-03-15
 categories: Gradient-Descent ML Optimization
 annotation: Gradient-Descent
 ---
