@@ -14,7 +14,7 @@ After coding your flask app, when you do flask run, you get the following warnin
 
 Here want to discuss why it warns not to use the development server in production and what to do instead. Along the way, I'll also look into the whole python application production setup and why it is the way it is.
 
-# Bundled Server
+## Bundled Server
 
 When you do `flask run` (or `python myapp.py`), Flask uses [Werkzeug's](https://palletsprojects.com/p/werkzeug/) development server. Flask documentation has a section on [Deployment Options](https://flask.palletsprojects.com/en/1.1.x/deploying/) which at the top asks not to use the built-in server:
 
@@ -28,7 +28,7 @@ The reasons of why not to use the development server (relevant [SO answer](https
 
 So what's the solution? Solution is WSGI. Let's understand, why we need WSGI. The next few sections are largely derived (at many places, reproduced as is) from this [reddit post](https://www.reddit.com/r/Python/comments/8bb102/why_shouldnt_one_use_flask_bottle_django_etc/dx5qklz/).
 
-# Problem with normal web servers
+## Problem with normal web servers
 
 There are normal web servers like, Apache or nginx, which are built to handle web requests. They run on port 80 and handle static files efficiently. So, if you are serving any static assets like images or videos, need low-level caching, or have higher concurrency demands, it's recommended to use a webserver like [nginx](http://nginx.org/) and have it handle all of your requests.
 
@@ -36,11 +36,11 @@ Problem is, these servers don't know what to do with python applications (beyond
 
 The problem of normal web servers is solved by application servers.
 
-# Application Servers
+## Application Servers
 
 Application servers can run python applications. As an absolute minimum they know how to keep python interpreter in the memory, so that it does not need to be restarted on each request. Usually application servers can also start multiple processes and handle multithreading etc. Application servers can not run on port 80, and by default they are not good with handling static files.
 
-# General Request Process
+## General Request Process
 
 <span style="display:block;text-align:center">
 ![output-agreement-games]({{ site.url }}/assets/2020-05/flask_prod_01.png)
@@ -54,7 +54,7 @@ Gunicorn, uwsgi, waitress, wsgiref.simple_server.WSGIServer etc all are examples
 
 When you do `flask run`, you are actually starting a development WSGI server that comes with Flask by default. And it publishes your WSGI application. This development WSGI server is very limited. That's why you need to use a real one for production.
 
-# Request Process with a WSGI Server
+## Request Process with a WSGI Server
 
 Using a WSGI server, the process looks something like this:
 
@@ -74,7 +74,7 @@ There are WSGI servers that are coupled with web servers. They have a special wa
 ![output-agreement-games]({{ site.url }}/assets/2020-05/flask_prod_03.png)
 </span>
 
-## Deployment option: mod_wsgi (Apache)
+### Deployment option: mod_wsgi (Apache)
 
 [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/deploying/mod_wsgi/) suggests using mod_wsgi if we are using [Apache](https://httpd.apache.org/) webserver. The [mod_wsgi homepage](https://modwsgi.readthedocs.io/en/develop/) says this:
 
@@ -84,19 +84,19 @@ This [Quick Configuration Guide](https://modwsgi.readthedocs.io/en/develop/user-
 
 If the application is hosted using Apache, and application fails for some reason, then automatic application restarts are handled by the Apache.
 
-## Deployment option: Gunicorn (nginx)
+### Deployment option: Gunicorn (nginx)
 
 > Gunicorn 'Green Unicorn' is a Python WSGI HTTP Server for UNIX. It's a pre-fork worker model. The Gunicorn server is broadly compatible with various web frameworks, simply implemented, light on server resources, and fairly speedy.
 
 Although, [Gunicorn](https://gunicorn.org/) can handle HTTP requests, they strongly suggest to use it behind nginx. Since, nginx and Gunicorn, don't handle the automatic application restarts if it fails for some reason, you'll need to add [supervisor](http://supervisord.org) into the mix.
 
-## Deployment option: uWSGI (nginx)
+### Deployment option: uWSGI (nginx)
 
 According to the [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/deploying/uwsgi/), FastCGI is a deployment option on servers like [nginx](https://nginx.org/), [lighttpt](https://www.lighttpd.net/) and [cherokee](http://cherokee-project.com/).
 
 uWSGI is a protocol as well as an application server. The application server can serve uWSGI, FastCGI, and HTTP protocols. Most popular uWSGI server is [uwsgi](https://uwsgi-docs.readthedocs.io/en/latest/). Although, uwsgi supports HTTP requests, a proper webserver should be used as it's not as good as a webserver at hosting static files. Since, nginx and uwsgi, don't handle the automatic application restarts if it fails for some reason, you'll need to add [supervisor](http://supervisord.org) into the mix.
 
-## Deployment option: FastCGI (nginx)
+### Deployment option: FastCGI (nginx)
 
 According to the [Flask documentation](https://flask.palletsprojects.com/en/1.1.x/deploying/fastcgi/), FastCGI is a deployment option on servers like [nginx](https://nginx.org/), [lighttpt](https://www.lighttpd.net/) and [cherokee](http://cherokee-project.com/). It can also work with Apache, but if you're using Apache webserver then it's recommended to go with mod_wsgi.
 
@@ -114,7 +114,7 @@ General patterns I observed being in use:
 - `nginx` + `gunicorn`
 - `nginx` + `gunicorn` + `supervisor`
 
-# Resources which helped me with the above basics
+## Resources which helped me with the above basics
 
 - [Is the server bundled with Flask safe to use in production?](https://stackoverflow.com/q/12269537/2650427)
 - [Why shouldn't one use Flask, Bottle, Django, etc. directly, and always use WSGI?](https://www.reddit.com/r/Python/comments/8bb102/why_shouldnt_one_use_flask_bottle_django_etc/dx5qklz/)
@@ -122,7 +122,7 @@ General patterns I observed being in use:
 - [Quickstart for Python/WSGI applications](https://uwsgi-docs.readthedocs.io/en/latest/WSGIquickstart.html)
 - [Zero to Hero: Flask Production Recipes](https://www.toptal.com/flask/flask-production-recipes)
 
-# Deploying Flask app through Docker
+## Deploying Flask app through Docker
 
 I think, building a docker container for a Flask app is the right approach as you have to setup things one time and after that it just works. You just have to do `docker run` and voila!
 
