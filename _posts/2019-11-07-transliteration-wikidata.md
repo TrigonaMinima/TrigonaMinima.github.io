@@ -79,13 +79,13 @@ This removed a lot of junk. Note that, all of these steps could have been coded 
 Now looking at the data, I saw many valid pairs were those where there were no spaces anywhere in the line. Lets call this set `pairs1`. The following grep command separated these rows into the `pairs1.txt` for me-
 
 ```sh
-grep -E "^[^ ]+\|[^ ]+$" pairs.txt > pairs1.txt
+grep -Ei "^[^ ]+\|[^ ]+$" pairs.txt > pairs1.txt
 ```
 
-Add an `-i` flag in the above command and you'll get all the non-matching lines.
+The `-i` flag is ignore-case flag. Add an `-v` flag in the above command and you'll get all the non-matching lines.
 
 ```sh
-grep -Ei "^[^ ]+\|[^ ]+$" pairs.txt > pairs_temp.txt
+grep -Eiv "^[^ ]+\|[^ ]+$" pairs.txt > pairs_temp.txt
 mv pairs_temp.txt pairs.txt
 ```
 
