@@ -8,7 +8,7 @@ permalink: /annotations/
 
 <div>
 {% for category in sortedcats %}
-  <a href="#{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a>, 
+  <a href="#{{ category[0] }}">{{ category[0] }} ({{ category[1].size }})</a>,
 {% endfor %}
 </div>
 <br>
@@ -17,8 +17,8 @@ permalink: /annotations/
     <h3><a name="{{ category[0] }}"></a>{{ category[0] }}</h3>
     {% for post in category[1] %}
         <li style="list-style-type: none;">
-          <time class="post-meta">{{ post.date | date: "%d-%m-%Y" }}</time>
-          <a href="{{ post.url }}">&nbsp;&nbsp;{{ post.title }}</a>
+          <time class="post-meta">{{ post.date | date: "%d-%m-%Y" }}</time>&nbsp;&nbsp;
+          <a href="{{ post.url }}">{{ post.title }}</a>
         </li>
     {% endfor %}
     <br>
