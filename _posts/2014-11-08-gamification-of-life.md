@@ -2,7 +2,7 @@
 layout: post
 title:  "Gamification of Life"
 date:   2014-11-08
-categories: Quantified-Self Data-Analytics Idea
+categories: Quantified-Self
 annotation: Quantified Self
 ---
 
@@ -25,10 +25,10 @@ So, I tried to think of some ways to achieve this 'Gamification of my Life'.
 
 At first, I thought of making a small python script that'll enter all the data given to it in an excel sheet. But, then there were some problems,
 
-- How to give input to the Script?  
+- How to give input to the Script?
 GUI might have been an answer but that was too much work. Wow, I just got a solution while writing this point. I can take input from a text file. Writing the data to be fed in a defined format. Nice. (still seems to be a hassle to work with)
 
-- After input, I had to think of the points over which I was going to quantify myself.  
+- After input, I had to think of the points over which I was going to quantify myself.
 That is, to decide over the scoring of activities I do. Since, I didnt know if my current decided criteria will be final or not, I couldn't start writing this script. It might need some major ammendments in the future. This was the point much required than the first one.
 
 Therefore, I first decided to explore the criteria/categories for the quantification. A set of categories I already had in mind, seemed to encompass every aspect I wanted to be covered. But, after 2-3 weeks I had to modify this set with some more elements. This was the final set which haven't been modified more.
@@ -37,25 +37,25 @@ Therefore, I first decided to explore the criteria/categories for the quantifica
 
 There were many activities over which I wanted to observe myself. The broad categories under which they will come are written above. Most of the activities are described below.
 
-**Watch**  
+**Watch**
 
 - Movies
 - Shows
 - Courses
 - Ted
 - Other Informative Videos (documentaries, debates etc)
-- Entertainment videos  
+- Entertainment videos
 
 **Read**
 
 - Novels
 - Books other then Novels
 - Blog Articles (Pocket, Fb saved links, Quora saved answers, stack exchange etc)
-- Research Papers  
+- Research Papers
 
-**Write**  
+**Write**
 
-- Blog Post  
+- Blog Post
 
 **Code**
 
@@ -63,25 +63,25 @@ There were many activities over which I wanted to observe myself. The broad cate
 - Completing A Project
 - Maintaining Past Project
 - Starting New Project
-- Improving other Skills  
+- Improving other Skills
 
 **Music**
 
 - Violin
 - Listening
 
-**Travel (weekly)**  
+**Travel (weekly)**
 
 - Alone to New Place
 - Alone to Known Place
 - With Friends to New Place
 - With Friends to Known Place
 
-Now the scores were decided. You can see the score distribution in the image below. 
+Now the scores were decided. You can see the score distribution in the image below.
 
 ![Scoring]({{ site.url }}assets/gamification_score.png)
 
-I know. I know. This was a hilarious score distribution.  
+I know. I know. This was a hilarious score distribution.
 Don't laugh over it. Okay?
 
 Now, from the above scores, some numbers and figures were crunched.

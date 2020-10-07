@@ -2,7 +2,7 @@
 layout: post
 title: "Python Module Versioning and Releases"
 date: 2020-06-15
-categories: Python Package
+categories: Python
 annotation: Python
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title:  "Seq2Seq Components"
 date:   2019-09-19
-categories: NLP Seq2Seq
+categories: NLP DL
 annotation: NLP
 ---
 

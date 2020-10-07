@@ -2,7 +2,7 @@
 layout: post
 title:  "Chatting Up - Part II"
 date:   2018-04-22
-categories: Quantified-Self Facebook-data  Data-Analysis
+categories: Quantified-Self Data-Analysis
 annotation: Quantified Self
 ---
 
@@ -20,7 +20,7 @@ Here's the daily footprint of my chats.
 
 ![daily_timestamp]({{ site.url }}/assets/2018-04/daily_timestamp.jpeg)
 
-There are 3 highlighted regions - College Life, Professional Life (2 different jobs). Most of the college segment was discussed in the first part. Lets discuss the time of end of the college and the job life. 
+There are 3 highlighted regions - College Life, Professional Life (2 different jobs). Most of the college segment was discussed in the first part. Lets discuss the time of end of the college and the job life.
 
 If you look towards the <u>end of the college (May 2016)</u>, there's a huge surge in conversations. There were many reasons - final year college project discussion with project partner, long chats with some friends, farewell, last day, saying goodbyes. This was also the time when I played some puerile truth-dare games in group chats. I had participated in six groups during this time - May 2016 (three in April and two in June). Another interesting thing is, between the time the college ended and the job started, how the last reply at the night shifted from 4:00 AM to 2:00 AM.
 

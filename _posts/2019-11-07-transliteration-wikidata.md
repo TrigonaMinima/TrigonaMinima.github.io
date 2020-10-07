@@ -2,7 +2,7 @@
 layout: post
 title: "Wikidata for Transliteration Pairs"
 date: 2019-11-07
-categories: NLP Wikipedia Data
+categories: NLP Data
 annotation: Training Data
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Flask in Production"
 date: 2020-05-29
-categories: Python Flask Backend Production
+categories: Python
 annotation: Python
 ---
 

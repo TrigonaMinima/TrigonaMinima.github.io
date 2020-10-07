@@ -2,7 +2,7 @@
 layout: post
 title:  "Chatting Up"
 date:   2016-06-09
-categories: Quantified-Self Facebook-data
+categories: Quantified-Self Data-Analysis
 annotation: Quantified Self
 ---
 

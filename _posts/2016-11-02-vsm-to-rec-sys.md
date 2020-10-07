@@ -2,7 +2,7 @@
 layout: post
 title:  "From Vector Space Models to Recommender Systems"
 date:   2016-11-02
-categories: Recommender-systems tfidf NLP
+categories: Recommender-systems NLP
 annotation: Recommender-systems
 ---
 
@@ -37,7 +37,7 @@ There's a concept of term document matrix. Usually, where ever VSMs are used, we
 |:----| :----: | :----: | :----: |
 |**the**|1|1|1|
 |**boxer**|1|1|0|
-|**rebellion**|1|0|1|  
+|**rebellion**|1|0|1|
 
 <br>
 
@@ -81,21 +81,21 @@ Lets talk about the values with which this matrix can be filled. All of these me
 
     This is the model which covers all the limitations of the models described above. In the model name, *term frequency* is, as the name suggests, the frequency of occurrence of each term in the document, whereas, *inverse document frequency* is to counter the effect of that term according to the specificity of that term across all of the documents. Mathematically, <u>term frequency</u> ($${\displaystyle \mathrm {tf} (t,d)}$$) can be calculated using any of the following formulas.
 
-     - **Raw frequency**  
+     - **Raw frequency**
          Just the ratio of term count to the total word count of the document.
 
      $$
     {\displaystyle \mathrm {tf} (t,d)={ \frac {term\_count} {|d|}} }
      $$
 
-     - **Log normalized frequency**  
+     - **Log normalized frequency**
         Exactly the same as described in the log normalized model.
 
      $$
     {\displaystyle \mathrm {tf} (t,d)=1+log_{10}(word\_freq) }
      $$
 
-     - **Double normalization k (0 < k < 1)**  
+     - **Double normalization k (0 < k < 1)**
         This is made to prevent the bias towards the longer documents. The formula effectively is, the term's raw frequency divided the maximum raw frequency of any term in that document.
 
     $$
@@ -218,7 +218,7 @@ There are two major major kinds of recommendations engines:
 
 2. Collaborative Recommendation Engines
 
-    Here, the system finds users similar to you, based your history or based on some common data (location in world, age, gender, etc), and then recommend the items that others have liked but you haven't yet seen them. 
+    Here, the system finds users similar to you, based your history or based on some common data (location in world, age, gender, etc), and then recommend the items that others have liked but you haven't yet seen them.
 
 These are the two kinds there are, now, you can use any of them or a combination of those to suit your application.
 
@@ -302,5 +302,3 @@ The method ```linear_kernel()``` multiplies one vector to another. You might hav
 ## Conclusion
 
 The aim of this post was to document the internals of the Vector Space Models and the basic understanding of the recommendation engine in a barely working form. This is the most basic recommendation engine that can be built. There's nothing new being done here. In future posts, I am going to write about some more sophisticated techniques that should work better than this basic one. But before exploring (and testing) those techniques, I have to make a complete working system, where I am gonna use this recommendation-engine. I am creating a sort of utility (bot/intelligence/etc) where I have many bots running on various slack channels which will do specific things, giving me new articles to read, for instance. I chose [Slack](https://slack.com/) because then I can access the platform from my android, web or laptop. I have to figure out some design details about this whole system. I'll talk about that whole thing in detail in some other post.
-
-

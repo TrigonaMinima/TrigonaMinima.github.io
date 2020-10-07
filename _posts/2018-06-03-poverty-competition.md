@@ -2,7 +2,7 @@
 layout: post
 title:  "Poverty and Competition"
 date:   2018-06-03
-categories: Publication Review
+categories: Publication
 annotation: Data Science for Development
 published: true
 ---
@@ -132,7 +132,7 @@ Just having a good law is not enough. The introduction of a competition law need
  - Politicians must be committed to wanting to make markets work well;
  - Help build the technical capacity needed.
 
-To be fully effective, a competition policy must be supported by a **culture of competition**, where the objectives of the competition are widely understood and form a natural part of the background to the decisions made by the government, firms and the consumers. Civil society and a vigorous consumer movement in particular, can play a constructive and valuable role in the development of a culture of competition. 
+To be fully effective, a competition policy must be supported by a **culture of competition**, where the objectives of the competition are widely understood and form a natural part of the background to the decisions made by the government, firms and the consumers. Civil society and a vigorous consumer movement in particular, can play a constructive and valuable role in the development of a culture of competition.
 
 
 ## Indian Context

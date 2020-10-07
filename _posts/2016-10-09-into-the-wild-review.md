@@ -2,7 +2,7 @@
 layout: post
 title:  "Into the Wild: A Review"
 date:   2016-10-09
-categories: Book-Review
+categories: Book
 annotation: Book-Review
 ---
 
