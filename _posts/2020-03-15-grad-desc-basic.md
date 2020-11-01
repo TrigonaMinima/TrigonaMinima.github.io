@@ -26,7 +26,7 @@ For example, if we have a function, f(x,y) then the Gradient Descent will operat
 4. update x and y with x_new and y_new
 ```
 
-The number of steps taken to reach the minima depends on learning rate ($\alpha$). The larger the value of $\alpha$, the bigger the steps will be and it'll find the minima quickly. Opposite is also true: smaller the $\alpha$, the smaller the steps will be and it'll take more time to reach minima. You have to find a balance though, because of a bigger $\alpha$, gradient descent might fail to converge and a smaller $\alpha$ will find a more accurate minima, but at the same time will take more time to converge. The following gradient descent step pseudo code shows how the $\alpha$ is used.
+The number of steps taken to reach the minima depends on learning rate ($$\alpha$$). The larger the value of $$\alpha$$, the bigger the steps will be and it'll find the minima quickly. Opposite is also true: smaller the $$\alpha$$, the smaller the steps will be and it'll take more time to reach minima. You have to find a balance though, because of a bigger $$\alpha$$, gradient descent might fail to converge and a smaller $$\alpha$$ will find a more accurate minima, but at the same time will take more time to converge. The following gradient descent step pseudo code shows how the $$\alpha$$ is used.
 
 ```
 1. Take variable and alpha as input
@@ -38,7 +38,7 @@ Usually, instead of checking for convergence we use number of iterations to end 
 
 ## Gradient Descent Parameters
 
-1. Learning Rate ($\alpha$)
+1. Learning Rate ($$\alpha$$)
 2. Number of Iterations
 
 ## Implementation

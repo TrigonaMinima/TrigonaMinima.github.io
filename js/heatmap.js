@@ -1,10 +1,10 @@
 var years = ["2014", "2015", "2016", "2017", "2018", "2019", "2020"].reverse();
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-var width = 900;
+var width = 650;
 var margin = ({ top: 50, right: 50, bottom: 50, left: 50 });
 var w = width - margin.left - margin.right;
-var xGridSize = Math.floor(w / (1.07 * months.length))
+var xGridSize = Math.floor(w / (1.11 * months.length))
 var yGridSize = Math.floor(w / (2.5 * months.length));
 var h = yGridSize * years.length + margin.top + margin.bottom;
 
@@ -100,7 +100,7 @@ var rectangles = svg.selectAll(".rectangle")
     .attr("height", yGridSize)
     .attr("fill", d => color(d.value))
     .attr("stroke", "#F7F7F7")
-    .attr("stroke-width", "1px")
+    .attr("stroke-width", "0.5px")
     .attr("rx", 4)
     .attr("ry", 4)
     .style("background-color", '#00000000')

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Verification by Gradient Descent: Fixed Perimeter + Maximum Area = Square"
+title: "Fixed Perimeter + Maximum Area = Square"
 date: 2019-12-25
 categories: ML
 annotation: Gradient Descent

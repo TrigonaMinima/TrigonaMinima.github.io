@@ -23,14 +23,14 @@ layout: default
 
       {% if curr_post_year != prev_post_year %}
       <a name='{{ post.date | date: "%Y" | slugify }}'></a>
-      <span class="post-year">{{ post.date | date: "%Y" }}</span>
+      <h3 class="post-year">{{ post.date | date: "%Y" }}</h3>
       {% endif %}
 
       {% assign prev_post_year = curr_post_year %}
 
 
       <!-- <div> -->
-      <span class=" post-meta" style="display: inline-block; width: 60px;">{{ post.date | date: "%b %d" }}&nbsp;</span>
+      <span class="post-meta" style="display: inline-block; width: 60px;">{{ post.date | date: "%b %d" }}&nbsp;</span>
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
       <!-- </div> -->
 
