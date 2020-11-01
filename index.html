@@ -6,16 +6,36 @@ layout: default
 
   <!-- <h1 class="page-heading">Posts</h1> -->
 
+  {% assign prev_post_year = '0000' %}
+  <br>
+
   <ul class="post-list">
     {% for post in paginator.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}  &nbsp; {{ post.content | number_of_words }} words</span>
+    <li>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
+      <!-- date, numner of words -->
+      <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} &nbsp; {{ post.content | number_of_words }} words</span> -->
 
-        <!-- <span class="post-meta">
+      <!-- post link -->
+      <!-- <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
+
+      {% assign curr_post_year = post.date | date: "%Y" %}
+
+      {% if curr_post_year != prev_post_year %}
+      <a name='{{ post.date | date: "%Y" | slugify }}'></a>
+      <span class="post-year">{{ post.date | date: "%Y" }}</span>
+      {% endif %}
+
+      {% assign prev_post_year = curr_post_year %}
+
+
+      <!-- <div> -->
+      <span class=" post-meta" style="display: inline-block; width: 60px;">{{ post.date | date: "%b %d" }}&nbsp;</span>
+      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+      <!-- </div> -->
+
+      <!-- Post categories -->
+      <!-- <span class="post-meta">
             {% for tag in post.categories %}
               {% if forloop.last != true %}
                <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>,
@@ -25,34 +45,45 @@ layout: default
             {% endfor %}
         </span>
  -->
-      </li>
+    </li>
     {% endfor %}
   </ul>
 
-{% unless paginator.total_pages == 1 %}
-<section class="pagination">
+  {% unless paginator.total_pages == 1 %}
+  <section class="pagination">
 
-  {% if paginator.page != 1 %}
+    {% if paginator.page != 1 %}
 
-    <a href="{{ paginator.previous_page_path }}" class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}" style="text-decoration: none;">
+    <a href="{{ paginator.previous_page_path }}"
+      class="previous-page{% unless paginator.previous_page %} invisible{% endunless %}" style="text-decoration: none;">
       <!-- Previous -->
-      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="20" y1="12" x2="4" y2="12"></line><polyline points="10 18 4 12 10 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 18" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-arrow-left">
+        <line x1="20" y1="12" x2="4" y2="12"></line>
+        <polyline points="10 18 4 12 10 6"></polyline>
+      </svg>
     </a>
 
     {% endif %}
 
-  &nbsp; {{ paginator.page }}/{{ paginator.total_pages }} &nbsp;
+    &nbsp; {{ paginator.page }}/{{ paginator.total_pages }} &nbsp;
 
-  {% if paginator.page != paginator.total_pages %}
+    {% if paginator.page != paginator.total_pages %}
 
     <a href="{{ paginator.next_page_path }}" class="next-page{% unless paginator.next_page %} invisible{% endunless %}">
-       <!-- Next -->
-       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="4" y1="12" x2="20" y2="12"></line><polyline points="14 6 20 12 14 18"></polyline></svg>
-     </a>
+      <!-- Next -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="18" viewBox="0 0 24 18" fill="none"
+        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+        class="feather feather-arrow-right">
+        <line x1="4" y1="12" x2="20" y2="12"></line>
+        <polyline points="14 6 20 12 14 18"></polyline>
+      </svg>
+    </a>
 
-  {% endif %}
+    {% endif %}
 
-</section>
-{% endunless %}
+  </section>
+  {% endunless %}
 
 </div>

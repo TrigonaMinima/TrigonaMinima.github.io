@@ -162,7 +162,7 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    padding: $spacing-unit 5;
 }
 
 .page-heading {
@@ -172,10 +172,11 @@
 .post-list {
     margin-left: 0;
     list-style: none;
+    padding-left: 0px;
 
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+    // > li {
+    //     margin-bottom: $spacing-unit;
+    // }
 }
 
 .post-meta {
@@ -193,16 +194,22 @@
 }
 
 .post-link {
-    display: block;
-    font-size: 24px;
+    // display: block;
+    font-size: 21px;
 }
 
+.post-year {
+    display: block;
+    font-size: 21px;
+    margin-top: $spacing-unit/2;
+}
 
 
 /**
  * Posts
  */
 .post-header {
+    margin-top: $spacing-unit;
     margin-bottom: $spacing-unit;
 }
 
