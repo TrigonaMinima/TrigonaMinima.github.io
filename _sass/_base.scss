@@ -160,7 +160,7 @@ blockquote {
     text-align: center;
     padding-right: $spacing-unit;
     padding-left: $spacing-unit;
-    font-size: 14px;
+    font-size: 16px;
     @extend %clearfix;
 
     @include media-query($on-laptop) {
