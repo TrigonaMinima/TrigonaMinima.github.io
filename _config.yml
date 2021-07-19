@@ -1,6 +1,6 @@
 title: Playground
 description: ""
-url: http://trigonaminima.github.io
+url: https://trigonaminima.github.io
 paginate: 1500
 paginate_path: "/blog/page:num/"
 permalink: "/:year/:month/:title/"
