@@ -4,3 +4,5 @@ _site
 *.sublime-workspace
 *.code-workspace
 Gemfile.lock
+.DS_Store
+.vscode
