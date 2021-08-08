@@ -2,7 +2,7 @@
 layout: post
 title: "Minutes - Building the Settings Page"
 date: 2021-08-08
-categories: Quantified-self
+categories: Quantified-Self
 ---
 
 In the [previous post]({% post_url 2021-07-25-flutter_app_1 %}), I had talked about the Quantified Self and how I started working on an app for that. I had shown the bottom navigation with the following five screens on the homepage:

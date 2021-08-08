@@ -2,7 +2,7 @@
 layout: post
 title: "Minutes - A Quantified Self App for Myself"
 date: 2021-07-25
-categories: Quantified-self
+categories: Quantified-Self
 ---
 
 I've long since [2014]({% post_url 2014-11-08-gamification-of-life %}) engaged in some form of [Quantified Self](https://en.wikipedia.org/wiki/Quantified_self). It started with a simple Libre Office worksheet. I tracked my finances, sleep, time spent on entertainment, walking steps, and many other things. Maintaining a worksheet had a lot of flaws. I didn't want to put my data in a Google worksheet, so it always remained on my laptop. Sometimes, I forgot to enter the data, and other times, I couldn't access the device. There was also a limit on what I could track through it. I wanted to know where my time was going within a day. To manually enter everything takes a lot of time. I wanted something automated. I found many useful tools while trying to automate these things.
