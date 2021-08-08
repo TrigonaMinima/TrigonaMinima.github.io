@@ -30,6 +30,7 @@ permalink: /resources/
 - Let There be Light by [Sir Arthur C. Clarke](https://en.wikipedia.org/wiki/Arthur_C._Clarke)
 - [Playing with Physics](https://www.asc.ohio-state.edu/kilcup.1/262/feynman.html) - From *Surely you're joking, Mr. Feynman*, by Richard Feynman
 - [The Animal is tired](http://www.robinhobb.com/blog/posts/38429) by Robin Hobb
+- [I had to give a wrong answer to get the job](https://dewitters.com/i-had-to-give-a-wrong-answer-to-get-the-job/)
 
 <br>
 
