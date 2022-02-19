@@ -1,4 +1,4 @@
-var years = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021"].reverse();
+var years = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022"].reverse();
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 var width = 650;
@@ -45,6 +45,7 @@ var data = [
     { "year": years.length - 7 - 1, "month": 6, "value": 1 },
     { "year": years.length - 7 - 1, "month": 7, "value": 2 },
     { "year": years.length - 7 - 1, "month": 9, "value": 1 },
+    { "year": years.length - 8 - 1, "month": 1, "value": 1 },
 ];
 
 
