@@ -47,6 +47,7 @@ var data = [
     { "year": years.length - 7 - 1, "month": 9, "value": 1 },
     { "year": years.length - 8 - 1, "month": 1, "value": 1 },
     { "year": years.length - 8 - 1, "month": 2, "value": 1 },
+    { "year": years.length - 8 - 1, "month": 3, "value": 1 },
 ];
 
 
