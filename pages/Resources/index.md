@@ -38,3 +38,4 @@ permalink: /resources/
 ## Articles
 
 - [Good Data Scientist, Bad Data Scientist](https://ianwhitestone.work/good-ds-bad-ds/)
+- [One year of TILs](https://simonwillison.net/2021/May/2/one-year-of-tils/)
