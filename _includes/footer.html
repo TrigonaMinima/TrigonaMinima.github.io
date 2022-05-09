@@ -84,7 +84,7 @@
           {% endif %}
 
 
-          <a class="icon-link" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+          <a class="icon-link" href="{{ " /feed.xml" | prepend: site.baseurl }}">
             <span class="icon  icon--rss">
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="128px" height="128px" id="RSSicon"
                 viewBox="0 0 256 256">
@@ -124,6 +124,15 @@
         ga('create', 'UA-51512073-2', 'auto');
         ga('send', 'pageview');
 
+      </script>
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-DYMY6F223L"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DYMY6F223L');
       </script>
 
       <!--       <div class="footer-col  footer-col-4" style='margin-left: 20px;'>
