@@ -19,6 +19,7 @@ layout: default
       <!-- post link -->
       <!-- <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
 
+      <!-- Add Year header -->
       {% assign curr_post_year = post.date | date: "%Y" %}
 
       {% if curr_post_year != prev_post_year %}
@@ -28,11 +29,17 @@ layout: default
 
       {% assign prev_post_year = curr_post_year %}
 
-
-      <!-- <div> -->
+      <!-- Add post date and link -->
       <span class="post-meta" style="display: inline-block; width: 80px;">{{ post.date | date: "%b %d" }}&nbsp;</span>
+
+      {% if post.type == 'work' %}
+      {% assign external_url_text = post.external_url | split: '/' %}
+      <a class="post-link" target="_blank" href="{{ post.external_url }}">{{ post.title }}</a> <small>({{
+        external_url_text[2]
+        }})</small>
+      {% else %}
       <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      <!-- </div> -->
+      {% endif %}
 
       <!-- Post categories -->
       <!-- <span class="post-meta">
@@ -49,6 +56,7 @@ layout: default
     {% endfor %}
   </ul>
 
+  <!-- Add page numbers -->
   {% unless paginator.total_pages == 1 %}
   <section class="pagination">
 
