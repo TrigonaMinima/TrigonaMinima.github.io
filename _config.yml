@@ -13,7 +13,7 @@ rdiscount:
 kramdown:
   input: GFM
   syntax_highlighter: rogue
-
+  auto_ids: true
 
 
 # For the feeds
