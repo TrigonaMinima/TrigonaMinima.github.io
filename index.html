@@ -9,52 +9,51 @@ layout: default
   {% assign prev_post_year = '0000' %}
   <br>
 
-  <ul class="post-list">
-    {% for post in paginator.posts %}
-    <li>
 
-      <!-- date, numner of words -->
-      <!-- <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }} &nbsp; {{ post.content | number_of_words }} words</span> -->
+  <table style="width: 100%; table-layout: fixed;">
+    <colgroup>
+      <col span="1" style="width: 70px">
+      <col span="1">
+    </colgroup>
 
-      <!-- post link -->
-      <!-- <h2><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2> -->
+    <!-- Put <thead>, <tbody>, and <tr>'s here! -->
+    <tbody>
+      {% for post in paginator.posts %}
+      <tr>
+        <!-- Add Year header -->
+        {% assign curr_post_year = post.date | date: "%Y" %}
 
-      <!-- Add Year header -->
-      {% assign curr_post_year = post.date | date: "%Y" %}
+        {% if curr_post_year != prev_post_year %}
+        <td>
+          <a name='{{ post.date | date: "%Y" | slugify }}'></a>
+          <h3 class="post-year">{{ post.date | date: "%Y" }}</h3>
+        </td>
+        <td></td>
+        {% endif %}
+        {% assign prev_post_year = curr_post_year %}
+      </tr>
 
-      {% if curr_post_year != prev_post_year %}
-      <a name='{{ post.date | date: "%Y" | slugify }}'></a>
-      <h3 class="post-year">{{ post.date | date: "%Y" }}</h3>
-      {% endif %}
+      <tr>
+        <!-- Add post date -->
+        <td class="post-meta" style="vertical-align: top;">{{ post.date | date: "%b %d" }}</td>
 
-      {% assign prev_post_year = curr_post_year %}
+        <!-- post link -->
+        <td>
+          {% if post.type == 'work' %}
+          {% assign external_url_text = post.external_url | split: '/' %}
+          <a class="post-link" target="_blank" href="{{ post.external_url }}">{{ post.title }}</a> <small>({{
+            external_url_text[2]
+            }})</small>
+          {% else %}
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          {% endif %}
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 
-      <!-- Add post date and link -->
-      <span class="post-meta" style="display: inline-block; width: 80px;">{{ post.date | date: "%b %d" }}&nbsp;</span>
 
-      {% if post.type == 'work' %}
-      {% assign external_url_text = post.external_url | split: '/' %}
-      <a class="post-link" target="_blank" href="{{ post.external_url }}">{{ post.title }}</a> <small>({{
-        external_url_text[2]
-        }})</small>
-      {% else %}
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      {% endif %}
-
-      <!-- Post categories -->
-      <!-- <span class="post-meta">
-            {% for tag in post.categories %}
-              {% if forloop.last != true %}
-               <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>,
-              {% else %}
-              <a href="{{ site.baseurl }}/annotations/#{{tag}}">{{tag}}</a>
-              {% endif %}
-            {% endfor %}
-        </span>
- -->
-    </li>
-    {% endfor %}
-  </ul>
 
   <!-- Add page numbers -->
   {% unless paginator.total_pages == 1 %}
