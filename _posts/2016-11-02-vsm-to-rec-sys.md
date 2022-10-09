@@ -2,8 +2,8 @@
 layout: post
 title:  "From Vector Space Models to Recommender Systems"
 date:   2016-11-02
-categories: Recommender-systems NLP
-annotation: Recommender-systems
+categories: RecSys NLP
+annotation: RecSys
 ---
 
 ## Vector Space Models (VSM)
