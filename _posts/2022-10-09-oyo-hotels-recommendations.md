@@ -177,3 +177,4 @@ Deep Recurrent Neural Networks for OYO Hotels Recommendation](https://link.sprin
     - There was no discussion about inferencing and the candidate set of restaurants to rank.
 - The embedding evaluation framework was comprehensive and quantified the effectiveness of the embeddings.
 - Model evaluation methodology followed the standard process of train-time validation and out-of-time validation steps.
+- One thing lacking was comparison with tree-based models like gradient boosted trees which have shown good performance in recommendation tasks in both industry and research.
