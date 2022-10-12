@@ -50,7 +50,7 @@ var data = [
     { "year": years.length - 8 - 1, "month": 3, "value": 1 },
     { "year": years.length - 8 - 1, "month": 5, "value": 2 },
     { "year": years.length - 8 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 8 - 1, "month": 9, "value": 1 },
+    { "year": years.length - 8 - 1, "month": 9, "value": 2 },
 ];
 
 
