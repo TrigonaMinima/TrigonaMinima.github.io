@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[Paper Review] Deep Recurrent Neural Networks for OYO Hotels Recommendation"
+title: "[Summary] Deep Recurrent Neural Networks for OYO Hotels Recommendation"
 date: "2022-10-09"
 categories: Publication RecSys
 ---
