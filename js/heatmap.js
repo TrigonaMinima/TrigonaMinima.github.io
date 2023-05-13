@@ -52,6 +52,7 @@ var data = [
     { "year": years.length - 8 - 1, "month": 8, "value": 1 },
     { "year": years.length - 8 - 1, "month": 9, "value": 3 },
     { "year": years.length - 9 - 1, "month": 0, "value": 1 },
+    { "year": years.length - 9 - 1, "month": 4, "value": 1 },
 ];
 
 
@@ -113,8 +114,8 @@ var rectangles = svg.selectAll(".rectangle")
     .attr("fill", d => color(d.value))
     .attr("stroke", "#F7F7F7")
     .attr("stroke-width", "0.5px")
-    .attr("rx", 4)
-    .attr("ry", 4)
+    .attr("rx", 1)
+    .attr("ry", 1)
     .style("background-color", '#00000000')
     .append("title")
     .text(d => (d.value == 1) ? "1 post" : d.value + " posts");
