@@ -19,8 +19,6 @@ I have observed that mechanisms work more efficiently than good intentions. Thus
 
 The following are my notes from [Mechanisms for Effective Machine Learning Projects](https://eugeneyan.com/writing/mechanisms-for-projects/) and related articles. These mechanisms apply to any data science project (work or hobby). Note that these mechanisms are mental tools. You have to make them a habit for mental tools to work.
 
-<br>
-
 ## Meta-Checklist for Projects
 
 - 1-pager describing a map to the destination (1-7 days)

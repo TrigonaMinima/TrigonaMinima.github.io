@@ -23,6 +23,11 @@ body {
 }
 
 
+h1, h2,
+%vertical-rhythm {
+    margin-top: $spacing-unit;
+}
+
 
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
