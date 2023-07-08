@@ -17,9 +17,9 @@ I track my call logs and someday would like to analyse them.
 
 Two years back, I even started making an app to track anything. You can read more about the app here:
 
-- [Minutes - A Quantified Self App for Myself]({% 2021-07-25-flutter_app_1 %})
-- [Minutes - Building the Settings Page]({% 2021-07-25-flutter_app_2 %})
-- [Minutes - Building the History Page]({% 2021-07-25-flutter_app_3 %})
+- [Minutes - A Quantified Self App for Myself]({% post_url 2021-07-25-flutter_app_1 %})
+- [Minutes - Building the Settings Page]({% post_url 2021-08-08-flutter_app_2 %})
+- [Minutes - Building the History Page]({% post_url 2021-08-14-flutter_app_3 %})
 
 Eventually, other commitments and curiosities caught up, and I couldn’t finish it. 😅
 

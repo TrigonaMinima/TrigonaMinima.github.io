@@ -1,9 +1,24 @@
 /**
  * Reset some basic elements
  */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure, code, pre {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+hr,
+dl,
+dd,
+ol,
+ul,
+figure,
+code,
+pre {
     margin: 0;
     padding: 0;
 }
@@ -23,7 +38,8 @@ body {
 }
 
 
-h1, h2,
+h1,
+h2,
 %vertical-rhythm {
     margin-top: $spacing-unit;
 }
@@ -32,17 +48,29 @@ h1, h2,
 /**
  * Set `margin-bottom` to maintain vertycal rhythm
  */
-h1, h2, h3, h4, h5, h6,
-p, blockquote,
-ul, ol, dl, figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+ul,
+ol,
+dl,
+figure,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
 
 // Added to handle code highlighting previously it was in the previous code block
-pre, code,
+pre,
+code,
 %vertical-rhythm {
     margin-bottom: 1;
+    // line wrap in code segments
+    white-space: pre-wrap;
 }
 
 
@@ -60,7 +88,7 @@ img {
 /**
  * Figures
  */
-figure > img {
+figure>img {
     display: block;
 }
 
@@ -73,14 +101,16 @@ figcaption {
 /**
  * Lists
  */
-ul, ol {
+ul,
+ol {
     margin-left: $spacing-unit;
 }
 
 li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
+
+    >ul,
+    >ol {
+        margin-bottom: 0;
     }
 }
 
@@ -89,7 +119,12 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-weight: 400;
 }
 
@@ -137,7 +172,7 @@ blockquote {
  */
 .wrapper {
     max-width: -webkit-calc(850px - (#{$spacing-unit} * 2));
-    max-width:         calc(850px - (#{$spacing-unit} * 2));
+    max-width: calc(850px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     padding-right: $spacing-unit;
@@ -146,7 +181,7 @@ blockquote {
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(850px - (#{$spacing-unit}));
-        max-width:         calc(850px - (#{$spacing-unit}));
+        max-width: calc(850px - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
@@ -159,7 +194,7 @@ blockquote {
  */
 .quotes {
     max-width: -webkit-calc(850px - (#{$spacing-unit} * 2));
-    max-width:         calc(850px - (#{$spacing-unit} * 2));
+    max-width: calc(850px - (#{$spacing-unit} * 2));
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -170,7 +205,7 @@ blockquote {
 
     @include media-query($on-laptop) {
         max-width: -webkit-calc(850px - (#{$spacing-unit}));
-        max-width:         calc(850px - (#{$spacing-unit}));
+        max-width: calc(850px - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
     }
@@ -195,7 +230,7 @@ blockquote {
  * Icons
  */
 .icon {
-    > svg {
+    >svg {
         display: inline-block;
         width: 25px;
         height: 25px;
@@ -209,10 +244,10 @@ blockquote {
 }
 
 .icons {
-    > a {
-            color: #FFFFFF;
-            text-decoration: none;
-        }
+    >a {
+        color: #FFFFFF;
+        text-decoration: none;
+    }
 }
 
 
@@ -224,4 +259,4 @@ hr {
     background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
     background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-  }
+}
