@@ -2,6 +2,7 @@
 layout: post
 title: "Fitness Dashboard with Google Fit"
 date: "2023-06-09"
+modified: 2023-07-19
 categories: Quantified-Self
 ---
 
@@ -32,6 +33,20 @@ Fitness was another frontier where I tried many things. Tracking was always enab
 Introducing: Do More With Less (DMWL). It is a trend at work where you identify and prioritize the tasks that are quick to execute with good ROI.
 
 I googled previous work in this direction. I found [this medium article](https://towardsdatascience.com/how-i-built-a-google-spreadsheet-to-keep-track-of-google-fit-fitness-data-a0887a59f730) that pointed to this more helpful article doing what I wanted - [Export Google Fit Daily Steps, Weight and Distance to a Google Sheet](https://ithoughthecamewithyou.com/post/export-google-fit-daily-steps-to-a-google-sheet). It made almost everything straightforward - setting up the app, auth, pulling and formatting data. Chat GPT complemented my lack of knowledge of Javascript to write code in Google Sheets.
+
+**Update: 19th July**
+
+I had to do set up the credentials again so I will add the steps where instead of referring the above linked article.
+
+1. Open script editor by going to Extensions > Apps Scrip. It will open a new apps script project.
+2. Name the project. Click the + in the Libraries section. In the Add a Library dialogue, add `1B7FSrk5Zi6L1rSxxTDgDEUsPzlukDsi4KGuTMorsTQHhGBzBkMun4iDF` as the Script ID. This will find the [Google OAuth2 Lib](https://github.com/googleworkspace/apps-script-oauth2). Select the latest version and save.
+3. Go to Project Properties from the file menu and make a note of the Script ID. This is the ID for our new project. We will need it later.
+4. Open the [Google API Console](https://accounts.google.com/ServiceLogin?service=cloudconsole&passive=1209600&osid=1&continue=https://console.cloud.google.com/apis/dashboard&followup=https://console.cloud.google.com/apis/dashboard).
+5. Create a new project and name it.
+6. Go to Enable APIs and Services and find the **Fitness API**.
+7. Go to Keys and create an OAuth Client ID. While creating the consent screen, only add the product name. Select "Web Application" in the application type. In the redirect URL add `https://script.google.com/macros/d/{SCRIPTID}/usercallback` and replace the `{SCRIPTID}` with the Script ID copied in step 3. Note down the client id and client secret created at the end. We will use these in our script.
+
+**End of the Update**
 
 <figure class="image">
 <img src="{{ site.url }}/assets/2023-06/1_fit_dash_logs.png" alt="" style="text-align: center; margin: auto">
@@ -124,3 +139,5 @@ I live a healthy lifestyle. Another goal of this dashboard is to observe how dif
 - Does fitness impact my productivity?
 
 There are more, but these are the important ones in my mind.
+
+**Update: 19th July**: I added meditation and cycling under the activities section. In the nutrition section, I added calories burnt and water intake. Calories burnt is Fit's approximation. The water intake is tracked manually in the app like the activities.
