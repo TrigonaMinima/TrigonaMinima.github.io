@@ -1,0 +1,10 @@
+Probability, Odds, Log-Odds
+===
+
+
+- p: Probability of something happening
+- odds: ratio of wins to loses
+- odds = p/(1 - p)
+- p = odds / (odds + 1)
+- log odds
+

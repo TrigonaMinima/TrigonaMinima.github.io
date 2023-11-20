@@ -35,3 +35,5 @@ github_username: TrigonaMinima
 lastfm_username: Shivamrana
 stackoverflow: trigonaminima
 linkdin_username: tminima
+
+exclude: ['_drafts']
