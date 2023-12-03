@@ -63,17 +63,9 @@ I still haven't found the solution, but I have a few leads:
 
 **End of the Update**
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-06/1_fit_dash_logs.png" alt="" style="text-align: center; margin: auto">
-<figcaption style="text-align: center">Raw data in yellow-shaded cells. The 0.00 values are unlogged days.</figcaption>
-</figure>
+{% include figure image_path="/assets/2023-06/1_fit_dash_logs.png" caption="Raw data in yellow-shaded cells. The 0.00 values are unlogged days." %}
 
-
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-06/2_fit_dash_logs2.png" alt="" style="text-align: center; margin: auto">
-<figcaption style="text-align: center">Rolling averages are calculated within the sheet.</figcaption>
-</figure>
-
+{% include figure image_path="/assets/2023-06/2_fit_dash_logs2.png" caption="Rolling averages are calculated within the sheet." %}
 
 ## Code
 
@@ -116,10 +108,7 @@ Time for the final results.
 
 Google Fit gives you a [Heart Point](https://support.google.com/fit/answer/7619539?hl=en&co=GENIE.Platform%3DAndroid#zippy=%2Chow-to-earn-heart-points) (HP) for each minute of activity you do. Here is how mine looks. My heart points mainly include walking, working out, and a little bit of swimming.
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-06/3_fit_dash_hp.png" alt="" style="text-align: center; margin: auto">
-<!-- <figcaption style="text-align: center">Figure 1:</figcaption> -->
-</figure>
+{% include figure image_path="/assets/2023-06/3_fit_dash_hp.png" caption="Rolling averages are calculated within the sheet." %}
 
 The red line is an aggregated line to make it easy to see the trend.
 
@@ -129,10 +118,8 @@ My heart points are also cyclic in nature. Whenever I am home, my only regular a
 
 Let's look at these heart points more closely.
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-06/fit_dash_steps.png" alt="" style="text-align: center; margin: auto">
-<img src="{{ site.url }}/assets/2023-06/fit_dash_workout.png" alt="" style="text-align: center; margin: auto">
-</figure>
+{% include figure image_path="/assets/2023-06/fit_dash_steps.png" %}
+{% include figure image_path="/assets/2023-06/fit_dash_workout.png" %}
 
 Can you notice the complementary nature of the two graphs? First, look at the red line and then focus on blue.
 

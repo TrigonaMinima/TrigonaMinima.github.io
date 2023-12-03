@@ -69,9 +69,7 @@ data["node_color"] = data["age_group"].apply(lambda x: node_dict[x])
 data.head(2)
 {% endhighlight %}
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-11/groupby1.png" alt="" style="text-align: center; margin: auto">
-</figure>
+{% include figure image_path="/assets/2023-11/groupby1.png" %}
 
 I am loading the data and converting the [wide to the long format](https://en.wikipedia.org/wiki/Wide_and_narrow_data) for NetworkX. Next, we define our graph using this data.
 
@@ -159,17 +157,12 @@ plt.show()
 
 Time to see the results.
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-11/groupby_male.svg" alt="" style="text-align: center; margin: auto">
-<figcaption style="text-align: center">Age-wise causes of death in males</figcaption>
-</figure>
+{% include figure image_path="/assets/2023-11/groupby_male.svg" caption="Age-wise causes of death in males" %}
 
 Male children mostly die due to Infectious and parasitic diseases, Respiratory infections, Maternal conditions, Neonatal conditions, and Nutritional deficiencies. Most teen and youth deaths (15-29 years in age) happen due to injuries. As men get old, serious ailments (Birth ailments, Cancer, Cardiovascular, Respiratory, and others) become more pronounced causes of death.
 
-<figure class="image">
-<img src="{{ site.url }}/assets/2023-11/groupby_female.svg" alt="" style="text-align: center; margin: auto">
-<figcaption style="text-align: center">Age-wise causes of death in females</figcaption>
-</figure>
+{% include figure image_path="/assets/2023-11/groupby_female.svg" caption="Age-wise causes of death in females" %}
+
 
 Females follow a similar distribution. One notable difference is that relatively few women die due to injuries. Is that the reason women live longer than men?
 

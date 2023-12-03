@@ -1,0 +1,11 @@
+<figure class="image" style="text-align: center; margin: auto">
+  <a href="{{ site.url }}/{{ include.image_path }}">
+    <img src=" {{ site.url }}/{{ include.image_path }}" style="text-align: center; margin: auto">
+  </a>
+  {%- if include.caption -%}
+  <figcaption style="text-align: center">
+    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
+  </figcaption>
+  {%- endif -%}
+</figure>
+<br>
