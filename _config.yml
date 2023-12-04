@@ -24,6 +24,7 @@ plugins:
   - github-pages
   - jekyll-feed
   - jekyll-paginate
+  - breakpoint
 
 # Owner Settings
 owner: Shivam Rana
@@ -36,4 +37,4 @@ lastfm_username: Shivamrana
 stackoverflow: trigonaminima
 linkdin_username: tminima
 
-exclude: ['_drafts']
+exclude: ['_drafts', 'js/jquery.magnific-popup.js']

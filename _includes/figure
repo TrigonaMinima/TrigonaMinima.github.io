@@ -1,11 +1,10 @@
-<figure class="image" style="text-align: center; margin: auto">
-  <a href="{{ site.url }}/{{ include.image_path }}">
-    <img src=" {{ site.url }}/{{ include.image_path }}" style="text-align: center; margin: auto">
+{% assign title = include.caption | markdownify | remove: "<p>" | remove: "</p>" %}
+<figure class="single-image-popup">
+  <a href="{{ include.image_path | relative_url }}" style="text-align: center; margin: auto" {% if title %}
+    title="{{ title }}" {% endif %}>
+    <img src="{{ include.image_path | relative_url }}" {% if title %} title="{{ title }}" {% endif %}>
   </a>
-  {%- if include.caption -%}
-  <figcaption style="text-align: center">
-    {{ include.caption | markdownify | remove: "<p>" | remove: "</p>" }}
-  </figcaption>
-  {%- endif -%}
+  {% if title %}
+  <figcaption style="text-align: center; margin: auto">{{ title }}</figcaption>
+  {% endif %}
 </figure>
-<br>
