@@ -37,4 +37,4 @@ lastfm_username: Shivamrana
 stackoverflow: trigonaminima
 linkdin_username: tminima
 
-exclude: ['_drafts', 'js/jquery.magnific-popup.js']
+exclude: ['vendor', '_drafts', 'js/jquery.magnific-popup.js']
