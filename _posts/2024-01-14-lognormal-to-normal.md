@@ -2,7 +2,8 @@
 layout: post
 title: "Lognormal to Normal Distribution"
 date: "2024-01-14"
-categories:
+modified: 2025-01-18
+categories: ML
 distributions:
   - image_path: "/assets/2024-01/norm_dist.svg"
   - image_path: "/assets/2024-01/lognorm_dist.svg"
@@ -17,7 +18,7 @@ normal_to_lognormal:
 
 The Normal and lognormal distributions are fundamental concepts in statistics. I recently used the relationship between these two distributions in a project. In this blog post, I want to share what I learned.
 
-Outline:
+Outline
 
 1. [Normal & Lognormal Distributions](#dist)
 3. [Lognormal to Normal](#log2normal)
@@ -264,4 +265,14 @@ Conclusion: to convert from a normal to lognormal, take exp of the normal sample
 
 We started with the Normal and Lognormal distributions and with their definition in Python. We converted each of the distributions into the other. It took me some effort to figure out how to do the conversion. With this post, I tried to demystify the confusion.
 
-I found an interesting link while researching the answers: visualisation of all the distributions available in [scipy.stats](http://docs.scipy.org/doc/scipy/reference/stats.html) on this [SO answer](https://stackoverflow.com/q/37559470/2650427).
+If you are interested in how other distributions look, your search is over. This [SO answer](https://stackoverflow.com/q/37559470/2650427) has visualisations of all the distributions available in [scipy.stats](http://docs.scipy.org/doc/scipy/reference/stats.html).
+
+**Update: 18th Jan**: Someone asked me the following question on reddit.
+
+> For what purpose are you converting between normal and lognormal? The two functions share the same parameters but thats about it. ln(data) is a non-destructive transformation but the process can obscure patterns just as often as it reveals them. Certain advanced statistical tests that require a normal distribution cannot necessarily have the results applied to the lognormal data.
+
+This stranger is correct that patterns are obscured, or rather, some other patterns come up after log transformation. Although, in my case, it did not matter.
+
+I wanted to match the customers with the items that are within the customer spending range. The formulation was that if I have customer and outlet distributions, then I can match these distributions or get the overlap to get the *match percentage*. This match percentage will then be used on top of relevance scores.
+
+Looking at the customer's spend history, I saw that the distribution was lognormally distributed. A similar trend was observed in the restaurant's order history. Since, computing the overlap in the production env was easier with the normal distributions, I was okay with the conversion. I will cover this in more detail in a future post.
