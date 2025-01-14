@@ -42,3 +42,7 @@ The effort invested in creating these digests yields substantial career benefits
 Actively managing your visibility is key to long-term career growth. Sending out regular progress digests ensures that your work is recognized. You also establish a record of your accomplishments and demonstrate your value. This practice requires regular work but has good returns.
 
 PS: I learned this trick on a tech podcast many years ago. If anyone knows which podcast or episode, please share it with me, and I will link it here.
+
+**Update: 14th Jan**
+
+PS: A related idea of [brag documents](https://jvns.ca/blog/brag-documents/) explained beautifully by [Julia Evans](https://jvns.ca/). Shared on this [HN comment](https://news.ycombinator.com/item?id=42695837).
