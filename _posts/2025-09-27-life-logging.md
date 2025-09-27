@@ -12,8 +12,12 @@ I am building a comprehensive set of tools to do life logging. General idea is:
 
 Objective is to do weekly reviews and take interventions if things are not BAU. Long term vision is to eventually have enough signals to give me a comprehensive understanding of myself (physical, mental, social, financial, etc).
 
-I have tried this multile times in various formats over the years. Here are my previous efforts in reverse chronology:
+Current progress in reverse chronology:
 
+- 2025: [Logging phone calls]({% post_url 2025-09-28-life-logging-calls-tasker %})
+
+
+I have tried this multile times in various formats over the years. Here are my previous efforts in reverse chronology:
 
 - 2023: [Google Fit data sync and analysis]({% post_url 2023-06-09-google-fit-data %}) -- my most successful attempt and still in-use. Pushed me to keep things simple.
 - 2021: [Futter app to do the logging 3]({% post_url 2021-08-14-flutter_app_3 %}) -- couldn't manage building this along with work.

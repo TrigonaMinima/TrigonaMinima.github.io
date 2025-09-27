@@ -61,6 +61,7 @@ var data = [
     { "year": years.length - 10 - 1, "month": 8, "value": 1 },
     { "year": years.length - 11 - 1, "month": 0, "value": 1 },
     { "year": years.length - 11 - 1, "month": 1, "value": 1 },
+    { "year": years.length - 11 - 1, "month": 8, "value": 2 },
 ];
 
 
