@@ -6,6 +6,8 @@ let timeFracs = [], time = [], sides = [];
 let timeZoneName = "", binary = "", monthStr = "", emoji = "", title = "", weekday = ""; //strings
 let randomColor = null;
 let darkMode = true;
+
+
 const anyColor = () => {
     const h = Math.floor(Math.random() * 360);
     const s = Math.floor(Math.random() * 40 + 30);
@@ -179,3 +181,24 @@ document.querySelectorAll("svg.peaks").forEach(svg => {
     svg.setAttribute("viewBox", "0 0 1000 10");
     svg.setAttribute("preserveAspectRatio", "none");
 });
+
+
+const updateTimeStr = () => {
+    getTime();
+    document.getElementById("timeStr").textContent = `${year} ${monthStr} ${date} ${weekday} ${String(hour).padStart(2, '0')}:${String(minute).padStart(2, '0')}:${String(second).padStart(2, '0')}`;
+    document.querySelectorAll("span.timeZone").forEach(span => {
+        span.textContent = `${timeZoneName}`;
+    });
+};
+
+setInterval(() => {
+    getTime();
+    document.querySelectorAll("span[data-level]").forEach(span => {
+        const level = parseInt(span.dataset.level, 10);
+        span.textContent = " (" + time[level] + ")";
+    });
+}, 1000);
+if (document.getElementById("timeStr")) {
+    updateTimeStr(); // Run on page load
+    setInterval(updateTimeStr, 1000); // Update every second
+};
