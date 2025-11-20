@@ -96,9 +96,12 @@ layout: default
 </div>
 
 <div class="heatmap"></div>
-
+<svg class="banner peaks"></svg>
 
 <!-- heatmap visualization stuff -->
 <script defer src="https://d3js.org/d3.v5.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script> -->
 <script defer type="text/javascript" src="{{ " /js/heatmap.js" | prepend: site.baseurl }}"></script>
+
+<!-- Wanted the bottom clock as on this page: https://ianto-cannon.github.io/clock.html -->
+<script defer type="text/javascript" src="{{ " /js/clock-peaks.js" | prepend: site.baseurl }}"></script>

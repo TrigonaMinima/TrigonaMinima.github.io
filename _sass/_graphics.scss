@@ -10,9 +10,23 @@
     overflow: hidden;
     padding-right: 10;
 }
+
 .svg-content-responsive {
     display: inline-block;
     // position: absolute;
     // top: 10px;
     left: 0;
+}
+
+
+/**
+ * Clock graphics
+ * https://ianto-cannon.github.io/clock.html
+ * Copied from the `common.css`
+ */
+.banner {
+    width: 100%;
+    height: 100px;
+    display: block;
+    overflow: hidden;
 }
