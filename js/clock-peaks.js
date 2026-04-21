@@ -3,7 +3,7 @@
 const svgNS = "http://www.w3.org/2000/svg";
 let year, month, date, hour, minute, second, millisecond, hue; //numbers
 let timeFracs = [], time = [], sides = [];
-let timeZoneName = "", binary = "", monthStr = "", emoji = "", title = "", weekday = ""; //strings
+let timeZoneName = "", monthStr = "", emoji = "", title = "", weekday = ""; //strings
 let randomColor = null;
 let darkMode = true;
 
@@ -98,8 +98,6 @@ const getTime = () => {
     const yrFrac = (days + dayFrac) / 365.25;
     const milFrac = (year + yrFrac) / 1000;
     timeFracs = [milFrac, yrFrac, dayFrac, hrFrac, minFrac, secFrac];
-    const unixTime = Math.floor(now.getTime() / 1000);
-    binary = unixTime.toString(2).padStart(31, '0');
 };
 const createTriangle = (value, width, height, lightness, peaksSVG) => {
     for (let i = -1; i <= 1; i++) {
