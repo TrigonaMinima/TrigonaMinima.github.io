@@ -58,13 +58,14 @@
             line-height: 0;
             padding-top: 10px;
             text-align: center;
+            color: var(--menu-icon-fill);
 
             > svg {
                 width: 18px;
                 height: 15px;
 
                 path {
-                    fill: $grey-color-dark;
+                    fill: currentColor;
                 }
             }
         }
@@ -258,4 +259,52 @@
  */
 .site-tag a {
     display: inline-block;
+}
+
+
+/**
+ * Dark mode toggle
+ */
+.theme-toggle {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    padding: 0 8px;
+    vertical-align: middle;
+    line-height: $base-line-height;
+}
+
+.theme-icon {
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Show sun (switch to light) only when in dark mode */
+.theme-icon-sun  { display: none; }
+html[data-theme="dark"] .theme-icon-sun  { display: inline; }
+html[data-theme="dark"] .theme-icon-moon { display: none; }
+
+/* Moon uses a filled path; sun uses strokes */
+.theme-icon-moon { fill: currentColor; stroke: none; }
+
+/* GitHub icon adapts to theme via currentColor */
+.icon--github {
+    color: var(--social-github-fill);
+    svg path { fill: currentColor; }
+}
+
+/* Smooth background/border transitions on theme switch (color excluded to avoid hover jank) */
+body,
+.site-header,
+.site-nav,
+.site-footer,
+.post-content {
+    transition: background-color 0.2s ease, border-color 0.2s ease;
 }

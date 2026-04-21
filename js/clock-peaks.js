@@ -5,7 +5,7 @@ let year, month, date, hour, minute, second, millisecond, hue; //numbers
 let timeFracs = [], time = [], sides = [];
 let timeZoneName = "", monthStr = "", emoji = "", title = "", weekday = ""; //strings
 let randomColor = null;
-let darkMode = true;
+let darkMode = document.documentElement.getAttribute('data-theme') === 'dark';
 
 
 const anyColor = () => {
@@ -172,7 +172,7 @@ if (col.startsWith("hsl(")) {
 } else {
     hue = rgbToHue(col);
 }
-const lightness = document.body.classList.contains('dark') ? 70 : 30;
+const lightness = darkMode ? 70 : 30;
 col = `hsl(${hue}, 30%, ${lightness}%)`;
 document.querySelectorAll("svg.peaks").forEach(svg => {
     updatePeaks(svg);
@@ -200,3 +200,7 @@ if (document.getElementById("timeStr")) {
     updateTimeStr(); // Run on page load
     setInterval(updateTimeStr, 1000); // Update every second
 };
+
+window.addEventListener('themechange', function (e) {
+    darkMode = e.detail.theme === 'dark';
+});

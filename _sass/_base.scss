@@ -137,7 +137,7 @@ figure {
 
 figcaption {
     margin-bottom: 0.5em;
-    color: $muted-text-color;
+    color: var(--muted-text-color);
     // font-family: $caption-font-family;
     font-size: $small-font-size;
 
@@ -146,7 +146,7 @@ figcaption {
         transition: $global-transition;
 
         &:hover {
-            color: $link-color-hover;
+            color: var(--link-color-hover);
         }
     }
 }
@@ -190,7 +190,7 @@ a {
     text-decoration: none;
 
     &:visited {
-        color: darken($brand-color, 15%);
+        color: var(--brand-color-visited);
     }
 
     &:hover {
@@ -297,7 +297,7 @@ blockquote {
 
 .icons {
     >a {
-        color: #FFFFFF;
+        color: var(--icons-fg);
         text-decoration: none;
     }
 }
@@ -307,8 +307,8 @@ blockquote {
 hr {
     border: 0;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -moz-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -ms-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
-    background-image: -o-linear-gradient(left, #f0f0f0, #8c8b8b, #f0f0f0);
+    background-image: -webkit-linear-gradient(left, var(--hr-gradient-start), var(--hr-gradient-end), var(--hr-gradient-start));
+    background-image: -moz-linear-gradient(left, var(--hr-gradient-start), var(--hr-gradient-end), var(--hr-gradient-start));
+    background-image: -ms-linear-gradient(left, var(--hr-gradient-start), var(--hr-gradient-end), var(--hr-gradient-start));
+    background-image: -o-linear-gradient(left, var(--hr-gradient-start), var(--hr-gradient-end), var(--hr-gradient-start));
 }

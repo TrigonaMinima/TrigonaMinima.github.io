@@ -4,7 +4,7 @@
 .rendered_html {
     overflow-x: auto;
     overflow-y: hidden;
-    color: #000;
+    color: var(--table-text);
 }
 
 .rendered_html table {
@@ -15,13 +15,13 @@
     border: none;
     border-collapse: collapse;
     border-spacing: 0;
-    color: black;
+    color: var(--table-text);
     font-size: 13px;
     table-layout: fixed;
 }
 
 .rendered_html thead {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--table-border);
     vertical-align: bottom;
     text-align: right;
 }
@@ -31,11 +31,11 @@
 }
 
 .rendered_html tbody tr:hover {
-    background: rgba(66, 165, 245, 0.2);
+    background: var(--table-row-hover);
 }
 
 .rendered_html tbody tr:nth-child(odd) {
-    background: #f5f5f5;
+    background: var(--table-row-odd);
 }
 
 .rendered_html tbody tr th:only-of-type {
