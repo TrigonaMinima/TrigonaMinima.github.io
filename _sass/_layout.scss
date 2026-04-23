@@ -2,9 +2,8 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 80px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
@@ -12,7 +11,7 @@
 
 .site-title {
     font-size: 26px;
-    line-height: 56px;
+    line-height: 80px;
     letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
@@ -25,7 +24,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+    line-height: 80px;
 
     .menu-icon {
         display: none;
@@ -43,26 +42,24 @@
 
     @include media-query($on-palm) {
         position: absolute;
-        top: 9px;
+        top: 0;
         right: 30px;
         background-color: $background-color;
-        border: 1px solid $grey-color-light;
-        border-radius: 5px;
         text-align: right;
 
         .menu-icon {
             display: block;
             float: right;
             width: 36px;
-            height: 26px;
-            line-height: 0;
-            padding-top: 10px;
+            height: 80px;
+            line-height: 80px;
             text-align: center;
             color: var(--menu-icon-fill);
 
             > svg {
                 width: 18px;
                 height: 15px;
+                vertical-align: middle;
 
                 path {
                     fill: currentColor;
@@ -73,6 +70,7 @@
         .trigger {
             clear: both;
             display: none;
+            line-height: $base-line-height;
         }
 
         &:hover .trigger {
@@ -84,6 +82,7 @@
             display: block;
             padding: 5px 10px;
         }
+
     }
 }
 
@@ -95,6 +94,14 @@
 .site-footer {
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
+}
+
+.site-footer--fixed {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 0;
 }
 
 .footer-heading {
@@ -266,13 +273,23 @@
  * Dark mode toggle
  */
 .theme-toggle {
+    float: right;
     background: none;
     border: 0;
     cursor: pointer;
     color: var(--text-color);
-    padding: 0 8px;
+    padding: 0 8px 0 24px;
     vertical-align: middle;
-    line-height: $base-line-height;
+    line-height: 80px;
+
+    @include media-query($on-palm) {
+        float: none;
+        position: absolute;
+        top: 0;
+        right: 80px;
+        line-height: 80px;
+        padding: 0 8px;
+    }
 }
 
 .theme-icon {
