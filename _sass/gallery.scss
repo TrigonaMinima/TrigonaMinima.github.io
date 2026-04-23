@@ -1,0 +1,72 @@
+// Task 13 — PhotoSwipe dark-mode overlay via CSS custom properties
+:root {
+  --pswp-bg: #111;
+  --pswp-placeholder-bg: #222;
+  --pswp-icon-color: #fff;
+  --pswp-icon-color-secondary: #333;
+}
+html[data-theme="dark"] {
+  --pswp-bg: #000;
+  --pswp-icon-color: #e8e8e8;
+}
+
+// Task 7 — keyboard-navigation hint shown in the lightbox footer
+.pswp__kbd-hint {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  font: 12px/1 monospace;
+  color: #ccc;
+  opacity: 0.65;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+// Task 7 — per-image caption from anchor title attribute
+.pswp__custom-caption {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  color: #eee;
+  font-size: 14px;
+  max-width: 80%;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  pointer-events: none;
+}
+
+// Task 12 — hover affordance on gallery thumbnails
+.gallery-popup a,
+.single-image-popup a {
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+}
+
+// Scale + fade effect; relies on the global `figure img { transition }` in _base.scss
+.gallery-popup a:hover img,
+.single-image-popup a:hover img {
+  transform: scale(1.03);
+  opacity: 0.88;
+}
+
+// Task 14 — image count badge on the first thumbnail of multi-image galleries
+.gallery-popup > a[data-count] {
+  position: relative;
+}
+
+.gallery-popup > a[data-count]::after {
+  content: "\2338\00a0" attr(data-count);
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  padding: 2px 7px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.58);
+  color: #fff;
+  font: bold 11px/1.4 sans-serif;
+  pointer-events: none;
+  z-index: 1;
+}
