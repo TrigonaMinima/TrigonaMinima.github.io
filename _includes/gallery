@@ -19,15 +19,15 @@
   {% for img in gallery %}
   {% assign img_title = img.title | markdownify | remove: "<p>" | remove: "</p>" | strip %}
   <a href="{{ img.image_path | relative_url }}"
-     {% if img_title %}title="{{ img_title }}"{% endif %}
+     {% if img_title != "" %}title="{{ img_title }}"{% endif %}
      {% if forloop.first and gallery.size > 1 %}data-count="{{ gallery.size }}"{% endif %}
-     aria-label="{% if img_title %}{{ img_title | escape }}{% else %}Open image {{ forloop.index }} of {{ gallery.size }}{% endif %}">
+     aria-label="{% if img_title != "" %}{{ img_title | escape }}{% else %}Open image {{ forloop.index }} of {{ gallery.size }}{% endif %}">
     <img src="{{ img.image_path | relative_url }}"
          alt="{% if img.alt %}{{ img.alt }}{% endif %}"
          loading="lazy" decoding="async">
   </a>
   {% endfor %}
-  {% if caption %}
+  {% if caption != "" %}
   <figcaption>{{ caption }}</figcaption>
   {% endif %}
 </figure>

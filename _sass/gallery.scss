@@ -1,4 +1,3 @@
-// Task 13 — PhotoSwipe dark-mode overlay via CSS custom properties
 :root {
   --pswp-bg: #111;
   --pswp-placeholder-bg: #222;
@@ -10,7 +9,6 @@ html[data-theme="dark"] {
   --pswp-icon-color: #e8e8e8;
 }
 
-// Task 7 — keyboard-navigation hint shown in the lightbox footer
 .pswp__kbd-hint {
   position: absolute;
   left: 50%;
@@ -23,7 +21,6 @@ html[data-theme="dark"] {
   white-space: nowrap;
 }
 
-// Task 7 — per-image caption from anchor title attribute
 .pswp__custom-caption {
   position: absolute;
   left: 50%;
@@ -37,7 +34,6 @@ html[data-theme="dark"] {
   pointer-events: none;
 }
 
-// Task 12 — hover affordance on gallery thumbnails
 .gallery-popup a,
 .single-image-popup a {
   cursor: pointer;
@@ -52,7 +48,6 @@ html[data-theme="dark"] {
   opacity: 0.88;
 }
 
-// Task 14 — image count badge on the first thumbnail of multi-image galleries
 .gallery-popup > a[data-count] {
   position: relative;
 }

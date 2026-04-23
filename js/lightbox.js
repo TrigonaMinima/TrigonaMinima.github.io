@@ -60,7 +60,7 @@ function setup(selector) {
       onInit: (el, pswp) => {
         pswp.on('change', () => {
           const d = pswp.currSlide && pswp.currSlide.data;
-          el.innerHTML = (d && d.title) ? d.title : '';
+          el.textContent = (d && d.title) ? d.title : '';
         });
       },
     });
