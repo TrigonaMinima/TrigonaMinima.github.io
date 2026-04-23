@@ -122,7 +122,9 @@
       gtag('config', 'G-DYMY6F223L');
     </script>
 
+    {% if page.content contains 'gallery-popup' or page.content contains 'single-image-popup' %}
     <script type="module" src="{{ '/js/lightbox.js' | relative_url }}"></script>
+    {% endif %}
 
   </div>
 
