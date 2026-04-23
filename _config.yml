@@ -1,5 +1,5 @@
 title: Playground
-description: ""
+description: "Notes on engineering, personal finance, and everyday curiosity — by Shivam Rana"
 url: https://trigonaminima.github.io
 paginate: 1500
 paginate_path: "/blog/page:num/"
@@ -19,6 +19,9 @@ kramdown:
 # For the feeds
 name: Playground
 author: Shivam Rana
+
+feed:
+  posts_limit: 100
 
 plugins:
   - github-pages
