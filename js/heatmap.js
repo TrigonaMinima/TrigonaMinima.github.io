@@ -66,18 +66,7 @@ var data = [
     { "year": years.length - 12 - 1, "month": 2, "value": 1 },
 ];
 
-
-// using <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js">
-// var colors = chroma.brewer.Blues.slice(0, -2);
-//
-// var color = d3.scaleQuantile()
-//     .domain([d3.min(data, d => +d.value), d3.max(data, d => +d.value)])
-//     .range(colors);
-//
-// https://github.com/d3/d3-scale-chromatic/blob/master/README.md
-var color = d3.scaleSequential()
-    .domain([0, d3.max(data, d => d.value)])
-    .interpolator(d3.interpolateBlues);
+var dataMax = d3.max(data, d => d.value);
 
 var svg = d3.select(".heatmap")
     .append("svg")
@@ -88,7 +77,7 @@ var svg = d3.select(".heatmap")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-var yearLabels = svg.selectAll(".year")
+svg.selectAll(".year")
     .data(years)
     .enter()
     .append("svg:a").attr("xlink:href", function (d) { return "#" + d })
@@ -100,10 +89,9 @@ var yearLabels = svg.selectAll(".year")
     .attr("text-decoration", "underline")
     .style("text-anchor", "end")
     .attr("transform", "translate(-6," + yGridSize / 1.5 + ")")
-    .attr("font-size", "10pt")
-    .attr("fill", "#989898");
+    .attr("font-size", "10pt");
 
-var monthLabels = svg.selectAll(".month")
+svg.selectAll(".month")
     .data(months)
     .enter().append("text")
     .text(d => d)
@@ -112,21 +100,41 @@ var monthLabels = svg.selectAll(".month")
     .attr("y", h - margin.bottom - margin.top / 2)
     .style("text-anchor", "middle")
     .attr("transform", "translate(" + xGridSize / 2 + ", -6)")
-    .attr("font-size", "10pt")
-    .attr("fill", "#989898");
+    .attr("font-size", "10pt");
 
-var rectangles = svg.selectAll(".rectangle")
+svg.selectAll(".rectangle")
     .data(data)
     .enter().append("rect")
     .attr("x", d => d.month * xGridSize)
     .attr("y", d => d.year * yGridSize)
     .attr("width", xGridSize)
     .attr("height", yGridSize)
-    .attr("fill", d => color(d.value))
-    .attr("stroke", "#F7F7F7")
-    .attr("stroke-width", "0.5px")
     .attr("rx", 1)
     .attr("ry", 1)
-    .style("background-color", '#00000000')
+    .attr("stroke-width", "2px")
+    .classed("rectangle", true)
     .append("title")
     .text(d => (d.value == 1) ? "1 post" : d.value + " posts");
+
+function draw() {
+    var styles = getComputedStyle(document.documentElement);
+    var brandColor = styles.getPropertyValue('--brand-color').trim();
+    var bgColor = styles.getPropertyValue('--background-color').trim();
+    var labelColor = styles.getPropertyValue('--grey-color').trim();
+
+    var dimColor = d3.color(brandColor);
+    dimColor.opacity = 0.2;
+
+    var color = d3.scaleSequential()
+        .domain([0.5, dataMax])
+        .interpolator(d3.interpolateRgb(String(dimColor), brandColor));
+
+    svg.selectAll(".year").attr("fill", labelColor);
+    svg.selectAll(".month").attr("fill", labelColor);
+    svg.selectAll(".rectangle")
+        .attr("fill", d => color(d.value))
+        .attr("stroke", bgColor);
+}
+
+draw();
+window.addEventListener('themechange', draw);
