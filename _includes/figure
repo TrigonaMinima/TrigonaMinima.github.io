@@ -1,4 +1,4 @@
-{% assign title = include.caption | markdownify | remove: "<p>" | remove: "</p>" %}
+{% assign title = include.caption | markdownify | remove: "<p>" | remove: "</p>" | strip %}
 <figure class="single-image-popup">
   <a href="{{ include.image_path | relative_url }}"
      style="text-align: center; margin: auto"
