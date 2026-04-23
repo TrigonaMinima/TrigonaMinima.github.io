@@ -10,13 +10,13 @@
 
   <div class="page-content">
     <div class="wrapper">
-      <hr>
+      {% unless page.is_404 %}<hr>{% endunless %}
       {{ content }}
     </div>
   </div>
   </br>
   {% include footer.html %}
-  <script src="{{ "/js/theme.js" | prepend: site.baseurl }}" defer></script>
+  {% unless page.is_404 %}<script src="{{ "/js/theme.js" | prepend: site.baseurl }}" defer></script>{% endunless %}
 
 </body>
 

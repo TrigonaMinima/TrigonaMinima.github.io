@@ -37,4 +37,4 @@ lastfm_username: Shivamrana
 stackoverflow: trigonaminima
 linkdin_username: tminima
 
-exclude: ['vendor']
+exclude: ['vendor', 'CLAUDE.md']

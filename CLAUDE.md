@@ -25,7 +25,7 @@ Standard Jekyll structure:
 
 - **`_posts/`** — Published posts. File naming convention: `YYYY-MM-DD-slug.md` (required by Jekyll for date parsing). Front matter must include `layout`, `title`, and `date`.
 - **`_drafts/`** — Unpublished posts, excluded from build. No date prefix required.
-- **`_layouts/`** — Four layouts: `default`, `default_404`, `page`, `post`.
+- **`_layouts/`** — Three layouts: `default`, `page`, `post`. The 404 page uses `default` with `is_404: true` in front matter.
 - **`_includes/`** — Reusable partials (`head`, `header`, `footer`) plus `figure` and `gallery` include tags for image display.
 - **`_sass/`** — SCSS partials; entry points are in `css/`.
 - **`assets/YYYY-MM/`** — Post media assets, organized by year-month.

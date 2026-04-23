@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
     <link rel="stylesheet" href="{{ '/css/gallery.css' | relative_url }}">
     {% endif %}
+    {% if page.is_404 %}
+    <link rel="stylesheet" href="{{ '/css/homer.css' | relative_url }}">
+    {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=devanagari"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -31,10 +34,8 @@
             font-family: 'Ubuntu', sans-serif;
         }
     </style>
+    {% unless page.is_404 %}
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
-
-    <!-- google adsense -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9478470981247555"
-        crossorigin="anonymous"></script>
+    {% endunless %}
 </head>
