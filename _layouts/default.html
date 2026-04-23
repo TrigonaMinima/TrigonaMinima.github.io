@@ -6,15 +6,18 @@
 
 <body>
 
+  <a class="skip-nav" href="#main-content" id="skip-navigation-link">Skip to content</a>
+
   {% include header.html %}
 
-  <div class="page-content">
+  <div class="page-content" id="main-content" tabindex="-1">
     <div class="wrapper">
       {% unless page.is_404 %}<hr>{% endunless %}
       {{ content }}
     </div>
   </div>
-  </br>
+  <br>
+  {% unless page.is_404 %}<a class="back-to-top" href="#skip-navigation-link">↑ Back to top</a>{% endunless %}
   {% include footer.html %}
   {% unless page.is_404 %}<script src="{{ "/js/theme.js" | prepend: site.baseurl }}" defer></script>{% endunless %}
 

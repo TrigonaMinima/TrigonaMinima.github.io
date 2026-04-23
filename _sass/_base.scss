@@ -1,3 +1,44 @@
+html {
+    @media (prefers-reduced-motion: no-preference) {
+        scroll-behavior: smooth;
+    }
+}
+
+.skip-nav {
+    position: absolute;
+    top: -100%;
+    left: 1rem;
+    padding: 0.4em 1em;
+    background-color: var(--background-color);
+    color: var(--brand-color);
+    border: 2px solid var(--brand-color);
+    border-radius: $border-radius;
+    font-size: $small-font-size;
+    z-index: 1000;
+    text-decoration: none;
+
+    &:focus {
+        top: 0.5rem;
+    }
+}
+
+.back-to-top {
+    display: block;
+    text-align: center;
+    padding: 0.75em 0;
+    font-size: $small-font-size;
+    color: var(--grey-color);
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        color: var(--brand-color);
+        text-decoration: none;
+    }
+}
+
+
+
 /**
  * Reset some basic elements
  */
