@@ -1,8 +1,12 @@
 {% assign title = include.caption | markdownify | remove: "<p>" | remove: "</p>" %}
 <figure class="single-image-popup">
-  <a href="{{ include.image_path | relative_url }}" style="text-align: center; margin: auto" {% if title %}
-    title="{{ title }}" {% endif %}>
-    <img src="{{ include.image_path | relative_url }}" {% if title %} title="{{ title }}" {% endif %}>
+  <a href="{{ include.image_path | relative_url }}"
+     style="text-align: center; margin: auto"
+     {% if title %}title="{{ title }}"{% endif %}
+     aria-label="{% if title %}{{ title | escape }}{% else %}Open image{% endif %}">
+    <img src="{{ include.image_path | relative_url }}"
+         {% if title %}title="{{ title }}"{% endif %}
+         loading="lazy" decoding="async">
   </a>
   {% if title %}
   <figcaption style="text-align: center; margin: auto">{{ title }}</figcaption>
