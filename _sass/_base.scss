@@ -32,7 +32,7 @@ body {
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    font-weight: 300;
+    font-weight: 400;
     color: $text-color;
     background-color: $background-color;
 }
@@ -168,6 +168,23 @@ li {
 
 
 
+pre {
+    font-family: $monospace;
+}
+
+code {
+    font-family: $monospace;
+    font-size: 0.85em;
+}
+
+:not(pre) > code {
+    background-color: var(--grey-color-light);
+    border-radius: $border-radius;
+    padding: 0.1em 0.35em;
+}
+
+
+
 /**
  * Headings
  */
@@ -205,10 +222,11 @@ a {
  * Blockquotes
  */
 blockquote {
+    font-family: $quote-font-family;
     color: $grey-color;
     border-left: 4px solid $grey-color-light;
     padding-left: $spacing-unit / 2;
-    font-size: 18px;
+    font-size: 0.9em;
     letter-spacing: -1px;
     // font-style: italic;
 

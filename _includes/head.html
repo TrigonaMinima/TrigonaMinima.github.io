@@ -22,18 +22,12 @@
     <link rel="stylesheet" href="{{ '/css/homer.css' | relative_url }}">
     {% endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=devanagari"
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Alice&family=Arvo&display=swap"
         as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i&amp;subset=devanagari"
+        <link href="https://fonts.googleapis.com/css2?family=Alice&family=Arvo&display=swap"
             rel="stylesheet">
     </noscript>
-
-    <style>
-        body {
-            font-family: 'Ubuntu', sans-serif;
-        }
-    </style>
     {% unless page.is_404 %}
     <script type="text/javascript" async
         src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"> </script>

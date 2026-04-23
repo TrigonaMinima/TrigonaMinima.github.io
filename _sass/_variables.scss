@@ -133,8 +133,9 @@ $global-transition: all 0.2s ease-in-out !default;
 $intro-transition: intro 0.3s both !default;
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size: 19px;
+$base-font-family: 'Alice', serif;
+$quote-font-family: 'Arvo', serif;
+$base-font-size: 1.1em;
 $small-font-size: $base-font-size * 0.875;
 
 // for better typography, line height should be approx. 150% of font size.
