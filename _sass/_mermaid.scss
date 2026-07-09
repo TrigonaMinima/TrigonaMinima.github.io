@@ -1,0 +1,15 @@
+/**
+ * Mermaid diagrams
+ * Rendered client-side from ```mermaid fences; see js/mermaid.js
+ */
+.mermaid {
+    display: block;
+    margin: $spacing-unit / 1.5 auto;
+    text-align: center;
+    overflow-x: auto;
+
+    svg {
+        max-width: 100%;
+        height: auto;
+    }
+}

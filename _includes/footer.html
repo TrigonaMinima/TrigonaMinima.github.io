@@ -113,6 +113,10 @@
     <script type="module" src="{{ '/js/lightbox.js' | relative_url }}"></script>
     {% endif %}
 
+    {% if page.content contains 'language-mermaid' %}
+    <script type="module" src="{{ '/js/mermaid.js' | relative_url }}"></script>
+    {% endif %}
+
   </div>
 
 </footer>
