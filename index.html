@@ -100,6 +100,7 @@ layout: default
 <p class="post-meta"><span id="timeStr"></span> <span class="timeZone"></span></p>
 
 <!-- heatmap visualization stuff -->
+<script type="application/json" id="heatmap-post-dates">[{% for post in site.posts %}"{{ post.date | date: "%Y-%m" }}"{% unless forloop.last %},{% endunless %}{% endfor %}]</script>
 <script defer src="https://d3js.org/d3.v5.min.js"></script>
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.0/chroma.min.js"></script> -->
 <script defer type="text/javascript" src="{{ " /js/heatmap.js" | prepend: site.baseurl }}"></script>

@@ -1,4 +1,20 @@
-var years = ["2014", "2015", "2016", "2017", "2018", "2019", "2020", "2021", "2022", "2023", "2024", "2025", "2026"].reverse();
+// Post dates are emitted by Jekyll at build time (see index.html) so this
+// list, and the year range below, always match the actual published posts —
+// no manual bookkeeping when a post goes out or a new year starts.
+var postDates = JSON.parse(document.getElementById("heatmap-post-dates").textContent);
+
+var counts = {};
+postDates.forEach(function (ym) {
+    counts[ym] = (counts[ym] || 0) + 1;
+});
+
+var yearNums = Object.keys(counts).map(function (ym) { return parseInt(ym.slice(0, 4), 10); });
+var minYear = Math.min.apply(null, yearNums);
+var maxYear = Math.max.apply(null, yearNums);
+var years = [];
+for (var y = maxYear; y >= minYear; y--) {
+    years.push(String(y));
+}
 var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 var width = 650;
@@ -8,63 +24,13 @@ var xGridSize = Math.floor(w / (1.11 * months.length))
 var yGridSize = Math.floor(w / (2.5 * months.length));
 var h = yGridSize * years.length + margin.top + margin.bottom;
 
-var data = [
-    { "year": years.length - 0 - 1, "month": 3, "value": 1 },
-    { "year": years.length - 0 - 1, "month": 4, "value": 4 },
-    { "year": years.length - 0 - 1, "month": 5, "value": 2 },
-    { "year": years.length - 0 - 1, "month": 6, "value": 1 },
-    { "year": years.length - 0 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 0 - 1, "month": 10, "value": 2 },
-    { "year": years.length - 1 - 1, "month": 6, "value": 1 },
-    { "year": years.length - 1 - 1, "month": 11, "value": 1 },
-    { "year": years.length - 2 - 1, "month": 1, "value": 1 },
-    { "year": years.length - 2 - 1, "month": 2, "value": 1 },
-    { "year": years.length - 2 - 1, "month": 5, "value": 1 },
-    { "year": years.length - 2 - 1, "month": 9, "value": 1 },
-    { "year": years.length - 2 - 1, "month": 10, "value": 1 },
-    { "year": years.length - 3 - 1, "month": 6, "value": 1 },
-    { "year": years.length - 4 - 1, "month": 0, "value": 1 },
-    { "year": years.length - 4 - 1, "month": 3, "value": 1 },
-    { "year": years.length - 4 - 1, "month": 5, "value": 2 },
-    { "year": years.length - 4 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 4 - 1, "month": 9, "value": 1 },
-    { "year": years.length - 5 - 1, "month": 0, "value": 1 },
-    { "year": years.length - 5 - 1, "month": 2, "value": 1 },
-    { "year": years.length - 5 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 5 - 1, "month": 10, "value": 1 },
-    { "year": years.length - 5 - 1, "month": 11, "value": 1 },
-    { "year": years.length - 6 - 1, "month": 0, "value": 2 },
-    { "year": years.length - 6 - 1, "month": 1, "value": 1 },
-    { "year": years.length - 6 - 1, "month": 2, "value": 2 },
-    { "year": years.length - 6 - 1, "month": 4, "value": 1 },
-    { "year": years.length - 6 - 1, "month": 5, "value": 3 },
-    { "year": years.length - 6 - 1, "month": 7, "value": 1 },
-    { "year": years.length - 6 - 1, "month": 9, "value": 2 },
-    { "year": years.length - 6 - 1, "month": 10, "value": 1 },
-    { "year": years.length - 7 - 1, "month": 1, "value": 1 },
-    { "year": years.length - 7 - 1, "month": 6, "value": 1 },
-    { "year": years.length - 7 - 1, "month": 7, "value": 2 },
-    { "year": years.length - 7 - 1, "month": 9, "value": 1 },
-    { "year": years.length - 8 - 1, "month": 1, "value": 2 },
-    { "year": years.length - 8 - 1, "month": 2, "value": 1 },
-    { "year": years.length - 8 - 1, "month": 3, "value": 1 },
-    { "year": years.length - 8 - 1, "month": 5, "value": 2 },
-    { "year": years.length - 8 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 8 - 1, "month": 9, "value": 3 },
-    { "year": years.length - 9 - 1, "month": 0, "value": 1 },
-    { "year": years.length - 9 - 1, "month": 4, "value": 1 },
-    { "year": years.length - 9 - 1, "month": 5, "value": 1 },
-    { "year": years.length - 9 - 1, "month": 6, "value": 1 },
-    { "year": years.length - 9 - 1, "month": 10, "value": 1 },
-    { "year": years.length - 9 - 1, "month": 11, "value": 1 },
-    { "year": years.length - 10 - 1, "month": 0, "value": 1 },
-    { "year": years.length - 10 - 1, "month": 8, "value": 1 },
-    { "year": years.length - 11 - 1, "month": 0, "value": 1 },
-    { "year": years.length - 11 - 1, "month": 1, "value": 1 },
-    { "year": years.length - 11 - 1, "month": 8, "value": 2 },
-    { "year": years.length - 11 - 1, "month": 10, "value": 3 },
-    { "year": years.length - 12 - 1, "month": 2, "value": 1 },
-];
+var data = Object.keys(counts).map(function (ym) {
+    return {
+        "year": years.indexOf(ym.slice(0, 4)),
+        "month": parseInt(ym.slice(5, 7), 10) - 1,
+        "value": counts[ym],
+    };
+});
 
 var dataMax = d3.max(data, d => d.value);
 
