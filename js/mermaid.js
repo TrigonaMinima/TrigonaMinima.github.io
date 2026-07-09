@@ -16,12 +16,25 @@ function collectBlocks() {
   });
 }
 
-function currentTheme() {
-  return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default';
+// Drive diagram colors from the site's own CSS custom properties, same
+// pattern as js/heatmap.js's draw(), so diagrams share the page's palette
+// and typography instead of Mermaid's generic default/dark themes.
+function themeVariables() {
+  const style = getComputedStyle(document.documentElement);
+  const cssVar = (name) => style.getPropertyValue(name).trim();
+  return {
+    background: cssVar('--background-color'),
+    primaryColor: cssVar('--grey-color-light'),
+    primaryTextColor: cssVar('--text-color'),
+    primaryBorderColor: cssVar('--brand-color'),
+    lineColor: cssVar('--brand-color'),
+    textColor: cssVar('--text-color'),
+    fontFamily: 'Alice, serif',
+  };
 }
 
 async function render(blocks) {
-  mermaid.initialize({ startOnLoad: false, theme: currentTheme() });
+  mermaid.initialize({ startOnLoad: false, theme: 'base', themeVariables: themeVariables() });
   blocks.forEach((div) => {
     div.removeAttribute('data-processed');
     div.textContent = div.dataset.mermaidSrc;
