@@ -19,6 +19,20 @@ bundle exec jekyll serve
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
+## Local Dev Server
+
+The user runs `bundle exec jekyll serve` themselves via the `jek` alias (default
+`http://localhost:4000`). Jekyll's watcher picks up post and asset changes
+automatically.
+
+- While authoring or updating blog posts, if `jek` is already running, do NOT kill
+  it after every change. Let the watcher regenerate.
+- Killing it is fine when: `_config.yml` changed (config is not watched, a rebuild
+  is required), the server is wedged/corrupt, or the user asked for a relaunch.
+- If you do kill it, relaunch it after the change is live.
+- This server is outside session-cleanup scope. Do not shut it down when wrapping
+  up the session, even if you were the one who relaunched it.
+
 ## Architecture
 
 Standard Jekyll structure:
