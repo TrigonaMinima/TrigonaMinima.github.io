@@ -13,7 +13,7 @@
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncatewords:75 }}" />
 
     <link rel="icon" type="image/png" href="{{ '/favicon.png' | relative_url }}">
-    <link rel="stylesheet" href="{{ " /css/main.css" | prepend: site.baseurl }}">
+    <link rel="stylesheet" href="{{ '/css/main.css' | relative_url }}">
     {% if page.content contains 'gallery-popup' or page.content contains 'single-image-popup' %}
     <link rel="stylesheet" href="https://unpkg.com/photoswipe@5.4.4/dist/photoswipe.css">
     <link rel="stylesheet" href="{{ '/css/gallery.css' | relative_url }}">
