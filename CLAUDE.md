@@ -33,6 +33,12 @@ automatically.
 - This server is outside session-cleanup scope. Do not shut it down when wrapping
   up the session, even if you were the one who relaunched it.
 
+## Authoring Posts
+
+- **Do not hard-wrap prose.** Write each paragraph as a single unbroken line, however long it ends up. The editor soft-wraps; hard line breaks inside a paragraph only add diff noise.
+- Do not reflow to 72/80/100 columns, and do not use one-sentence-per-line semantic breaks. A 1000-character paragraph line is fine.
+- Applies to prose in `_posts/` and `_drafts/`. Does not apply to code blocks, YAML front matter, tables, or inline HTML/SVG, where existing formatting wins.
+
 ## Architecture
 
 Standard Jekyll structure:
