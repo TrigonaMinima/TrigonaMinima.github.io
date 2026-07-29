@@ -2,7 +2,7 @@
 layout: post
 title: "Life Logging: Calls"
 date: "2025-09-28"
-categories: Quantified-self
+categories: Quantified-Self
 ---
 
 I am building a comprehensive set of tools to do life logging. General idea is:
