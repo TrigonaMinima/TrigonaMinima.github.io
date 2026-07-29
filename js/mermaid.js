@@ -16,12 +16,14 @@ function collectBlocks() {
   });
 }
 
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
 // Drive diagram colors from the site's own CSS custom properties, same
 // pattern as js/heatmap.js's draw(), so diagrams share the page's palette
 // and typography instead of Mermaid's generic default/dark themes.
 function themeVariables() {
-  const style = getComputedStyle(document.documentElement);
-  const cssVar = (name) => style.getPropertyValue(name).trim();
   return {
     background: cssVar('--background-color'),
     primaryColor: cssVar('--grey-color-light'),
@@ -33,11 +35,22 @@ function themeVariables() {
   };
 }
 
+const SEMANTIC_CLASS_RE = /\bclass\s+\S+\s+(good|bad)\b/;
+
+// A few diagrams tag nodes with `class X good` / `class X bad` for allowed/denied
+// outcomes. That's this blog's own authoring convention, not a Mermaid theme
+// variable, so it's kept separate from themeVariables() and only appended to
+// diagrams that actually reference it.
+function semanticClassDefs() {
+  return `\nclassDef good stroke:${cssVar('--brand-color')},stroke-width:2px;\nclassDef bad stroke:${cssVar('--grey-color-dark')},stroke-width:1px,stroke-dasharray: 4 2;`;
+}
+
 async function render(blocks) {
   mermaid.initialize({ startOnLoad: false, theme: 'base', themeVariables: themeVariables() });
   blocks.forEach((div) => {
     div.removeAttribute('data-processed');
-    div.textContent = div.dataset.mermaidSrc;
+    const src = div.dataset.mermaidSrc;
+    div.textContent = SEMANTIC_CLASS_RE.test(src) ? src + semanticClassDefs() : src;
   });
   await mermaid.run({ nodes: blocks });
 }
