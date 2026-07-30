@@ -101,6 +101,7 @@ ul,
 ol,
 dl,
 figure,
+details,
 %vertical-rhythm {
     margin-bottom: $spacing-unit / 2;
 }
@@ -205,6 +206,29 @@ li {
     >ol {
         margin-bottom: 0;
     }
+
+    // a loose list item wraps its own text in a <p>; when a nested list
+    // follows directly, the <p>'s standard margin-bottom reads as an
+    // oversized gap before the first sub-bullet
+    >p:has(+ ul),
+    >p:has(+ ol) {
+        margin-bottom: 0.35em;
+    }
+
+    // a loose list item's trailing <p> keeps the standard paragraph
+    // margin-bottom, which reads as an oversized gap before the next
+    // sibling bullet compared to a plain (non-loose) list item
+    >p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// same fix, one level up: a top-level paragraph used as a plain-text
+// pseudo-heading (e.g. a bold label) immediately followed by a list reads
+// the same oversized gap before the first bullet
+p:has(+ ul),
+p:has(+ ol) {
+    margin-bottom: 0.35em;
 }
 
 

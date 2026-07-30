@@ -1,0 +1,50 @@
+/**
+ * Hand-drawn figure container/caption styling, shared across posts.
+ * Diagrams themselves are standalone SVG files with colors baked in
+ * (see assets/YYYY-MM/), so this only covers layout, not per-element color.
+ */
+.lr-fig {
+    margin: 1.6em 0;
+    padding: 14px 14px 4px;
+}
+
+.lr-fig-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.lr-fig-scroll svg,
+.lr-fig-scroll img {
+    display: block;
+    width: 100%;
+    min-width: 460px;
+    height: auto;
+}
+
+.lr-fig-mpl .lr-fig-scroll svg,
+.lr-fig-mpl .lr-fig-scroll img {
+    border-radius: $border-radius;
+    overflow: hidden;
+}
+
+.lr-fig figcaption {
+    font-size: 0.8em;
+    font-style: italic;
+    margin: 0.5em 4px 0.9em;
+}
+
+.lr-fig-narrow .lr-fig-scroll {
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.lr-fig-narrow .lr-fig-scroll svg,
+.lr-fig-narrow .lr-fig-scroll img {
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .lr-fig {
+        padding: 10px 8px 4px;
+    }
+}

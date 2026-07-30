@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="300" viewBox="0 0 360 300" role="img" aria-label="Concentric contour ellipses on a w1-w2 plane representing the loss surface, with a dashed path of decreasing steps converging to the center minimum">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="180" y="20" text-anchor="middle" fill="#111111" font-size="15" font-weight="600" font-family="Monaco, Consolas, 'Lucida Console', monospace">Gradient Descent On A Convex Loss</text>
+  <defs>
+    <marker id="lr-gd-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#c0392b"/>
+    </marker>
+  </defs>
+  <ellipse cx="195" cy="140" rx="110" ry="80" transform="rotate(15 195 140)" fill="none" stroke="#1f7a4d" stroke-width="1.5" opacity="0.85"/>
+  <ellipse cx="195" cy="140" rx="75" ry="54" transform="rotate(15 195 140)" fill="none" stroke="#1f7a4d" stroke-width="1.5" opacity="0.85"/>
+  <ellipse cx="195" cy="140" rx="45" ry="32" transform="rotate(15 195 140)" fill="none" stroke="#1f7a4d" stroke-width="1.5" opacity="0.85"/>
+  <ellipse cx="195" cy="140" rx="20" ry="14" transform="rotate(15 195 140)" fill="rgba(31,122,77,0.12)" stroke="#1f7a4d" stroke-width="1.5" opacity="0.85"/>
+  <path marker-end="url(#lr-gd-arrow)" d="M345,50 L255,85 L217,115 L202,132 L196,139" fill="none" stroke="#c0392b" stroke-width="2" stroke-dasharray="5 4"/>
+  <g fill="#c0392b">
+    <circle cx="345" cy="50" r="4"/>
+    <circle cx="255" cy="85" r="4"/>
+    <circle cx="217" cy="115" r="4"/>
+    <circle cx="202" cy="132" r="4"/>
+  </g>
+  <circle cx="195" cy="140" r="4" fill="#111111"/>
+  <text x="340" y="40" text-anchor="end" fill="#111111" font-size="12" font-family="Monaco, Consolas, 'Lucida Console', monospace">start</text>
+  <text x="203" y="170" fill="#111111" font-size="12" font-family="Monaco, Consolas, 'Lucida Console', monospace">minimum</text>
+  <line x1="20" y1="284" x2="60" y2="284" stroke="#e8e8e8" stroke-width="1.5"/>
+  <line x1="20" y1="284" x2="20" y2="244" stroke="#e8e8e8" stroke-width="1.5"/>
+  <text x="64" y="288" fill="#777777" font-size="11" font-family="Monaco, Consolas, 'Lucida Console', monospace">w&#8321;</text>
+  <text x="14" y="238" text-anchor="middle" fill="#777777" font-size="11" font-family="Monaco, Consolas, 'Lucida Console', monospace">w&#8322;</text>
+</svg>

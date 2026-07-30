@@ -1,0 +1,15 @@
+/**
+ * MathJax display equations
+ * This site loads the TeX-MML-AM_CHTML config, i.e. the CommonHTML output jax,
+ * which wraps every displayed ($$...$$ or \[...\]) equation in a
+ * `.MJXc-display` span (NOT `.MathJax_Display` - that class belongs to the
+ * older HTML-CSS output jax and never appears here). A long equation can be
+ * wider than the viewport on mobile; scroll it horizontally instead of
+ * letting it overflow the page.
+ */
+.MJXc-display {
+    overflow-x: auto;
+    overflow-y: hidden;
+    max-width: 100%;
+    -webkit-overflow-scrolling: touch;
+}
